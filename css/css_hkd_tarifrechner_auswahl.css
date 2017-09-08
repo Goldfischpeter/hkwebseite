@@ -1,0 +1,1848 @@
+/*
+Haftpflichtkasse
+TARIFRECHNER AUSWAHL 2017/04/21
+Goldfischclub, pw@goldfischclub.de
+*/
+
+
+ 
+
+#hk-tarifrechner .hk-tarif-auswahl .hkd-form-row {
+	background-color: #fff;
+}
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-tarif-basis,
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-tarif-tarif {
+	background-color: #f7f6f6;
+}
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-1 .hkd-tarif-selected,
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-tarif-selected,
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-tarif-selected,
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-tarif-tarif .hkd-col-b  {
+	background-color: #fff;
+}
+
+
+#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-action {
+	background-color: transparent;
+	margin-top: 20px;
+}
+
+
+#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-paket-closed {
+	background-color: #008fd2;
+}
+
+#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-paket {
+	cursor: pointer;
+}
+
+
+
+#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-beitrag,
+#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-action .hkd-col-d {
+	background-color: #f7f6f6;
+}
+
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-6 .hkd-tarif-beitrag {
+	background-image: url(bilder/hk-bg-table-tarif-6-desktop.gif);
+	background-repeat: repeat-y;
+	background-position: 352px 0;
+}
+
+@media handheld, only screen and (max-width: 1000px) {
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-6 .hkd-tarif-beitrag {
+		background-image: url(bilder/hk-bg-table-tarif-6-tablet.gif);
+		background-repeat: repeat-y;
+		background-position: 265px 0;
+	}
+}
+@media handheld, only screen and (max-width: 700px) {
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-6 .hkd-tarif-beitrag {
+		background-image: url(bilder/hk-bg-table-tarif-6-tablet.gif);
+		background-repeat: repeat-y;
+		background-position: 251px 0;
+	}
+}
+@media handheld, only screen and (max-width: 440px) {
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-6 .hkd-tarif-beitrag {
+		background-image: url(bilder/hk-bg-table-tarif-6-tablet.gif);
+		background-repeat: repeat-y;
+		background-position: 151px 0;
+	}
+}
+
+
+#hk-tarifrechner .hk-tarif-auswahl .hkd-mobile-currency {
+	display: none;
+}
+
+#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-select {
+	display: none;
+}
+
+
+
+
+
+#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-selector {
+	display: none;
+}
+
+div.details #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-tarif-select {
+	margin-top: 20px;
+	margin-bottom: 0px;
+	padding-bottom: 5px;
+}
+div.details #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-tarif-tarif ul,
+div.details #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-tarif-select ul {
+	margin-left: 20px;
+	margin-top: 20px;
+}
+div.details #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-tarif-select ul {
+	margin-top: 10px;
+}
+div.details #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-tarif-tarif ul {
+	margin-top: 5px;
+	margin-left: 10px;
+}
+div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-tarif ul li,
+div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-select ul li {
+	padding: 0;
+	background-image: none;
+	margin-bottom: 4px;
+}
+div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-tarif ul li a,
+div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-select ul li a {
+	font-size: 110%;
+}
+
+div.details #hk-tarifrechner .hk-tarif-2 .hk-tarif-sel-1 {
+	/*display: none;*/
+}
+div.details #hk-tarifrechner .hk-tarif-2 .hkd-tarif-selector li.aktiv,
+div.details #hk-tarifrechner .hk-tarif-4 .hkd-tarif-selector li.aktiv {
+	font-weight: bold;
+}
+
+
+
+
+a.hkd-has-ic-float {
+	background-position: 50% 50%;
+    display: inline;
+    padding-right: 20px;
+    padding-top: 4px;
+    width: 30px;
+    padding-bottom: 5px;
+    border: 1px solid #fff;
+}
+
+
+#hk-tarifrechner .hk-tarif-auswahl .hkd-form-row {
+	padding: 0;
+}
+/* vert linien */
+#hk-tarifrechner .hk-tarif-auswahl .hkd-form-col {
+	min-height: 55px;
+}
+
+#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-tarif .hkd-form-col {
+	min-height: 82px;
+}
+
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-5 .hkd-tarif-tarif .hkd-form-col {
+	min-height: 75px;
+}
+
+
+#hk-tarifrechner .hk-tarif-auswahl .hk-dcb .hkd-col-b1,
+#hk-tarifrechner .hk-tarif-auswahl .hkd-col-b2,
+#hk-tarifrechner .hk-tarif-auswahl .hkd-col-b3,
+#hk-tarifrechner .hk-tarif-auswahl .hkd-col-b4,
+#hk-tarifrechner .hk-tarif-auswahl .hkd-col-c,
+#hk-tarifrechner .hk-tarif-auswahl .hkd-col-d {
+	border-left: 2px solid #e2e2e0;
+}
+
+#hk-tarifrechner .hk-tarif-auswahl .hk-dcb .hkd-col-d {
+	border-left: none;
+	min-height: 55px;
+}
+
+
+/* mod tarif einfach */
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-5 .hkd-col-b2 {
+	border-left: 6px solid #e2e2e0;
+}
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-5 .hkd-col-b3 {
+	border-left: 1px solid #e2e2e0;
+}
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-5 .hkd-col-b4 {
+	border-left: 6px solid #e2e2e0;
+}
+
+
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-5 .hkd-tarif-paket .hkd-col-b2,
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-5 .hkd-tarif-paket .hkd-col-b3,
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-5 .hkd-tarif-paket .hkd-col-b4 {
+	border-left: none;
+}
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-5 .hkd-tarif-paket .hkd-col-c {
+	padding-left: 13px;
+}
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-5 .hkd-tarif-paket .hkd-col-d {
+	padding-left: 3px;
+}
+
+#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-summe .hkd-col-b2,
+#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-summe .hkd-col-b3,
+#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-summe .hkd-col-b4,
+#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-summe .hkd-col-c,
+#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-summe .hkd-col-d {
+	min-height: 58px;
+}
+
+
+
+#hk-tarifrechner .hk-tarif-auswahl .hkd-angaben-dokumente .hkd-form-row {
+	padding-top: 10px;
+}
+#hk-tarifrechner .hk-tarif-auswahl .hkd-angaben-dokumente .hkd-form-col {
+	border-left: none;
+}
+
+#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-action {
+	border: none;
+}
+
+#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-paket .hkd-col-c,
+#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-paket .hkd-col-d {
+	border: none;
+}
+#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-paket {
+	background-image: url("bilder/hk_box_pfeil_open.png");
+    background-position: 99% 50%;
+}
+#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-paket-closed {
+	background-image: url("bilder/hk_box_pfeil_closed2.png");
+}
+
+#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-tarif,
+#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-paket {
+	margin-top: 20px;
+}
+
+#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-zusatz {
+	margin-top: 20px;
+}
+
+#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-einfach-deckungsumfang {
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+#hk-tarifrechner .hk-tarif-auswahl .hkd-praemienneutral {
+	margin-top: 20px;
+}
+
+#hk-tarifrechner  .hk-tarif-auswahl  .hkd-tarif-summe {
+	border-top: 1px solid #008fd2;
+	border-bottom: 1px solid #008fd2;
+	margin-bottom: 15px;
+	margin-top: 6px
+}
+
+#hk-tarifrechner  .hk-tarif-auswahl  .hkd-tarif-kombi {
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+
+div.details #hk-tarifrechner .hk-tarif-auswahl p {
+    font-size: 100%;
+}
+div.details #hk-tarifrechner .hk-tarif-auswahl p.dv-hinweis {
+    font-size: 75%;
+}
+
+div.details #hk-tarifrechner .hk-tarif-auswahl p {
+	margin-bottom: 0;
+}
+div.details #hk-tarifrechner .hk-tarif-auswahl p {
+	padding: 7px 0;
+}
+div.details #hk-tarifrechner .hk-tarif-auswahl p.hkd-form-checkbox {
+	padding: 3px 0;
+}
+div.details #hk-tarifrechner .hk-tarif-auswahl p.hkd-form-select {
+	padding: 0px 0;
+}
+
+
+
+
+#hk-tarifrechner .hk-tarif-auswahl .hkd-form-col {
+	margin-left: 0px;
+}
+
+#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-leistung .hkd-form-col {
+	min-height: 72px;
+}
+
+/* TARIF */
+#hk-tarifrechner .hk-tarif-auswahl .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-b {
+	text-align: center;
+}
+
+/* TARIF PREIS SPALTEN 1 Tarif */
+#hk-tarifrechner .hk-tarif-auswahl .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-b {
+	width: 260px;
+}
+/* TARIF PREIS SPALTEN 2 Tarif2 */
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-b {
+	width: 160px;
+}
+/* TARIF PREIS SPALTEN 4 Tarif4 */
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-b {
+	width: 130px;
+}
+
+/* TARIF PREIS SPALTEN 4 Tarif4 */
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-6 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-b {
+	width: 176px;
+}
+
+div.details #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-6 ul {
+	margin-left: 20px;
+}
+
+
+
+/* TARIF PREIS SPALTEN 4 Tarif4 */
+/*
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4.hk-dcb .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-b {
+	width: 132px;
+}
+*/
+
+
+/* TARIF PREIS SPALTEN 3 Tarif5-1 EINFACH */
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-5-1 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-b {
+	width: 174px;
+}
+
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-5 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-b2,
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-5 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-b3 {
+	width: 130px;
+}
+
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-b1-4 {
+	width: 526px;
+}
+
+
+
+/* OPTION */
+#hk-tarifrechner .hk-tarif-auswahl .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-c {
+	width: 150px;
+	margin-left: 0px
+}
+#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-bhv-einfach .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-c {
+	width: 250px;
+	margin-left: 0px
+}
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-c {
+	width: 100px;
+	margin-left: 0px
+}
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-1 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-c {
+	width: 270px;
+	margin-left: 0px
+}
+
+
+
+
+
+
+
+
+/* Pakete, Personen, Objekte - BREITEN */
+#hk-tarifrechner .hk-tarif-auswahl .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-d {
+	margin-left: 0px;
+	width: 458px;
+}
+
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-d {
+	margin-left: 0px;
+	width: 505px;
+}
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-d {
+	margin-left: 0px;
+	width: 356px;
+}
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-5 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-d {
+	margin-left: 0px;
+	width: 347px;
+}
+
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-d {
+	margin-left: 0px;
+	width: 515px; 
+}
+
+/* variante tarif-2 für tarif-einfach */
+#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-bhv-einfach .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-d {
+	margin-left: 0px;
+	width: 415px; 
+}
+
+
+
+
+/* elemente in auswahl reihen/cols */
+div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-form-col p {
+	padding-top: 20px;
+}
+div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-leistung .hkd-col-b p {
+	padding-top: 18px;
+}
+div.details #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-1 .hkd-col-b p,
+div.details #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-tarif-basis .hkd-col-b2 p {
+	padding-top: 19px;
+}
+div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-summe .hkd-col-b p {
+	padding-top: 20px;
+}
+div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-tarif .hkd-col-b p {
+	padding-top: 38px; /* 20px 20160412*/
+}
+
+
+
+
+
+
+div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-action .hkd-form-col .hkd-form-submit-antrag {
+	padding: 0;
+}
+/* reset forms.css #19 */
+div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-action .hkd-form-col .hkd-form-submit {
+	margin-top: 0px;
+}
+div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-action .hkd-form-col p {
+	padding: 0;
+}
+
+div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-action p {
+	margin-bottom: 15px;
+}
+
+div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-action div.hkd-tarif-info div {
+	display: block;
+	background-color: #fff;
+	margin-bottom: 12px;
+	padding: 15px;
+	color: #008fd2;
+	font-size: 105%;
+}
+
+div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-action .hkd-col-b2 div.hkd-tarif-info div,
+div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-action .hkd-col-b3 div.hkd-tarif-info div {
+	border-top: 1px solid;
+}
+
+div.details #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-6 .hkd-tarif-action .hkd-col-b2 div.hkd-tarif-info div,
+div.details #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-6 .hkd-tarif-action .hkd-col-b3 div.hkd-tarif-info div {
+	border-top: none;
+}
+
+
+div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-action div.hkd-tarif-info {
+	background-image: url(bilder/hk_pfeil_submit.gif);
+	background-position: 50% bottom;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+}
+
+
+
+/* reset color #432, li module #511 */
+div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-action .hkd-col-d ul li {
+	background-image: url(bilder/hkd-ic-pfeil-tr-box-1x.png);
+	background-position: 0 50%;
+	margin-bottom: 10px;
+    padding-left: 20px;
+    font-size: 120%;
+}
+div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-action .hkd-col-d ul {
+	margin-left: 20px;
+}
+
+div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-col-c p,
+div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-col-d p {
+	padding-top:18px;
+}
+
+div.details #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-col-d p {
+	padding-top: 16px;
+	padding-right: 30px;
+}
+div.details #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-tarif-vs .hkd-col-d p {
+	padding-top: 13px;
+	line-height: 1.1em;
+}
+
+div.details #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-6 .hkd-tarif-tarif .hkd-col-d p {
+	padding-top: 31px; /* 20px 20160412*/
+}
+
+
+div.details #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-5 .hkd-col-d p {
+	padding-right: 40px;
+}
+
+div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-col-c p.hkd-form-select {
+	margin: 8px 10px 0 10px;
+	padding: 0;
+}
+
+div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-col-d p  {
+	margin-left: 20px;
+}
+div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-paket .hkd-col-d p  {
+	margin-left: 24px;
+}
+div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-paket .hkd-col-c p  {
+	margin-left: 14px; 
+}
+
+
+
+
+
+#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-haken {
+	background-image: url(bilder/hk-ic-tarif-paket-haken.png); 
+	background-position: 50% 50%;
+}
+
+
+
+
+/*
+div.details #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-tarif-select,
+div.details #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-tarif-select {
+	padding: 0 0 0 0px;
+}
+*/
+
+
+
+
+
+/* font sizes  */
+div.details #hk-tarifrechner .hkd-col-b p {
+	font-size: 135%;
+	font-weight: normal;
+	line-height: 0.8em;
+}
+
+div.details #hk-tarifrechner .hk-tarif-5 .hkd-tarif-tarif .hkd-col-b p {
+	font-size: 105%;
+	font-weight: normal;
+	line-height: 120%;
+}
+
+
+div.details #hk-tarifrechner .hk-tarif-5 .hkd-tarif-tarif .hkd-col-b2 p,
+div.details #hk-tarifrechner .hk-tarif-5 .hkd-tarif-tarif .hkd-col-b3 p {
+	border-top: 1px solid;
+}
+
+div.details #hk-tarifrechner .hkd-tarif-tarif .hkd-col-b p,
+div.details #hk-tarifrechner .hkd-tarif-tarif .hkd-col-d p {
+	font-size: 125%;
+	font-weight: normal;
+}
+
+
+div.details #hk-tarifrechner .hk-tarif-1 .hkd-col-b p,
+div.details #hk-tarifrechner .hk-tarif-2 .hkd-tarif-basis .hkd-col-b2 p,
+div.details #hk-tarifrechner .hk-tarif-2 .hkd-tarif-paket .hkd-col-b p,
+div.details #hk-tarifrechner .hk-tarif-4 .hkd-col-b1-4 p {
+	font-size: 105%;
+}
+
+
+
+div.details #hk-tarifrechner .hkd-col-b p span {
+	font-size: 65%;
+	font-weight: normal;
+}
+
+div.details #hk-tarifrechner .hkd-tarif-action .hkd-col-b p {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+div.details #hk-tarifrechner .hkd-tarif-summe .hkd-col-b p {
+	font-size: 155%;
+}
+
+
+/* waehrung */
+div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-col-b p span {
+	font-size: 12px;
+}
+div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-leistung .hkd-col-b p span {
+	font-size: 14px;
+}
+
+
+
+
+div.details #hk-tarifrechner .hkd-tarif-paket .hkd-col-b p,
+#hk-tarifrechner  .hkd-tarif-top .hkd-col-b p,
+#hk-tarifrechner  .hkd-tarif-top .hkd-col-d p,
+#hk-tarifrechner  .hkd-tarif-summe .hkd-col-b p,
+#hk-tarifrechner  .hkd-tarif-summe .hkd-col-d p,
+#hk-tarifrechner .hkd-tarif-tarif .hkd-col-b p {
+	color: #008fd2;
+}
+
+#hk-tarifrechner .hk-tarif-2 .hkd-tarif-basis .hkd-col-b p,
+#hk-tarifrechner .hk-tarif-2 .hkd-tarif-basis .hkd-col-d p {
+	color: #575757;
+}
+
+#hk-tarifrechner .hkd-tarif-tarif .hkd-col-b p a {
+	background-image: url(bilder/hkd-ic-pfeil-navi-inaktiv-1x.png);
+	background-position: 0 50%;
+	padding-left: 14px;
+}
+
+#hk-tarifrechner .hkd-tarif-tipp {
+	background-image: url(bilder/hk-ic-tarif-unser-tipp.jpg);
+	background-position: center 0;
+}
+#hk-tarifrechner .hkd-tarif-ogf{
+	background-image: url(bilder/hk-ic-tarif-ohne-gesundheitspruefung.jpg);
+	background-position: center 0;
+}
+
+
+
+div.details #hk-tarifrechner .hkd-tarif-paket-closed .hkd-col-b p,
+#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-paket-closed p {
+	color: #fff;
+}
+
+
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-1 .hkd-tarif-selected p,
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-1 .hkd-tarif-selected select,
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-tarif-selected p,
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-tarif-selected select,
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-tarif-selected p,
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-tarif-selected select,
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-6 .hkd-tarif-selected p,
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-6 .hkd-tarif-selected select {
+	color: #68a618; /* gruen*/
+}
+
+#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-basis .hkd-col-b2 p {
+	color: #575757; /* grau */
+}
+
+#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-basis .hkd-col-b2 p.hkd-paket-neu {
+	color: #68a618; /* gruen*/
+}
+
+#hk-tarifrechner .hk-tarif-auswahl p.hkd-paket-neu {
+	color: #68a618 !important; /* gruen*/
+	font-size: 135% !important;
+	padding-top: 15px !important;
+} 
+
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-6 .hkd-tarif-selected p,
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-6 .hkd-tarif-selected select {
+	color: #68a618; /* gruen*/
+}
+
+
+
+#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-funktion {
+	background-color: transparent;
+}
+
+#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-funktion .hkd-col-c {
+	background-image: url(bilder/hkd-tarif-pfeil.gif);
+	background-position: 0 50%;
+	height: 80px;
+}
+
+
+#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-zahlungsweise {
+	padding-bottom: 30px;
+}
+
+
+/* help/info */
+#hk-tarifrechner .hk-tarif-auswahl .hkd-ic-hlp {
+	background-image: url(bilder/hkd-ic-tr-info-1x.png);
+	background-position: 97% 50%;
+	cursor: pointer;
+}
+
+
+
+#hk-tarifrechner .hk-tarif-auswahl .hkd-ic-edit {
+	background-position: 97% 50%;
+	cursor: pointer;
+}
+
+
+#hk-tarifrechner .hk-tarif-auswahl .hkd-col-d p {
+	margin-left: 0;
+}
+
+
+#hk-tarifrechner .hk-tarif-auswahl .hkd-hlp-txt {
+	background-color: #eff6f9;
+	padding: 10px;
+	margin-left: 10px;
+	margin-top: 10px;
+	float: left;
+	clear: both;
+	margin-bottom: 10px;
+	padding-right: 50px;
+	width: 912px;
+	background-image: url(bilder/hkd-ic-tr-close-1x.png);
+	background-position: 99% 10px;
+	cursor: pointer;
+	display: none;
+}
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-tarif-basis .hkd-hlp-txt,
+#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-beitrag .hkd-hlp-txt { 
+	background-color: #fff;
+}
+
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-tarif-selected .hkd-hlp-txt { 
+	background-color: #eff6f9;
+}
+
+/* reset color #172 */
+div.details  #hk-tarifrechner .hk-tarif-auswahl .hkd-hlp-txt p,
+div.details  #hk-tarifrechner .hk-tarif-auswahl .hkd-hlp-txt li {
+	color: #008fd2;
+}
+
+	
+	
+
+
+/* .visual-5 #hk-tarifrechner .hkd-form-col .hkd-form-submit input #173*/
+.visual-5 #hk-tarifrechner .hk-tarif-auswahl .hkd-col-b .hkd-form-submit input {
+	width: 95%;
+}
+.visual-5 #hk-tarifrechner .hkd-form-submit {
+	background-image: none;
+}
+
+
+
+
+
+.visual-5 #hk-tarifrechner .hk-tarif-auswahl .hkd-col-c .hkd-form-submit,
+.visual-5 #hk-tarifrechner .hk-tarif-auswahl .hkd-col-d .hkd-form-submit{
+	float: left;
+}
+.visual-5 #hk-tarifrechner .hk-tarif-auswahl .hkd-col-c .hkd-form-submit input,
+.visual-5 #hk-tarifrechner .hk-tarif-auswahl .hkd-col-d .hkd-form-submit input {
+	width: 170px;
+}
+
+
+
+
+
+.visual-5 #hk-tarifrechner .hk-tarif-auswahl .hkd-col-b .hkd-form-submit input {
+	background-color: #008fd2;
+	color: #fff;
+}
+.visual-5 #hk-tarifrechner .hk-tarif-auswahl .hkd-col-b .hkd-form-submit-antrag input {
+	background-color: #89c53b;
+}
+.visual-5 #hk-tarifrechner .hk-tarif-auswahl .hkd-col-b .hkd-form-submit-angebot input {
+	background-color: #729bb2;
+}
+
+
+.visual-5 #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-aktiv .hkd-form-submit input,
+.visual-5 #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-aktiv .hkd-form-submit input {
+	background-color: #7fbc12;
+	color: #fff;
+	/*background-image: url(bilder/hk_filter_haken.png);*/
+    background-position: 96% 50%;
+}
+
+
+
+
+
+
+
+
+/* tarif slider */
+
+div.details .hkd-tarif-controller-status ul li {
+	background-image: url(bilder/hk_slider_status.png);
+	background-position: 0 0;
+	width: 18px;
+	height: 18px;
+	display: block;
+	float: left;
+	padding: 0;
+	margin: 0 0 0 3px;
+}
+
+.hkd-tarif-controller {
+	position: absolute;
+	margin: 35px 0 0 105px;
+}
+#hk-tarifrechner .hk-tarif-4 .hkd-tarif-controller {
+	margin: 35px 0 0 90px;
+}
+
+div.details .hkd-tarif-controller-status ul li.hkd-tarif-controller-aktiv {
+	background-image: url(bilder/hk_slider_status.png);
+	background-position: 0 -30px;
+}
+
+.hkd-tarif-controller .hkd-tarif-buttons a {
+	display: block;
+	width: 20px;
+	height: 24px;
+	position: absolute;
+	margin-top: -43px;
+}
+
+.hk-tarif-4 .hkd-tarif-controller .hkd-tarif-buttons a {
+	display: block;
+	width: 20px;
+	height: 24px;
+	position: absolute;
+	margin-top: -40px;
+}
+
+.hkd-tarif-controller .hkd-tarif-button-prev {
+	background-image: url(bilder/hk_pfeil_prev.png);
+	margin-left: -95px;
+}
+#hk-tarifrechner .hk-tarif-4 .hkd-tarif-controller .hkd-tarif-button-prev {
+	background-image: url(bilder/hk_pfeil_prev.png);
+	margin-left: -65px;
+}
+
+.hkd-tarif-controller .hkd-tarif-button-next {
+	background-image: url(bilder/hk_pfeil.png);
+	margin-left: 140px;
+}
+
+
+.hkd-abstand-top {
+	margin-top: 20px
+}
+
+div.details #hk-tarifrechner .hkd-tarif-leistungen .hkd-col-b3 p {
+	line-height: 0.9em;
+	padding-top: 10px;
+}
+
+div.details #hk-tarifrechner .hkd-tarif-leistungen .hkd-col-b3 a {
+	line-height: 0.5em;
+	font-size: 80%;
+}
+
+.hkd-tarif-leistung-hidden {
+	display: none;
+}
+
+.hkd-tarif-leistungen .hkd-col-d {
+	cursor: pointer;
+}
+
+
+
+
+
+@media handheld, only screen and (max-width: 1000px) {
+
+	
+	#hk-tarifrechner .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-form-col, 
+	#hk-tarifrechner .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-form-col-first, 
+	#hk-tarifrechner .hkd-form-function .hkd-form-col {
+    	width: 50%;
+	}
+	
+	#hk-tarifrechner .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-form-col-first {
+		width: 29.5%;
+	}
+	#hk-tarifrechner .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-form-col-2 {
+		width: 32%;
+		padding-right: 2.5%;
+	}
+	#hk-tarifrechner .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-form-col-3 {
+		width: 34.5%;
+	} 
+	
+	#hk-tarifrechner input.hkd-form-ts6,
+	#hk-tarifrechner input.hkd-form-ts100 {
+		width: 331px;
+	}
+	
+	#hk-tarifrechner input.hkd-form-ts3,
+	#hk-tarifrechner input.hkd-form-ts4,
+	#hk-tarifrechner input.hkd-form-ts5 {
+		width: 94%;
+	}
+	
+	#hk-tarifrechner .hkd-form-field-group input.hkd-form-ts7-1,
+	#hk-tarifrechner .hkd-form-field-group input.hkd-form-ts3,
+	#hk-tarifrechner .hkd-form-field-group input.hkd-form-ts7,
+	#hk-tarifrechner .hkd-form-field-group input.hkd-form-ts8,
+	#hk-tarifrechner .hk-angebot-anfordern .hkd-form-text input.hkd-form-ts8,
+	#hk-tarifrechner .hk-antrag-stellen .hkd-form-text input.hkd-form-ts8 {
+		width: 215px;
+	}
+	
+	
+	
+	#hk-tarifrechner textarea.hkd-form-textarea {
+		width: 85%;
+	}
+	.visual-5 #hk-tarifrechner .hkd-angaben-dokumente .hkd-form-submit input {
+		width: 30%;
+	}
+	
+	
+	
+	#hk-tarifrechner .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-form-field-group .hkd-form-col {
+		width: auto;
+	} 
+	#hk-tarifrechner .hk-tarif-2 .hkd-form-field-group input.hkd-form-ts3 {
+		width: 234px;
+	}
+	#hk-tarifrechner .hk-tarif-2 .hkd-form-field-group input.hkd-form-ts10 {
+		width: 80px;	
+	}
+	#hk-tarifrechner .hk-tarif-3 .hkd-form-element .hkd-form-ts5 {
+		width: 95%;	
+	}
+	#hk-tarifrechner .hk-tarif-3 .hkd-form-select .hkd-form-ss2 {
+		width: 96%;	
+	}
+
+	
+	.hk-tarif-2 .hkd-form-radio label {
+   		width: 90%;
+	}
+	.hlp { 
+		width: 662px;
+	}
+	
+	
+	
+
+	/* AUSWAHL */
+
+	/* TARIF-1 */
+	#hk-tarifrechner .hk-tarif-auswahl .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-b {
+		width: 130px;
+	}
+	#hk-tarifrechner .hk-tarif-auswahl .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-c {
+		width: 120px;
+	}	
+	#hk-tarifrechner .hk-tarif-auswahl .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-d {
+		width: 443px; 
+	}
+	
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-1 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-d {
+		width: 290px; 
+	}
+	
+	
+	/* TARIF-2 */
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-b {
+		width: 120px;
+	}
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-c {
+		width: 120px;
+	}	
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-d {
+		width: 330px; 
+	}
+	
+	div.details #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-tarif-action div.hkd-tarif-info div {
+		font-size: 100%;
+	}
+	div.details #hk-tarifrechner .hkd-tarif-tarif .hkd-col-b p {
+		font-size: 115%;
+	}
+	
+	
+	/* TARIF-4 */
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-b {
+		width: 100px;
+	}
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-c {
+		width: 90px; /* 100 */
+	}
+	/* TARIF-6 HR NEU */
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-6 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-b {
+		width: 135px; /* 160 */
+	}
+	
+	/*
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4.hk-dcb .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-b {
+		width: 118px;
+	}
+	*/
+	
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-b1-4 {
+		width: 466px;
+	}
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-c {
+		display: block;
+	}	
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-d {
+		width: 190px; /* 210 */ 
+	}
+	div.details #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-col-d p {
+    	margin-left: 10px;
+    	width: 80%;
+	}	
+	div.details #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-tarif-paket .hkd-col-d p {
+    	margin-left: 16px;
+	}
+
+	div.details #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-tarif-action div.hkd-tarif-info div {
+		font-size: 100%;
+	}
+	div.details #hk-tarifrechner .hkd-tarif-tarif .hk-tarif-4 .hkd-col-b p {
+		font-size: 115%;
+	}
+	
+	
+	
+	
+	#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-hilfe-paket .hkd-col-c,
+	#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-hilfe-paket .hkd-col-d {
+		min-height: 70px;
+	}
+	
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-tarif-basis .hkd-col-b {
+		min-height: 70px;
+	}
+	
+
+	/* hilfe-paket*/
+	div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-hilfe-paket .hkd-col-b p {
+		padding-top: 13px;
+	}
+	div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-hilfe-paket .hkd-col-c p {
+		padding-top: 8px;
+	}
+	div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-hilfe-paket .hkd-col-d p {
+		padding-top: 23px;
+	}
+	
+	
+	#hk-tarifrechner .hk-tarif-auswahl .hkd-hlp-txt {
+		width: 88%;
+	}
+	
+	.visual-5 #hk-tarifrechner .hkd-angaben-dokumente .hkd-form-submit input {
+		width: 40%;
+	}
+	#hk-tarifrechner .hkd-form-wrapper .hkd-form-berechnungsgrundlage > .hkd-form-cols > .hkd-form-col {
+		width: 45%;
+	}
+
+
+
+
+}
+
+
+
+@media handheld, only screen and (max-width: 700px) {
+	
+	
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-c {
+		display: none;
+	}
+	
+	#hk-tarifrechner .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-form-col, 
+	#hk-tarifrechner .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-form-col-first, 
+	#hk-tarifrechner .hkd-form-function .hkd-form-col {
+    	width: 100%;
+	}
+	
+	#hk-tarifrechner .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-form-col {
+    	margin-left: 12px;
+	}
+	#hk-tarifrechner .hkd-form-wrapper .hkd-tarif-action > .hkd-form-cols > .hkd-form-col {
+    	margin-left: 0;
+	}
+
+	#hk-tarifrechner .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-form-col-first {
+    	margin-left: 2px;
+    	margin-bottom: 5px;
+	}
+	
+	.hkd-angaben-dokumente .hkd-form-col {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	
+	#hk-tarifrechner input.hkd-form-ts6,
+	#hk-tarifrechner input.hkd-form-ts100 {
+		width: 380px;
+	}
+	
+	#hk-tarifrechner .hkd-form-field-group input.hkd-form-ts7-1,
+	#hk-tarifrechner .hkd-form-field-group input.hkd-form-ts3,
+	#hk-tarifrechner .hkd-form-field-group input.hkd-form-ts7,
+	#hk-tarifrechner .hkd-form-field-group input.hkd-form-ts8,
+	#hk-tarifrechner .hk-angebot-anfordern .hkd-form-text input.hkd-form-ts8,
+	#hk-tarifrechner .hk-antrag-stellen .hkd-form-text input.hkd-form-ts8 {
+		width: 265px;
+	}
+	
+	#hk-tarifrechner .hkd-form-text input.hkd-form-ts1 {
+		width: 20%;
+	}
+	
+	#hk-tarifrechner input.hkd-form-ts3 {
+		width:92%;
+	}
+	
+	#hk-tarifrechner textarea.hkd-form-textarea {
+		width: 85%;
+	}
+	
+	.visual-5 #hk-tarifrechner .hkd-form-add .hkd-form-submit input {
+    	width: 50%;
+	}
+	.visual-5 #hk-tarifrechner .hkd-form-submit input {
+    	width: 40%;
+	}
+	
+	.visual-5 #hk-tarifrechner .hkd-angaben-dokumente .hkd-form-submit input {
+		width: 40%;
+	}
+
+
+	#hk-tarifrechner .hk-tarif-2 .hkd-form-field-group input.hkd-form-ts3 {
+		width: 268px;
+	}
+	#hk-tarifrechner  .hk-tarif-2 .hkd-form-field-group input.hkd-form-ts10 {
+		width: 80px;	
+	}
+	#hk-tarifrechner .hk-tarif-2 .hkd-form-field-group input.hkd-form-ts6 {
+		width: 80px;
+	}
+	#hk-tarifrechner  .hk-tarif-2 .hkd-form-field-group input.hkd-form-ts7 {
+		width: 268px;	
+	}
+
+	.hkd-bx-config h3 {
+		font-size: 90%;
+	}
+	
+	.hkd-form-field-group .hkd-form-row {
+		width: 96%;
+	}
+	#hk-tarifrechner .hk-tarif-3 .hkd-form-element .hkd-form-ts5 {
+		width: 93%;	
+	}
+	#hk-tarifrechner .hk-tarif-3 .hkd-form-select .hkd-form-ss2 {
+		width: 94%;	
+	}
+	.hlp { 
+		width: 373px;
+	}
+	
+	
+	
+	
+	
+	/* auswahl */
+	
+	#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-select,
+	#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-selector {
+		display: block;
+	}
+	
+	/* optionen ausschalten */
+	#hk-tarifrechner .hk-tarif-1 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-c,
+	#hk-tarifrechner .hk-tarif-2 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-c,
+	#hk-tarifrechner .hk-tarif-4 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-c {
+		display: none;
+	}
+	
+	#hk-tarifrechner .hk-tarif-1 .hkd-form-wrapper .hk-row-editmode > .hkd-form-cols > .hkd-col-c,
+	#hk-tarifrechner .hk-tarif-2 .hkd-form-wrapper .hk-row-editmode > .hkd-form-cols > .hkd-col-c,
+	#hk-tarifrechner .hk-tarif-4 .hkd-form-wrapper .hk-row-editmode > .hkd-form-cols > .hkd-col-c,
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-form-wrapper .hk-row-editmode > .hkd-form-cols > .hkd-col-c {
+		border-left: medium none;
+		display: block;
+		margin: 65px 0 0 142px;
+		position: absolute;
+		width: 264px;
+	}
+	
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-6 .hkd-form-wrapper .hk-row-editmode > .hkd-form-cols > .hkd-col-c {
+		border-left: medium none;
+		display: block;
+		margin: 48px 0 0 0;
+		position: absolute;
+		width: 164px;
+	}
+	
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-form-wrapper .hk-row-editmode > .hkd-form-cols > .hkd-label-r1 {
+		margin: 48px 0 0 142px;
+	}
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-form-wrapper .hk-row-editmode > .hkd-form-cols > .hkd-label-r2 {
+		margin: 62px 0 0 142px;
+	}
+	
+
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-form-wrapper .hk-row-editmode > .hkd-form-cols > .hkd-col-c {
+		margin: 65px 0 0 170px;
+		width: 230px;
+	}
+	
+	
+	
+	
+	
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-1 .hkd-form-wrapper .hk-row-editmode > .hkd-form-cols > .hkd-editable-mode2 {
+		margin: 35px 0 0 146px;
+	}
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-form-wrapper .hk-row-editmode > .hkd-form-cols > .hkd-editable-mode2 {
+		margin: 45px 0 0 172px;
+	}
+	
+
+	
+	
+	
+	
+
+	/* AUSWAHL */
+	
+	
+	/* 1-tarif auswahl */
+	#hk-tarifrechner .hk-tarif-1 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-b,
+	#hk-tarifrechner .hk-tarif-1 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-d {
+		margin-left: 0;
+	}
+	#hk-tarifrechner .hk-tarif-1 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-d {
+		width: 240px;
+		padding-right: 30px;
+		margin-left: 5px;
+		background-position: 100% 50%;
+	}
+	
+	
+	/* BUTTONS */
+	#hk-tarifrechner .hk-tarif-1 .hkd-form-wrapper .hkd-tarif-action > .hkd-form-cols > .hkd-col-b {
+		width: 100%;
+	}
+	#hk-tarifrechner .hk-tarif-1 .hkd-form-wrapper .hkd-tarif-action > .hkd-form-cols > .hkd-col-d {
+		width: 344px;
+	}
+	
+
+
+
+
+
+
+	/* 2-tarife auswahl */
+	#hk-tarifrechner .hk-tarif-2 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-b,
+	#hk-tarifrechner .hk-tarif-2 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-d {
+		margin-left: 0;
+	}
+	
+	/* PREIS SPALTEN AUSSCHALTEN */
+	#hk-tarifrechner .hk-tarif-2 .hkd-tarif-paket .hkd-col-b1:first-child,
+	#hk-tarifrechner .hk-tarif-4 .hkd-tarif-paket .hkd-col-b,
+	#hk-tarifrechner .hk-tarif-2 .hkd-col-b2,
+	#hk-tarifrechner .hk-tarif-4 .hkd-col-b2,
+	#hk-tarifrechner .hk-tarif-4 .hkd-col-b3,
+	#hk-tarifrechner .hk-tarif-4 .hkd-col-b4 {
+		display: none;
+	}
+	
+	#hk-tarifrechner .hk-tarif-4 .hkd-tarif-paket .hkd-col-b1:first-child {
+		display: block;
+	}
+	
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-col-b2,
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-col-b2,
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-col-b3,
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-col-b4 {
+		border-left: none;
+	}
+	
+	
+	
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-b {
+		width: 160px;
+	}
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-d {
+		width: 216px; 
+		margin-left: 0px;
+		padding-right: 30px;
+	}
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-ic-hlp {
+		background-position: 99% 50%;
+	}
+	
+	
+	/* BUTTONS */
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-form-wrapper .hkd-tarif-action > .hkd-form-cols > .hkd-col-b {
+		width: 100%;
+	}
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-form-wrapper .hkd-tarif-action > .hkd-form-cols > .hkd-col-d {
+		width: 350px;
+		margin-left: 15px;
+	}
+
+
+
+	#hk-tarifrechner .hk-tarif-1 .hkd-form-wrapper .hk-row-editmode > .hkd-form-cols > .hkd-ic-edit,
+	#hk-tarifrechner .hk-tarif-2 .hkd-form-wrapper .hk-row-editmode > .hkd-form-cols > .hkd-ic-edit,
+	#hk-tarifrechner .hk-tarif-4 .hkd-form-wrapper .hk-row-editmode > .hkd-form-cols > .hkd-ic-edit {
+		padding-bottom: 50px;
+		background-position: 100% 10px;
+		padding-right: 20px;
+	}
+
+
+
+	#hk-tarifrechner .hk-tarif-auswahl .hkd-hlp-txt {
+		background-image: none;
+		padding-right: 10px;
+	}
+	
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-6 .hkd-hlp-txt {
+		margin-top: 50px;
+	}
+	
+	#hk-tarifrechner .hk-tarif-1 .hkd-hlp-txt,
+	#hk-tarifrechner .hk-tarif-2 .hkd-hlp-txt,
+	#hk-tarifrechner .hk-tarif-4 .hkd-tarif-beitrag .hkd-hlp-txt {
+		margin-top: 5px;
+		margin-left: 10px;
+		margin-top: 70px;
+		width: 370px;
+	}
+	
+	#hk-tarifrechner .hk-tarif-6 .hkd-tarif-beitrag.hkd-deckver .hkd-hlp-txt {
+		margin-top: 0px;
+	}
+	
+	
+	#hk-tarifrechner .hk-tarif-auswahl .hkd-col-d p {
+		margin-left: 0px;
+	}
+	
+	
+	
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-1 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-d {
+		width: 245px; 
+	}
+	
+	
+	
+	
+	/* 4-TARIFE */
+
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-b {
+		width: 140px;
+	}
+
+	
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-d {
+		width: 238px; 
+		margin-left: 0px;
+		padding-right: 30px;
+	}
+	
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-tarif-selected .hkd-form-col {
+    	min-height: 95px;
+	}
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-6 .hkd-tarif-selected .hkd-form-col {
+    	min-height: 55px;
+	}
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-tarif-tarif .hkd-form-col {
+    	min-height: 110px;
+	}
+	
+	div.details #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-tarif-tarif .hkd-col-b p {
+    	padding-top: 28px;
+	}
+	
+	#hk-tarifrechner .hk-tarif-auswahl .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-form-col {
+		margin-left: 0;
+	}
+	
+	#hk-tarifrechner .hk-tarif-1 .hkd-form-wrapper .hkd-tarif-action > .hkd-form-cols > .hkd-col-d {;
+		margin-left: 15px;
+	}
+	
+	
+	
+	/* BUTTONS */
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-form-wrapper .hkd-tarif-action > .hkd-form-cols > .hkd-col-b {
+		width: 100%;
+		margin-left: 0;
+	}
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-form-wrapper .hkd-tarif-action > .hkd-form-cols > .hkd-col-d {
+		width: 344px;
+		margin-left: 15px;
+	}
+	
+	
+	
+	
+	
+	.visual-5 #hk-tarifrechner .hk-tarif-auswahl .hkd-form-submit input {
+		width: 60%;
+	}
+	
+	.visual-5 #hk-tarifrechner .hkd-angaben-dokumente .hkd-form-submit input {
+		width: 60%;
+	}
+	
+	#hk-tarifrechner .hkd-form-wrapper .hkd-form-row > .hkd-form-berechnungsgrundlage {
+		width: 95%;	
+	}
+
+
+
+	#hk-tarifrechner .hkd-form-wrapper .hkd-form-berechnungsgrundlage {
+		width: 90%;
+	}
+	#hk-tarifrechner .hkd-form-wrapper .hkd-form-berechnungsgrundlage > .hkd-form-cols > .hkd-form-col {
+		margin-left: 0;
+	}
+	
+	/* wechsel fragezeichen, pfeil */
+	
+	#hk-tarifrechner .hk-tarif-auswahl .hkd-ic-hlp,
+	#hk-tarifrechner .hk-tarif-auswahl .hkd-ic-edit {
+		background-image: url(bilder/hk_box_pfeil_closed.png);
+	}
+	#hk-tarifrechner .hk-tarif-auswahl .hk-row-editmode .hkd-ic-hlp,
+	#hk-tarifrechner .hk-tarif-auswahl .hk-row-editmode .hkd-ic-edit {
+		background-image: url(bilder/hk_box_pfeil_open.png);
+	}
+	
+	
+	
+	#hk-tarifrechner .hk-tarif-1 .hkd-form-wrapper .hk-row-editmode > .hkd-form-cols > .hkd-col-c,
+	#hk-tarifrechner .hk-tarif-2 .hkd-form-wrapper .hk-row-editmode > .hkd-form-cols > .hkd-col-c,
+	#hk-tarifrechner .hk-tarif-4 .hkd-form-wrapper .hk-row-editmode > .hkd-form-cols > .hkd-col-c {
+		/*margin: 110px 0 0 146px;*/
+		margin: 65px 0 0 142px;
+		
+	}
+	
+	#hk-tarifrechner .hk-tarif-6 .hkd-tarif-action .hkd-col-d {
+		display: none;
+	}
+	
+	
+	div.details #hk-tarifrechner .hkd-col-b p {
+		font-size: 120%;
+	}
+	
+
+}
+
+
+@media handheld, only screen and (max-width: 440px) {
+	
+	#hk-tarifrechner .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-form-col, 
+	#hk-tarifrechner .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-form-col-first, 
+	#hk-tarifrechner .hkd-form-function .hkd-form-col {
+    	width: 100%;
+	}
+
+	#hk-tarifrechner .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-form-col {
+    	margin-left: 12px;
+	}
+	#hk-tarifrechner .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-form-col-first {
+    	margin-left: 2px;
+    	margin-bottom: 5px;
+	}
+	
+	#hk-tarifrechner .hkd-form-text input.hkd-form-ts1 {
+		width: 30%;
+	}
+	
+	#hk-tarifrechner input.hkd-form-ts6,
+	#hk-tarifrechner input.hkd-form-ts100 {
+		width: 240px;
+	}
+	
+	#hk-tarifrechner input.hkd-form-ts3,
+	#hk-tarifrechner input.hkd-form-ts4,
+	#hk-tarifrechner input.hkd-form-ts5 {
+		width: 88%;
+	}
+	
+	#hk-tarifrechner .hkd-form-field-group input.hkd-form-ts7-1,
+	#hk-tarifrechner .hkd-form-field-group input.hkd-form-ts3,
+	#hk-tarifrechner .hkd-form-field-group input.hkd-form-ts7,
+	#hk-tarifrechner .hkd-form-field-group input.hkd-form-ts8,
+	#hk-tarifrechner .hk-angebot-anfordern .hkd-form-text input.hkd-form-ts8,
+	#hk-tarifrechner .hk-antrag-stellen .hkd-form-text input.hkd-form-ts8 {
+		width: 125px;
+	}
+	
+	#hk-tarifrechner textarea.hkd-form-textarea {
+		width: 65%;
+	}
+	
+	#hk-tarifrechner .hk-tarif-2 .hkd-form-wrapper .hkd-form-radio-group .hkd-form-row {
+		width: 90%;
+	}
+
+	.visual-5 #hk-tarifrechner .hkd-form-add .hkd-form-submit input,
+	.visual-5 #hk-tarifrechner .hkd-form-submit input {
+    	width: 70%;
+	}
+	
+	#hk-tarifrechner .hkd-form-wrapper .hkd-form-field-group .hkd-form-row >  .hkd-form-cols > .hkd-form-col {
+		margin: 0;
+	}
+	#hk-tarifrechner .hk-tarif-2 .hkd-form-field-group input.hkd-form-ts3 {
+		width: 240px;
+	}
+	#hk-tarifrechner  .hk-tarif-2 .hkd-form-field-group input.hkd-form-ts10 {
+		width: 240px;	
+	}
+	
+	#hk-tarifrechner .hk-tarif-2 .hkd-form-field-group input.hkd-form-ts6 {
+		width: 240px;
+	}
+	#hk-tarifrechner  .hk-tarif-2 .hkd-form-field-group input.hkd-form-ts7 {
+		width: 240px;
+	}
+	
+	
+	#hk-tarifrechner .hk-tarif-3 .hkd-form-element .hkd-form-ts5 {
+		width: 90%;	
+	}
+	#hk-tarifrechner .hk-tarif-3 .hkd-form-select .hkd-form-ss2 {
+		width: 91%;	
+	}
+
+	.hlp { 
+		width: 234px;
+	}
+	
+
+
+
+
+
+
+	
+	/* AUSWAHL */
+	
+	#hk-tarifrechner .hkd-form-row {
+		padding: 4px 0;
+	}
+	
+	#hk-tarifrechner .hk-tarif-auswahl .hkd-col-b span {
+		display: inline-block;
+	}
+	
+	div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-col-d p  {
+		margin-left: 10px;
+	}
+
+	
+	#hk-tarifrechner .hk-tarif-auswahl .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-form-col {
+		margin-left: 0;
+	}
+	
+	#hk-tarifrechner .hk-tarif-auswahl .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-c {
+		margin-left: 82px;
+		width: 186px;
+	}
+		
+		
+	#hk-tarifrechner .hk-tarif-auswahl .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-b {
+		width: 75px;
+	}
+
+	
+	#hk-tarifrechner .hk-tarif-1 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-d {
+		width: 185px;
+		padding-right: 0px;
+		margin-left: 5px;
+	}
+	
+	#hk-tarifrechner .hk-tarif-1 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-d {
+		width: 155px;
+		padding-right: 30px;
+		margin-left: 5px;
+	}
+	
+	#hk-tarifrechner .hk-tarif-1 .hkd-form-wrapper .hkd-tarif-action > .hkd-form-cols > .hkd-col-d {
+		width: 224px;
+	}
+	
+	
+	#hk-tarifrechner .hk-tarif-1 .hkd-form-wrapper .hkd-tarif-action > .hkd-form-cols > .hkd-col-b {
+		width: 100%;
+	}
+	/*
+	#hk-tarifrechner .hk-tarif-1 .hkd-form-wrapper .hkd-tarif-action > .hkd-form-cols > .hkd-col-d {
+		width: 236px;
+		margin-left: 15px;
+	}
+	*/
+	#hk-tarifrechner .hk-tarif-auswahl .hkd-hlp-txt {
+		margin-left: 10px;
+		width: 230px;
+	}
+
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-1 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-d {
+		width: 160px; 
+	}
+
+
+	/* TARIFE-2 */
+	
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-b {
+		width: 110px;
+	}
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-d {
+		width: 128px; 
+		margin-left: 0px;
+		padding-right: 30px;
+	}
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-form-wrapper .hkd-tarif-tarif > .hkd-form-cols > .hkd-col-d {
+		width: 156px; 
+		padding-right: 0px;
+	}
+	
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-c {
+		margin-left: 112px;
+    	margin-top: 90px; /* abstand 3 zeilen wie bei hausrat */
+    	width: 156px;
+	}
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-editable-mode2 {
+		margin-left: 112px;
+    	margin-top: 60px;  /* abstand 2 zeilen durch .hkd-editable-mode2 */
+    	width: 156px;
+	}
+	
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-form-wrapper  .hkd-erweiterte-vorsorge > .hkd-form-cols .hkd-col-c {
+		margin-top: 90px
+	}
+
+	
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-tarif-tarif .hkd-form-col {
+		min-height: 85px;
+	}
+	
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-ic-hlp {
+		background-position: 99% 50%;
+	}
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-form-wrapper .hkd-tarif-action > .hkd-form-cols > .hkd-col-b {
+		width: 100%;
+	}
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-form-wrapper .hkd-tarif-action > .hkd-form-cols > .hkd-col-d {
+		width: 205px;
+		margin-left: 15px;
+	}
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-form-wrapper .hkd-tarif-action > .hkd-form-cols > .hkd-col-d ul {
+		
+		margin-left: 10px;
+	}
+	
+	div.details #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-tarif-tarif ul,
+	div.details #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-tarif-select ul {
+		margin-left: 10px;
+		margin-top: 20px;
+	}
+	
+	div.details #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-tarif-paket .hkd-col-d p {
+    	margin-left: 10px;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	/* TARIFE-4 */
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-b {
+		width: 100px;
+	}
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-d {
+		width: 138px; 
+		margin-left: 0px;
+		padding-right: 30px;
+	}
+	
+	.hkd-tarif-selector li span {
+		display: none;
+	}
+	
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-tarif-selected .hkd-form-col {
+    	min-height: 95px;
+	}
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-6 .hkd-tarif-selected .hkd-form-col {
+    	min-height: 55px;
+	}
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-tarif-tarif .hkd-form-col {
+    	min-height: 110px;
+	}
+	
+	div.details #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-tarif-tarif .hkd-col-b p {
+    	padding-top: 50px;
+	}
+	div.details #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-6 .hkd-tarif-tarif .hkd-col-b p {
+    	padding-top: 20px;
+		line-height: 1.3em;
+	}
+	
+	
+	#hk-tarifrechner .hk-tarif-auswahl .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-form-col {
+		margin-left: 0;
+	}
+	
+	#hk-tarifrechner .hk-tarif-1 .hkd-form-wrapper .hkd-tarif-action > .hkd-form-cols > .hkd-col-d {
+		margin-left: 5px;
+	}
+
+	
+	
+	/* BUTTONS */
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-form-wrapper .hkd-tarif-action > .hkd-form-cols > .hkd-col-b {
+		width: 100%;
+		margin-left: 0;
+	}
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-form-wrapper .hkd-tarif-action > .hkd-form-cols > .hkd-col-d {
+		width: 206px;
+		margin-left: 15px;
+	}
+	
+	
+	
+	#hk-tarifrechner .hk-tarif-1 .hkd-form-wrapper .hk-row-editmode > .hkd-form-cols > .hkd-col-c,
+	#hk-tarifrechner .hk-tarif-2 .hkd-form-wrapper .hk-row-editmode > .hkd-form-cols > .hkd-col-c,
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-form-wrapper .hk-row-editmode > .hkd-form-cols > .hkd-col-c {
+		/*margin: 110px 0 0 146px;*/
+		margin: 65px 0 0 76px;
+	}
+	
+	#hk-tarifrechner .hk-tarif-1 .hkd-form-wrapper .hkd-tarif-zusatz > .hkd-form-cols > .hkd-col-c {
+		margin: 110px 0 0 76px;
+	}
+	
+	#hk-tarifrechner .hk-tarif-1 .hkd-form-wrapper .hkd-jahresbeitrag-netto > .hkd-form-cols > .hkd-col-c {
+		margin: 45px 0 0 76px;
+	}
+	#hk-tarifrechner .hk-tarif-1 .hkd-form-wrapper .hkd-jahresbeitrag-netto-deckungssumme > .hkd-form-cols > .hkd-col-c,
+	#hk-tarifrechner .hk-tarif-1 .hkd-form-wrapper .hkd-jahresbeitrag-netto-versicherungssumme > .hkd-form-cols > .hkd-col-c{
+		margin: 85px 0 0 76px;
+	}
+	
+	#hk-tarifrechner .hk-tarif-1 .hkd-form-wrapper .hkd-hunde > .hkd-form-cols > .hkd-col-c {
+		margin: 45px 0 0 76px;
+	}
+
+	
+
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-form-wrapper .hk-row-editmode > .hkd-form-cols > .hkd-col-c {
+		/*margin: 110px 0 0 146px;*/
+		margin: 85px 0 0 100px;
+		width: 150px;
+	}
+	
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-6 .hkd-form-wrapper .hk-row-editmode > .hkd-form-cols > .hkd-col-c {
+		/*margin: 110px 0 0 146px;*/
+		margin: 45px 0 0 0px;
+		width: 150px;
+	}
+	
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-6 .hkd-form-wrapper .hkd-tarif-beitrag.hk-row-editmode > .hkd-form-cols > .hkd-col-c {
+		/*margin: 110px 0 0 146px;*/
+		margin: 92px 0 0 0px;
+		width: 150px;
+	}
+	
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-form-wrapper .hk-row-editmode > .hkd-form-cols > .hkd-label-r1 {
+		/*margin: 110px 0 0 146px;*/
+		margin: 45px 0 0 100px;
+	}
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-form-wrapper .hk-row-editmode > .hkd-form-cols > .hkd-label-r2 {
+		/*margin: 110px 0 0 146px;*/
+		margin: 65px 0 0 100px;
+	}
+	
+
+	#hk-tarifrechner .hkd-form-wrapper .hkd-form-berechnungsgrundlage > .hkd-form-cols > .hkd-form-col {
+		margin-left: 0;
+	}
+	
+	#hk-tarifrechner .hk-tarif-auswahl .hkd-mobile-currency {
+		display: block;
+	}
+	
+	#hk-tarifrechner .hk-tarif-4 .hkd-tarif-beitrag .hkd-hlp-txt {
+		width: 230px;
+	}
+	
+	
+	
+}
+
+
+
+/* retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), 
+only screen and (min-resolution: 144dpi) {
+
+	div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-action .hkd-col-d ul li {
+		background-image: url(bilder/hkd-ic-pfeil-tr-box-2x.png);
+		background-size: 9px 18px;
+	}
+	
+	#hk-tarifrechner .hkd-tarif-tarif .hkd-col-b p a {
+		background-image: url(bilder/hkd-ic-pfeil-navi-inaktiv-2x.png);
+		background-size: 5px 10px;
+	}
+	
+	#hk-tarifrechner .hk-tarif-auswahl .hkd-ic-hlp {
+		background-image: url(bilder/hkd-ic-tr-info-2x.png);
+		background-size: 20px 20px;
+	}
+	#hk-tarifrechner .hk-tarif-auswahl .hkd-hlp-txt {
+		background-image: url(bilder/hkd-ic-tr-close-2x.png);
+		background-size: 20px 20px;
+	}
+
+}

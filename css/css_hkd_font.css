@@ -1,0 +1,454 @@
+/*
+Haftpflichtkasse
+FONT 2017/04/25
+Goldfischclub, pw@goldfischclub.de
+
+*/
+
+
+@font-face{
+	font-family:"Filson Soft W03 Light";
+	src:url("fonts/5205715/372230da-e92c-4fa0-84ff-fc2563f5359e.eot?#iefix");
+	src:url("fonts/5205715/372230da-e92c-4fa0-84ff-fc2563f5359e.eot?#iefix") format("eot"),url("fonts/5205715/3dea1d2f-afb9-43b9-a7bb-28cfbd44c729.woff2") format("woff2"),url("fonts/5205715/7e3b40a2-d24c-419e-bb36-8b91b2bcef17.woff") format("woff"),url("fonts/5205715/e79c52a7-81c8-47b2-8c9e-845b66b70581.ttf") format("truetype");
+}
+
+/*
+@font-face{
+	font-family:"Filson Soft W03 Bold";
+	src:url("fonts/5205725/84329372-da16-46bb-ba35-2f269957af88.eot?#iefix");
+	src:url("fonts/5205725/84329372-da16-46bb-ba35-2f269957af88.eot?#iefix") format("eot"),url("fonts/5205725/2357f2d2-9956-4320-a9f2-b8e9d0919130.woff2") format("woff2"),url("fonts/5205725/43d726ff-b2d5-42d5-8a94-f3f70b12625f.woff") format("woff"),url("fonts/5205725/29f28e26-af2b-4163-b0c4-b61c2d7e54f4.ttf") format("truetype");
+}
+*/
+@font-face{
+	font-family:"Filson Soft W03 Medium";
+	src:url("fonts/5205760/652ef45f-6fb7-4751-8028-76107d36a0e9.eot?#iefix");
+	src:url("fonts/5205760/652ef45f-6fb7-4751-8028-76107d36a0e9.eot?#iefix") format("eot"),url("fonts/5205760/6d6a8331-b28c-4421-89df-2b3d63d5dfd6.woff2") format("woff2"),url("fonts/5205760/70f59124-bb45-41a8-946b-425b647ccfb0.woff") format("woff"),url("fonts/5205760/8ff2297c-392c-4f7e-8c0c-a02071488115.ttf") format("truetype");
+}
+/*
+@font-face{
+	font-family:"Filson Soft W03 Book";
+	src:url("fonts/5210617/fc2a1dd0-9e0b-4771-9ad1-c44d9f4a89ab.eot?#iefix");
+	src:url("fonts/5210617/fc2a1dd0-9e0b-4771-9ad1-c44d9f4a89ab.eot?#iefix") format("eot"),url("fonts/5210617/67243edf-db55-4c1d-92e2-ee4c33fa633b.woff2") format("woff2"),url("fonts/5210617/de0124a9-743a-4757-bfff-c509c5970ee7.woff") format("woff"),url("fonts/5210617/7dc9ee0c-f8e4-4631-843b-6153bccac5e5.ttf") format("truetype");
+}
+*/
+@font-face{
+	font-family:"Filson Soft W01 Regular";
+	src:url("fonts/5207246/08ecc5dc-9fff-4b48-8f2c-a2c52bfd9a5a.eot?#iefix");
+	src:url("fonts/5207246/08ecc5dc-9fff-4b48-8f2c-a2c52bfd9a5a.eot?#iefix") format("eot"),url("fonts/5207246/a4d55032-0a0f-4a03-b17a-cdd0d3dd7412.woff2") format("woff2"),url("fonts/5207246/5d14dbeb-af72-4894-9a29-e257f48a430e.woff") format("woff"),url("fonts/5207246/3848c90e-5c3c-4292-b14f-306df00ef9c5.ttf") format("truetype");
+}
+
+body, input, textarea {
+	font-family: 'Filson Soft W01 Regular', Arial, sans-serif;
+}
+
+h1,
+h2,
+h2.h2-vgl strong,
+h3,
+h4
+div.text strong,
+.auswahl h1,
+.hkd-grid-6 .auswahl-sel .col p,
+.slider-item h2,
+.slider-item a,
+.selbox div.ic-sel p,
+.selbox p {
+	/*font-family: 'Filson Soft W03 Medium', Arial, sans-serif;*/
+	font-weight: bold;
+}
+
+
+h1 strong,
+h2.h2sum strong, 
+.faq h3 {
+	font-weight: normal;
+}
+
+div.teaser div.action a,
+ul.auswahl-sel h1,
+h2.h2-vgl {
+	font-family: 'Filson Soft W01 Regular', Arial, sans-serif;
+}
+
+
+
+
+
+
+
+sup {
+	font-size: 0.83em;
+	vertical-align: super;
+	line-height: 0;
+}
+
+
+
+input.submit,
+ul.top li a,
+div#footer li a,
+div#legal li a,
+ul.path li a{
+	font-size: 80%;
+}
+
+
+div.vermittlerfinden-ergebnis div.extended,
+div.details div.zusammenfassung ul li,
+div.teaser p,
+div.details p,
+div.details li,
+div.details .selbox li,
+div.details ul.auswahl-100 ul.links li a,
+div.details a,
+div.details div.message a,
+div.details div.message ul li a,
+span.counter  {
+	font-size: 85%;
+}
+
+.selbox div.box a,
+ul.auswahl-sel h1 {
+	font-size: 90%;
+}
+
+div.details a.aLink {
+	font-size: 95%;
+}
+
+.hkd-angaben-dokumente .hkd-tbl-last a {
+	font-size: 95%;
+}
+
+div.details p.dv-hinweis {
+	font-size: 75%;
+}
+
+div.details ul.auswahl-100 ul li,
+div.details ul.auswahl-100 ul.links li a,
+div.details h2.h2-vgl a {
+	font-size: 100%;
+}
+
+
+.hkd-grid-6 div.auswahl ul.auswahl-sel span {
+	font-size: 60%;
+}
+
+div.feedback,
+.hkd-form-element label,
+.nav-flyout a,
+div#news ul li,
+.hkd-grid-3 div.auswahl ul.auswahl-sel li.quick ul li a,
+.vermittlerfinden .col-2 p {
+	font-size: 86%;
+}
+
+.vermittlerfinden .col-2 p {
+	font-size: 72%;
+	margin-top: -3px;
+}
+
+
+div.details div.meldung ul li a {
+	font-size: 95%;
+}
+
+.visual-1 div.teaser h3,
+div.details div.feedback a,
+div.details .sitemap ul li a,
+div.feedback p,
+div.lexikon-ergebnis-liste p,
+div.suche ul.ergebnis-liste li,
+div.suche div.filter ul li a,
+ul.nav li a,
+div.details div.txt a,
+div.details div.zusammenfassung ul li a,
+div.faq a,
+div.feed ul li a,
+div.ansprechpartner a,
+div.details div.meldung ul li a  {
+	font-size: 100%;
+}
+
+
+div.teaser div.action a {
+	font-size: 80%;
+}
+
+
+div.details div.vermittlerfinden ul.vmf-umkreis li a,
+div.pagination ul li a,
+div.box h1,
+div.teaser h2,
+.quick h3,
+i,
+em {
+	font-size: 110%;
+}
+
+.hkd-grid-6 div.auswahl ul.auswahl-sel .labeled h2 {
+	font-size: 70%;
+	font-weight: normal;
+}
+
+.hkd-grid-6 div.auswahl ul.auswahl-sel li .col-b p {
+	font-size: 110%;
+}
+
+.hkd-grid-2 .selbox div.box p,
+.hkd-grid-3 .selbox div.box p {
+	font-size: 120%;
+}
+div.lexikon-ergebnis-liste h4 {
+	font-size: 125%;
+}
+
+
+
+
+
+
+
+/* HEADLINES */
+h1,
+.visual-1 div.videoteaser div.box p,
+div.teaser h1 {
+	font-size: 150%;
+}
+div.details h2 {
+	font-size: 104%;
+}
+div.details div.meldung h2 {
+	font-size: 140%;
+}
+
+
+/* startseite */
+
+
+
+div.lexikon-select a,
+.visual-1 div.box p {
+	font-size: 130%;
+}
+
+.feedback h3,
+li.videoteaser div.box p {
+	font-size: 130%;
+}
+
+
+.visual-1 div.teaser h2 {
+	font-size: 140%;
+}
+
+
+
+div#contact ul li .mark {
+	font-size: 150%;
+}
+
+
+
+.dv-p {
+	font-size: 160%;
+}
+
+
+
+/* Geschichte Teaser mod */
+.visual-3 div.teaser h2 {
+    font-size: 360%;
+    text-align: center;
+}
+.visual-3 div.teaser p {
+    text-align: center;
+}
+
+
+
+div.details div.deckungsvergleich strong {
+	font-size: 110%;
+}
+/* nicht redaktionell */
+div.details div.deckungsvergleich ul li > ul li {
+	font-size: 100%;
+}
+
+
+
+
+
+
+div.pagination ul li a {
+	line-height: 1em;
+}
+
+
+
+.hkd-grid-6 div.auswahl ul.auswahl-sel li .col-b p,
+div.teaser h2 {
+	line-height: 1.2em;
+}
+
+ul.auswahl-sel h1,
+.feedback h3,
+.visual-1 div.videoteaser div.box p,
+div.teaser h3 {
+	line-height: 1.3em;
+}
+
+.hkd-grid-2 .selbox div.box p,
+.hkd-grid-3 .selbox div.box p,
+div.details h1 {
+	line-height: 1.2em;
+}
+
+.hkd-form-element label,
+div.details h2 {
+	line-height: 1.4em;
+}
+
+div.liste h3 {
+	line-height: 1.5em;
+}
+
+
+
+ul.auswahl-sel p,
+div.teaser p,
+div.box h1,
+div#news h3,
+div.faq h3,
+div.news p,
+div.box p {
+	line-height: 1.4em;
+}
+
+div.details p,
+div.details li,
+div.details a {
+	line-height: 1.6em;
+}
+
+
+
+div.vermittlerfinden-ergebnis div.extended,
+div#news ul li,
+div#contact ul li {
+	line-height: 1.5em;
+}
+
+
+
+
+
+div.lexikon-ergebnis-liste h5,
+div.lexikon-ergebnis-liste h4,
+.feedback h3,
+div.box h1,
+div#news h3,
+div.details h1,
+div.details h2,
+div.teaser h1,
+ul.auswahl-sel h1,
+div.teaser h2,
+div.teaser h3,
+.quick h3,
+div.faq h3 {
+	/*font-weight: normal;*/
+}
+
+div.details div.sitemap .col-1,
+div.kp .col-vmf-1,
+div.details div.deckungsvergleich ul.head li,
+div.details div.deckungsvergleich li.head,
+div.details .hkd-form-wrapper h2 {
+	font-family: 'Filson Soft W03 Medium', Arial, sans-serif;
+}
+
+
+
+
+p.info-mandatory,
+p.dv-hinweis {
+	font-style: italic;
+}
+
+
+div.modal-content li{
+	font-size: 85%;
+}
+div.details .modal-layer li a {
+	font-size: 95%;
+}
+
+
+
+
+
+
+@media handheld, only screen and (max-width: 700px) {
+
+
+	h1, .visual-1 div.videoteaser div.box p, div.teaser h1 {
+		font-size: 120%;
+	}
+	
+	div.vermittlerfinden-ergebnis div.extended, 
+	div.details div.zusammenfassung ul li, 
+	div.teaser p, 
+	div.details p, 
+	div.details li, 
+	div.details a, 
+	span.counter {
+    	font-size: 90%;
+	}
+	
+	div.teaser p {
+		font-size: 80%;
+	}
+	
+	.visual-2 div.teaser div.slider-item a {
+     	font-size: 90%; 	
+     	line-height: 1.4; 	
+	} 
+	
+	
+	
+	.visual-1 div.teaser h2 {
+    	font-size: 120%;
+	}
+	.visual-1 div.teaser h3 {
+		font-size: 100%;
+	}
+	
+	.visual-1 div.teaser a.tsr-a {
+		font-size: 90%;
+		line-height: 1.2em;
+	}
+
+
+}
+
+
+
+
+@media handheld, only screen and (max-width: 440px) {
+
+	.visual-1 div.teaser h2 {
+    	font-size: 110%;
+	}
+	.visual-1 div.teaser h3 {
+    	font-size: 100%;
+	}
+
+	.auswahl-1 div.teaser h2, 
+	.auswahl-2 div.teaser h2 {
+    	font-size: 110%;
+	}
+	
+	
+
+}

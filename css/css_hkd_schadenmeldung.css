@@ -1,0 +1,532 @@
+/*
+Haftpflichtkasse
+SCHADENMELDUNG 2017/04/21
+Goldfischclub, pw@goldfischclub.de
+*/
+
+
+
+/* colors und fonts übertragen */
+
+div.hkd-bx5 .hkd-bx-config h3 {
+	color: #008fd2;
+	font-weight: normal;
+}
+
+
+
+
+
+/* title, klappbar */
+
+div.hkd-bx5 .hkd-bx-config {
+	cursor: pointer;
+}
+
+div.hkd-bx5 .hkd-bx-config,
+div.hkd-bx-open .hkd-bx-config  {
+	 background-image: url(bilder/hkd-ic-pfeil-akk-oben-1x.png);
+	 background-position: 98.5% 50%;
+}
+
+div.hkd-bx-closed .hkd-bx-config {
+	 background-image: url(bilder/hkd-ic-pfeil-akk-unten-weiss-1x.png);
+	 background-position: 98.5% 50%;
+}
+
+.visual-5 .hkd-bx-submit {
+	background-image: url(bilder/hk-ic-pfeil-submit.png);
+	background-position: center 14px;
+}
+
+
+
+
+
+
+
+
+
+
+/* fragen */
+.hkd-bx5-content {
+    float: left;
+    padding: 10px 0;
+}
+.hkd-bx5-line {
+	border-top: 1px solid #e2e2e0;
+}
+
+.hkd-fieldset-frage {
+	font-weight: bold;
+	/*background-image: url(bilder/hk-ic-help.png);
+	background-position: 0 2px;
+	padding-left: 30px;
+	cursor: help;*/
+}
+#hkd-toggle-bx-10 .hkd-fieldset-frage {
+	background-image: none;
+	padding-left: 0;
+	cursor: default;
+}
+
+.hkd-bx5-content {
+	width: 99%;
+} 
+
+/*
+#hkd-sm-6 .hkd-bx5-content {
+	font-size: 80%;
+	line-height: 1.2em;
+}
+*/
+
+
+/* tabellen mit add-schadenmeldungen */
+
+.hkd-tbl1 {
+	margin-bottom: 20px;
+}
+.hkd-tbl1 table {
+	width: 98%;
+}
+
+.hkd-tbl1 th,
+.hkd-tbl1 td {
+	font-weight: normal;
+	font-size: 14px;
+    border: 1px solid #CFCFCF;
+    padding: 5px 4px;
+    vertical-align: middle;
+}
+.hkd-tbl1 th {
+    vertical-align: baseline;
+    color: #008fd2;
+    font-size: 12px;
+    background-color: #eff6f9;
+    padding: 10px 4px;
+    border-left: 1px solid #008fd2;
+    border-right: 1px solid #008fd2;
+}
+.hkd-tbl1 th {
+    border-top: 1px solid #fff;
+}
+
+.hkd-tbl1 .hkd-tbl-first {
+    border-left: 1px solid #fff;
+}
+.hkd-tbl1 .hkd-tbl-last {
+    border-right: 1px solid #fff;
+}
+
+.hkd-tbl1 td.bi {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.hkd-bx5-content legend { float: none;}
+
+/*
+.hkd-bx5 .hkd-grid-2col .hkd-col {
+    width: 460px;
+}
+*/
+
+
+
+
+/* spalten breiten */
+.hkd-tbl-col-sm-nr {
+	width: 30px;
+}
+.hkd-tbl-col-function-2 {
+	width: 60px;
+}
+.hkd-has-doc-col .hkd-ic-doc {
+	float: left;
+}
+
+/* funktionen */
+.hkd-ic-doc {
+	width: 17px;
+	height: 17px;
+	display: block;
+
+}
+.hkd-ic21 {
+	background-image: url(bilder/hk-ic-table-edit.gif);
+	margin-right: 10px;
+}
+.hkd-ic25 {
+	background-image: url(bilder/hk-ic-table-delete.gif);
+}
+
+
+
+/* messages */
+
+.hkd-form-message p {
+	padding: 5px;
+}
+
+.hkd-message-error {
+	background-color: #F3E3E3;
+}
+
+.hkd-message-error p {
+	color: #DD3E3E;
+}
+
+.hkd-message-confirm {
+	background-color: #DEF1DA;
+}
+
+.hkd-message-confirm p {
+	color: #107C2C;
+}
+
+
+
+
+
+
+/* unused elemente ausblenden */
+div.hkd-bx5 .hkd-bx-config .hkd-bx-show-all,
+div.hkd-bx5 .hkd-bx-config .hkd-clearer {
+	display: none;
+}
+
+
+
+/* style boxen */
+div.hkd-bx5 {
+	background-color: #fff;
+	width: 100%;
+	float: left;
+	margin-bottom: 20px;
+	padding-bottom: 0px;
+}
+
+div.hkd-bx-closed {
+	background-color: #008fd2;
+}
+div.hkd-bx-closed .hkd-bx-config h3 {
+	color: #fff;
+}
+
+
+div.hkd-bx-submit {
+	background-color: transparent;
+	text-align: center;
+}
+div.hkd-bx5 .hkd-bx-content {
+	margin-left: 10px;
+}
+
+
+
+
+/* titlebar */
+div.hkd-bx5 .hkd-bx-config {
+	padding: 15px 0;
+}
+div.hkd-bx5 .hkd-bx-config h3 {
+	text-align: center;
+}
+
+
+div.hkd-toggle-bx {
+	padding-top: 10px;
+}
+
+
+
+
+.hkd-col,
+div.hkd-grid-2col,
+.hkd-form-cols,
+.hkd-form-col {
+	float: left;
+}
+
+
+
+/* 2 spalten layout */
+div.hkd-grid-2col .hkd-col {
+	width: 476px;
+}
+div.hkd-grid-2col .hkd-col-first {
+	margin-right: 20px;
+}
+
+
+/* 2 spalten form elemente */
+div.hkd-bx5 .hkd-form-col-first {
+    margin-left: 0;
+}
+.hkd-form-cols {
+	width: 100%;
+}
+#hk-schadenmeldung .hkd-form-col {
+	width: 232px;
+}
+
+
+
+
+
+/* buttons, submit, add */
+
+/* gobal button submit style */
+
+.visual-5 .hkd-form-submit input,
+.visual-5 .hkd-form-submit input:hover,
+.visual-5 .hkd-form-submit input:focus,
+.visual-5 .hkd-form-submit input:active {
+	background-color: #008fd2;
+	color: #fff;
+	text-transform: uppercase;
+	cursor: pointer;
+	border-radius: 2px;
+	white-space: normal;
+	cursor: pointer;
+	-webkit-appearance: none;
+	 -webkit-border-radius: 6px;
+	 -moz-border-radius: 6px;
+	 border-radius: 6px;
+}
+
+
+
+.visual-5 .hkd-form-submit-link input,
+.visual-5 .hkd-form-submit-link input:hover,
+.visual-5 .hkd-form-submit-link input:focus,
+.visual-5 .hkd-form-submit-link input:active {
+	background-color: transparent;
+	color: #008fd2;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+
+
+
+
+
+/* anpassungen breite */
+.visual-5 .hkd-form-submit input {
+	width: 30%;
+}
+
+/* add bei liste/tabelle  hkd-form-add-schadenmeldung  hkd-form-add-schadenmeldung*/
+.hkd-form-add-schadenmeldung .hkd-form-submit input   {
+	width: 20%;
+}
+.hkd-form-add-schadenmeldung input.hkd-form-submit,
+.hkd-form-add-schadenmeldung .hkd-form-submit input {
+	background-color: #D6E8F1;
+	color: #008fd2;
+}
+	
+
+.hkd-form-add-schadenmeldung {
+    margin-bottom: 20px;
+}
+
+
+.visual-5 .hkd-bx-submit {
+	padding-top: 0px;
+}
+
+
+
+
+div.hkd-bx-open .hkd-toggle-bx{
+	display: block;
+}
+div.hkd-bx-closed .hkd-toggle-bx{
+	display: none;
+}
+
+
+
+/* kontext-hilfe */
+.hkd-fieldset-frage span {
+	display: block;
+	font-weight: normal;
+	border: 1px solid #008fd2;
+	background-color: #eff6f9;
+	color: #008fd2;
+	padding: 8px;
+	margin-top: 5px;
+}
+
+
+
+
+
+
+.hkd-form-file input.hkd-form-submit {
+	width: 40%;
+	background-color: #D6E8F1;
+	color: #008fd2;
+	margin-top: 5px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+
+
+.hkd-form-element input.hkd-form-submit {
+	border: none;
+}
+
+
+
+
+
+
+
+@media handheld, only screen and (max-width: 1000px) {
+	
+
+
+	/* global collapse form-box */
+	
+	.visual-5 .hkd-content {
+		padding: 0 15px;
+	}
+	
+	/* breite col 2 spaltige formulare */
+	.visual-5 .hkd-content .hkd-grid-2col .hkd-col {
+    	width: 330px;
+	}
+	
+	
+	/* schadensmeldung*/
+	
+	#hk-schadenmeldung .hkd-form-col {
+		width: 159px;
+	}
+	
+	.visual-5 .hkd-content #hkd-toggle-bx-10 .hkd-grid-2col .hkd-col {
+    	width: 100%;
+	}
+	#hk-schadenmeldung #hkd-toggle-bx-10 .hkd-form-col {
+    	width: 49%;
+	}
+	
+	/* anpassungen breite */
+	.visual-5 .hkd-form-submit input {
+		width: 35%;
+	}
+	
+	
+
+}
+
+
+@media handheld, only screen and (max-width: 700px) {
+	
+	/* breite col 2 spaltige formulare */
+	.visual-5 .hkd-content .hkd-grid-2col .hkd-col {
+    	width: 390px;
+	}
+	
+	/* schadensmeldung*/
+	#hk-schadenmeldung .hkd-form-col {
+		width: 188px;
+	}
+	#hk-schadenmeldung textarea.hkd-form-textarea, .hkd-form-textarea textarea {
+    	width: 97%;
+	}
+	#hk-schadenmeldung #hkd-toggle-bx-10 .hkd-form-col {
+    	width: 97%;
+    	margin-left: 0;
+	}
+	
+	
+	/* anpassungen breite */
+	.visual-5 .hkd-form-submit input {
+		width: 60%;
+	}
+	.visual-5 .hkd-form-add-schadenmeldung .hkd-form-submit input {
+		width: 30%;
+	}
+	
+	#hkd-tbl-schadenaufstellung {
+		overflow: auto;
+		width: 390px;
+		padding-bottom: 30px;
+	}
+	#hkd-tbl-schadenaufstellung table {
+    	width: 600px;
+	}
+	
+	.hkd-form-file {
+		text-align: center;
+	}
+	.hkd-form-file input.hkd-form-submit {
+		width: 80%;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	
+
+}
+
+
+@media handheld, only screen and (max-width: 440px) {
+	
+	
+	/* breite col 2 spaltige formulare */
+	.visual-5 .hkd-content .hkd-grid-2col .hkd-col {
+    	width: 248px;
+	}
+	
+	/* schadensmeldung*/
+	#hk-schadenmeldung .hkd-form-col {
+		width: 118px;
+	}
+	#hk-schadenmeldung #hkd-toggle-bx-10 .hkd-form-col {
+    	width: 97%;
+    	margin-left: 0;
+	}
+	#hkd-tbl-schadenaufstellung {
+		overflow: auto;
+		width: 248px;
+		padding-bottom: 30px;
+	}
+	#hkd-tbl-schadenaufstellung table {
+    	width: 600px;
+	}
+	
+	
+	/* anpassungen breite */
+	.visual-5 .hkd-form-submit input {
+		width: 90%;
+	}
+	.visual-5 .hkd-form-add-schadenmeldung .hkd-form-submit input {
+		width: 50%;
+	}
+	
+	
+
+}
+
+
+/* retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), 
+only screen and (min-resolution: 144dpi) {
+
+	div.hkd-bx5 .hkd-bx-config,
+	div.hkd-bx-open .hkd-bx-config  {
+		 background-image: url(bilder/hkd-ic-pfeil-akk-oben-2x.png);
+		 background-size: 18px 9px;
+	}
+
+	div.hkd-bx-closed .hkd-bx-config {
+		 background-image: url(bilder/hkd-ic-pfeil-akk-unten-weiss-2x.png);
+		 background-size: 18px 9px;
+	}
+
+}

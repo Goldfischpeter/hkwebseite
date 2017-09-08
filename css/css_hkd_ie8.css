@@ -1,0 +1,38 @@
+/*
+Haftpflichtkasse
+IE8 2017/04/21
+Goldfischclub, pw@goldfischclub.de
+*/
+
+.hkd-form-row .hkd-form-radio label,
+.hkd-form-row .hkd-form-checkbox label,
+.hkd-form-checkbox label {
+    display: inline;
+}
+
+
+.hkd-form-row .hkd-form-radio input,
+.hkd-form-row .hkd-form-checkbox input,
+.hkd-form-checkbox input,
+.hkd-form-radio input {
+    width: auto;
+    background-color: transparent;
+    border: none;
+}
+
+
+.hkd-form-row .hkd-form-radio label,
+.hkd-form-row .hkd-form-checkbox label,
+.hkd-form-checkbox label {
+    vertical-align: center;
+}
+
+.drop2 {
+	border-left: 1px solid #e3e2e0;
+	border-right: 1px solid #e3e2e0;
+	border-bottom: 1px solid #e3e2e0;
+}
+
+.nav-flyout .main {
+    margin-right: 12px;
+}

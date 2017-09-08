@@ -1,0 +1,622 @@
+/*
+Haftpflichtkasse
+FORMS 2017/04/21
+Goldfischclub, pw@goldfischclub.de
+*/
+
+
+input.submit,
+.hkd-form-submit  {
+	padding: 10px 18px;
+	border: none;
+	cursor: pointer;
+	-webkit-appearance: none;
+}
+
+/* mehr als 1 submit btn, abstand veringern */
+.hkd-form-submit + .hkd-form-submit {
+	padding-top: 0;
+}
+
+div.hkd-form-submit  {
+	padding: 0px;
+}
+
+.hkd-form-submit {
+	margin-top: 20px;
+}
+
+#hk-tarifrechner .hkd-form-submit {
+	margin-top: 0px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+
+p.info-mandatory {
+	margin-top: 40px;
+}
+
+
+
+
+legend {
+	margin-top: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top: 1px solid #d6e8f1;
+	float: left;
+	width: 100%;
+	display: block;
+}
+#hk-schadenmeldung legend {
+	margin-top: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	border: none;
+	float: none;
+	width: auto;
+	display: inline;
+	color: #575757;
+	font-size: 85%;
+}
+
+.legend-1 {
+	margin-top: 35px;
+}
+
+
+
+.hkd-form-element label,
+.hkd-form-element input {
+	width: 100%;
+}
+
+
+
+
+.hkd-form-element input.hkd-form-readonly {
+	background-color: #f9f9f9;
+	border-top: 1px solid #e8e8e8;
+	border-bottom: 1px solid #e8e8e8;
+	font-style: italic;
+	color: #959595;
+}
+
+
+
+
+	
+
+.hkd-form-element input {
+	padding: 10px 3px;
+}
+
+.hkd-form-element input {
+	width: 99%;
+}
+
+.hkd-form-select select {
+	width: 100%;
+	border: none;
+	padding: 9px 3px 9px 3px;
+	-webkit-appearance: none;
+}
+
+
+
+.hkd-form-element input,
+.hkd-form-select select,
+.hkd-form-textarea textarea,
+textarea.hkd-form-textarea {
+/*
+	border: none;
+	border-bottom: 2px solid #00a0dc;
+	*/
+	background-color: #ededed;
+	border: none;
+	border-top: 1px solid #d3d3d3;
+	border-bottom: 1px solid #d3d3d3;
+}
+
+
+
+/**
+ * This hack targets the Webkit browser engine
+ * which includes Safari and Chrome.
+ */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+ 
+    .hkd-form-select select {
+		background-image: url(bilder/hkd-ic-select-webkit.png);
+		background-position: 98% 50%;
+		background-repeat: no-repeat;
+	}
+}
+
+
+textarea.hkd-form-textarea,
+.hkd-form-textarea textarea {
+	width: 99%;
+	height: 154px;
+	border: none;
+	padding: 10px 3px;
+	margin-top:0px;
+}
+.hkd-form-textarea span.counter {
+	float: right;
+}
+
+.hkd-form-textarea-tiny textarea {
+	height: 55px;
+}
+
+
+
+
+div.details p.hkd-form-element {
+	margin: 0 0 10px 0;
+}
+
+div.details p.hkd-form-element input {
+	background-position: right 8px;
+	background-repeat: no-repeat;
+}
+div.details p.hkd-form-element input[type="text"]:focus {
+	background-position: right 8px;
+	background-repeat: no-repeat;
+	background-color: #e5eef2;
+}
+
+div.details p.hkd-form-element input[type="text"].hkd-form-readonly:focus {
+	background-color: #fff;
+}
+
+div.details p.hkd-form-element textarea:focus {
+	background-position: right 8px;
+	background-repeat: no-repeat;
+	background-color: #e5eef2;
+}
+
+
+
+.hkd-form-col {
+	margin-left: 10px;
+}
+.hkd-form-col-mleft0 {
+	margin-left: 0;
+}
+.hkd-form-col-1 {
+	margin-left: 0;
+}
+
+.hkd-aenderungsmitteilung .hkd-form-radio-group {
+	margin-bottom: 29px;
+    margin-left: 0;
+    margin-top: 14px;
+}
+
+.hkd-aenderungsmitteilung .hkd-form-radio-group  .hkd-form-row:first-child {
+	margin-bottom: 10px;
+}
+
+
+.hkd-aenderungsmitteilung .hkd-form-submit {
+	margin-top: 42px;
+}
+
+.hkd-form-row,
+.hkd-form-cols {
+	width: 100%;
+	display: block;
+}
+
+.hkd-form-row,
+.hkd-form-cols,
+.hkd-form-col {
+	float: left;
+}
+
+
+.hkd-form-row label {
+	display: block;
+}
+
+
+
+
+div.hkd-form-marker {
+	float: left;
+	width:468px;
+	margin-left: 0px;
+	padding: 10px 10px 20px 10px;
+	margin-bottom: 15px;
+}
+
+
+
+div.hkd-form-wrapper h3 {
+	margin-bottom: 10px;
+	float: left;
+}
+div.hkd-form-wrapper h3.mtop {
+	margin-top: 20px;
+}
+
+
+
+
+div.hkd-form-marker .hkd-form-element input,
+div.hkd-form-marker .hkd-form-select select,
+div.hkd-form-marker .hkd-form-textarea textarea {
+	background-color: #fff;
+}
+
+
+/* suche */
+div.details p.hkd-form-suche input {
+	background-position: 98% 8px;
+	background-repeat: no-repeat;
+	width: 300px;
+}
+
+
+
+
+
+/* ERROR */
+
+
+div.error div.cols,
+div.message div.cols,
+div.tipp div.cols {
+	padding: 20px;
+}
+
+div.error,
+div.message,
+div.tipp{
+	float: left;
+	margin-bottom: 20px;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	padding-bottom: 15px;
+}
+
+div.details .col1-1  div.meldung div.col-1,
+div.details .col1-1  div.meldung div.col-2{
+	width: 452px;
+}
+div.details .col1-1  div.meldung div.col-2 {
+	margin-left: 32px;
+}
+
+div.details div.meldung ul {
+    margin-top: 0px;
+}
+
+div.details div.meldung ul li{
+    background-position: 0 8px;
+    font-weight: bold;
+}
+
+
+div.feedback {
+	padding: 10px;
+	float: left;
+}
+
+div.details div.feedback div.col {
+	width: 50%;
+}
+div.details div.feedback div.col-1 {
+	width: 40%;
+}
+
+div.details div.feedback div.cols {
+	margin-bottom: 14px;
+	width: 100%;
+}
+div.details div.feedback p {
+	padding: 0;
+	margin-top: -4px;
+}
+
+
+
+
+
+/* checkbox und radio button styling, nur für !IE8 */
+
+
+
+
+
+/* spalten eingaben */
+
+/* 160 + 296 + 10 = 465 */
+.strasse-nr .hkd-form-col {
+	width: 180px;
+}
+
+.strasse-nr .hkd-form-col-1 {
+	width: 295px;
+}
+
+
+
+.vermittler-nr .hkd-form-col {
+	width: 310px;
+}
+
+.vermittler-nr .hkd-form-col-1 {
+	width: 165px;
+}
+
+
+.plz-ort .hkd-form-col {
+	width: 295px;
+}
+.plz-ort .hkd-form-col-1 {
+	width:180px;
+}
+
+
+.tel-fax .hkd-form-col {
+	width: 238px;
+}
+.tel-fax .hkd-form-col-1 {
+	width:237px;
+}
+
+.rückruf-termin .hkd-form-col {
+	width: 224px;
+	margin-left: 0;
+}
+.rückruf-termin .hkd-form-col-1 {
+	margin-right: 20px;
+}
+
+.iban-bic .hkd-form-col {
+	width: 238px;
+}
+
+/* 50:50% */
+.col-50 .hkd-form-col {
+	width: 238px;
+}
+.col-50 .hkd-form-col-1 {
+	width:238px;
+}
+
+
+
+
+
+.datum .hkd-form-col {
+	width: 163px;
+}
+.datum .hkd-form-col-1 {
+	width: 182px;
+}
+.datum .jahr {
+	width: 123px;
+}
+
+.set-mitarbeiter {
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	opacity:0.2;
+	filter:alpha(opacity=20); /* For IE8 and earlier */
+}
+.set-mitarbeiter .hkd-form-col {
+	width: 200px;
+}
+.set-mitarbeiter .hkd-form-col-1 {
+	width: 240px;
+}
+
+/* uhrzeit sm */
+.hkd-form-select select.hkd-form-s-date-d,
+.hkd-form-select select.hkd-form-s-date-m {
+	width: 40%;
+}
+
+select.hkd-form-ss3 {
+	width: 106px;
+}
+
+
+
+
+
+
+@media handheld, only screen and (max-width: 1020px) {
+	
+	div.details p.hkd-form-suche input {
+		width: 224px;
+	}
+
+	.strasse-nr .hkd-form-col {
+    	width: 80px;
+	}
+	.strasse-nr .hkd-form-col-1 {
+    	width: 260px;
+	}
+	
+	.plz-ort .hkd-form-col {
+    	width: 260px;
+	}
+	.plz-ort .hkd-form-col-1 {
+    	width: 80px;
+	}
+	
+	/* col = 353px */
+	.tel-fax .hkd-form-col {
+		width: 170px;
+	}
+	.tel-fax .hkd-form-col-1 {
+    	width: 170px;
+	}
+	
+	.iban-bic .hkd-form-col {
+		width: 170px;
+	}
+	.iban-bic .hkd-form-col-1 {
+    	width: 170px;
+	}
+	
+	.datum .hkd-form-col {
+    	width: 123px;
+	}
+	.datum .hkd-form-col-1 {
+    	width: 130px;
+	}
+	.datum .jahr {
+    	width: 80px;
+	}
+	
+	/* 50:50% */
+	.col-50 .hkd-form-col {
+		width: 353px;
+		margin-left: 0;
+	}
+	.col-50 .hkd-form-col-1 {
+		width:353px;
+	}
+
+	
+	div.details .col1-1  div.error div.col-1,
+	div.details .col1-1  div.error div.col-2,
+	div.details .col1-1  div.message div.col-1,
+	div.details .col1-1  div.message div.col-2 {
+		width: 306px;
+	}
+	
+
+	
+	div.hkd-form-marker {
+		width: 333px;
+	}
+	.rückruf-termin .hkd-form-col {
+		width: 156px
+	}
+	
+	div.details .col1-1 div.meldung {
+		margin-left: 10px;
+	}
+
+	div.details div.feedback div.col,
+	div.details div.feedback div.col-1 {
+		width: 100%;
+	}
+	
+}
+
+
+
+
+@media handheld, only screen and (max-width: 700px) {
+
+	div.details p.hkd-form-suche input {
+		width: 433px;
+	}
+	
+	.strasse-nr .hkd-form-col-1 {
+    	width: 346px;
+	}
+	.plz-ort .hkd-form-col {
+    	width: 346px;
+	}
+	.plz-ort .hkd-form-col-1 {
+    	width: 80px;
+	}
+	
+	.iban-bic .hkd-form-col {
+    	width: 213px;
+	}
+	
+	div.hkd-form-marker {
+		width: 420px;
+	}
+	.rückruf-termin .hkd-form-col {
+		width: 200px;
+	}
+
+	div.details .col1-1 div.meldung {
+		margin-left: 10px;
+		width: 420px;
+	}
+	div.details .col1-1 div.meldung div.col {
+   		margin-left: 0px;
+   		width: 100%;
+	}
+	
+	.tel-fax .hkd-form-col {
+		width: 100%;
+		margin-left: 0px;
+	}
+	.tel-fax .hkd-form-col-1 {
+    	width: 100%;
+	}
+	
+	.col-50 .hkd-form-col {
+		width: 100%;
+	}
+
+	
+
+}
+
+
+
+
+@media handheld, only screen and (max-width: 440px) {
+
+	div.details p.hkd-form-suche input {
+		width: 304px;
+	}
+	
+	.strasse-nr .hkd-form-col {
+    	width: 52px;
+	}
+	.strasse-nr .hkd-form-col-1 {
+    	width: 235px;
+	}
+	.plz-ort .hkd-form-col {
+    	width: 235px;
+	}
+	.plz-ort .hkd-form-col-1 {
+    	width: 52px;
+	}
+	
+	.iban-bic .hkd-form-col {
+    	width: 300px;
+    	margin-left: 0;
+	}
+	.datum .hkd-form-col {
+   		width: 304px;
+   		margin-left: 0;
+	}
+	
+	div.hkd-form-marker {
+		width: 280px;
+	}
+	.rückruf-termin .hkd-form-col {
+		width: 280px
+	}
+	
+	div.details .col1-1 div.meldung {
+		margin-left: 10px;
+		width: 280px;
+	}
+	
+	.hk-antrag-stellen .hkd-form-select select.hkd-form-ss3,
+	.hk-angebot-anfordern .hkd-form-select select.hkd-form-ss3 {
+    	width: 106px;
+	}
+
+
+}
+

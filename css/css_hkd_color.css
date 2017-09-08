@@ -1,0 +1,1602 @@
+/*
+Haftpflichtkasse
+COLORS 2017/06/23
+Goldfischclub, pw@goldfischclub.de
+
+
+*/
+
+
+
+body{
+  	background-color: #fff;
+}
+
+/* Slider */
+
+.rsDefault .rsBullets {
+    left: 39%;
+}
+
+@media handheld, only screen and (max-width: 1000px) {
+	.rsDefault .rsBullets {
+    	left: 38%;
+	}
+}
+
+@media handheld, only screen and (max-width: 800px) {
+	.rsDefault .rsBullets {
+    	left: 33%;
+	}
+}
+
+.rsDefault.rsHor .rsArrowLeft .rsArrowIcn { 
+	background-image: url(bilder/hkd-ic-pfeil-links-1x.png) 
+}
+.rsDefault.rsHor .rsArrowRight .rsArrowIcn { 
+	background-image: url(bilder/hkd-ic-pfeil-rechts-1x.png); margin-left: -29px 
+}
+
+.rsDefault .rsBullet {
+	height: 14px;
+	width: 14px;
+	display: inline-block;
+	*display:inline; 
+	*zoom:1;
+	padding: 6px 5px 6px;
+	background-image: url(bilder/hkd-ic-slider-status-1x.png);
+	background-repeat: no-repeat;
+}
+
+.rsDefault .rsBullets .rsNavSelected  {
+	background-image: url(bilder/hkd-ic-slider-status-1x.png);
+	background-position: 0 -30px;
+}
+
+
+
+
+div.details div.feedback a {
+	background-image: url(bilder/hkd_ic_pdf.gif);
+	background-position: 4px 5px;
+}
+
+.mobile-nav-trigger {
+	background-image: url(bilder/hkd-ic-mobile-navi-1x.png);
+	background-position: 0 50%;
+}
+
+
+div.details ul.auswahl-100 ul.links li a,
+div.details div.hkd-legal-angebot a,
+div.details div.txt a,
+.aLink {
+	background-image: url(bilder/hkd-ic-pfeil-breadcrumb-1x.png);
+	background-position: 8px center;
+}
+div.details div.txt a.btn {
+	background-image: none;
+}
+
+
+div.suche div.filter ul li a,
+input.submit {
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+
+
+.drop {
+	-webkit-box-shadow: 0 6px 6px -7px #c1c1c1;
+       -moz-box-shadow: 0 6px 6px -7px #c1c1c1;
+            box-shadow: 0 6px 6px -7px #c1c1c1;
+}
+.drop2 {
+	-webkit-box-shadow: 0px 4px 4px 0px #c1c1c1;
+    -moz-box-shadow: 0px 4px 4px 0px #c1c1c1;
+     box-shadow: 0px 4px 4px 0px #c1c1c1;
+}
+
+.trans80 {
+	background-image: url(bilder/hk_trans_80.png);
+	background-repeat: repeat;
+}
+.visual-1 .trans80 {
+	background-image: none;
+}
+.trans90 {
+	background-image: url(bilder/hk_trans_90.png);
+	background-repeat: repeat;
+}
+.trans95 {
+	background-image: url(bilder/hk_trans_95.png);
+	background-repeat: repeat;
+}
+
+
+
+
+div.videoteaser div.box a {
+	background-image: url(bilder/hk_btn_video_start.jpg);
+}
+li.videoteaser div.box a {
+	background-image: url(bilder/hk_btn_video_s_start.jpg);
+}
+
+
+.telefon a,
+div.feed ul li a,
+div.suche div.filter ul li a,
+ul.top li a,
+ul.nav li a,
+.nav-flyout a,
+ul.path li a,
+div.box a,
+div#news a,
+div.vermittlerfinden ul.vmf-umkreis li a,
+.hinweis-layer li a,
+.modal-layer li a   {
+	text-decoration: none;
+}
+
+
+div.faq a,
+div.ansprechpartner a,
+div.details div.meldung a  {
+	text-decoration: underline;
+}
+
+
+
+ul.ergebnis-liste a,
+div.list-img-txt a,
+div.liste a {
+	padding: 3px 5px;
+	background-color: #eff6f9;
+	color: #3293c0;
+}
+
+
+h2.phv-einfach-stufe-1,
+h2.phv-einfach-stufe-2,
+h2.phv-einfach-stufe-3,
+h2.phv-einfach-stufe-4 {
+	background-repeat: no-repeat;
+	background-position: 0 7px;
+}
+
+
+h2.phv-einfach-stufe-1 {
+	background-image: url(bilder/ic-phv-einfach-1.png);
+}
+h2.phv-einfach-stufe-2 {
+	background-image: url(bilder/ic-phv-einfach-2.png);
+}
+h2.phv-einfach-stufe-3 {
+	background-image: url(bilder/ic-phv-einfach-3.png);
+}
+h2.phv-einfach-stufe-4 {
+	background-image: url(bilder/ic-phv-einfach-4.png);
+}
+
+
+
+
+
+
+body,
+a,
+div#header div.suche input  {
+	color: #383838;
+}
+
+p {
+	color: #575757;
+}
+
+
+div#news h3 {
+	color: #757575;
+}
+
+
+
+
+div#header {
+	background-image: url(bilder/hk_bg_header_001.png);
+	background-repeat: repeat-x;
+}
+div#header div.container {
+	border-bottom: 1px solid #00a0dc;
+}
+
+div#header div.logo {
+	background-image: url(bilder/hkd-ic-logo-1x.png);
+}
+
+
+
+ul.top li.prio a {
+	background-color: #d6e8f1;
+}
+
+
+div.details div.feedback a,
+div.details div.hkd-legal-angebot a,
+.hkd-grid-4 div.auswahl ul.auswahl-sel li.selbox,
+.hkd-grid-6 div.auswahl ul.auswahl-sel li.selbox,
+.nav-flyout .main,
+.nav-flyout .quick {
+     background-color: #fff
+}
+
+
+
+/* blau */
+div.details ul.auswahl-100 span,
+.teaser h1,
+.selbox a,
+div.details #hk-tarifrechner .hkd-tarif-leistungen .hkd-col-b3 a,
+.hkd-tarif-leistungen p,
+.hkd-tarif-konfiguration p,
+div.details div.feedback a,
+div.details div.feedback h3,
+div.details div.feedback div.col-1,
+div.details div.hkd-legal-angebot a,
+.hkd-angaben-dokumente .hkd-tbl-last a,
+.aLink,
+div.feed a,
+div.details div.feed ul li a span,
+div.details div.sitemap .col-1 a,
+.dv-download a,
+ul.top li.prio a,
+div#footer h4.aktiv,
+div#contact ul li .mark,
+ul.path li.aktiv a,
+.quick h3,
+.quick a,
+div#news a,
+div.dv-title a,
+div.details ul li a,
+div.teaser h2,
+div.teaser a,
+div.details div.deckungsvergleich ul li.c-1,
+div.details div.deckungsvergleich ul li.c-2,
+div.details div.deckungsvergleich ul.head li,
+div.details div.deckungsvergleich li.head,
+div.details div.deckungsvergleich strong,
+div.ergebnis-hinweis p,
+div.vermittlerfinden-ergebnis span,
+div.vermittlerfinden-ergebnis div.col-vmf-2,
+div.vermittlerfinden-ergebnis div.faq h3,
+div.details div.txt a,
+div.details div.ansprechpartner ul li div.col-2 span,
+div.faq a,
+div.hkd-form-marker h2,
+div.hkd-form-marker label,
+div.details h2.h2sum,
+div.details h2.h2-vgl a,
+div.details h2.h2-vgl,
+#hk-tarifrechner .hkd-tbl5 .hkd-tbl-cols-2 a,
+.hinweis-layer,
+.modal-layer strong,
+.dv-p,
+legend,
+i, 
+em  {
+	color: #00a0dc;
+}
+
+/* last-child IE8 */
+ul.path li:last-child a {
+	color: #00a0dc;
+}
+
+/* reset link blau */
+div.details .ansprechpartner a,
+div.details .sitemap ul li a {
+	color: #383838;
+}
+
+div.details .ansprechpartner a {
+	text-decoration: none;
+}
+
+
+.hkd-tarif-leistung-neu span.tarif-leistung-neu {
+	color: #ea940b;
+}
+
+
+/* hellblau */
+
+.aLink,
+div.details ul.auswahl-100 ul.links li a,
+div.dv-title,
+div.zusammenfassung,
+div.hkd-form-marker,
+div.lex-bsp,
+ul.vmf-umkreis li a,
+div.details div.txt a,
+div.details div.col-1 div.feedback,
+div.details h2.h2-vgl a  {
+	background-color: #eff6f9;
+}
+
+
+/* mod nav */
+ul.nav li a.roll,
+.hkd-form-add-schadenmeldung input.hkd-form-submit    {
+	background-color: #D6E8F1;
+}
+
+
+
+
+
+div.teaser h3 {
+	color: #575757;
+}
+
+
+/* weiss */
+.hkd-grid-6 div.auswahl ul.auswahl-sel .labeled h2,
+div.lexikon-ergebnis-liste h5,
+div.suche div.filter ul li.aktiv a,
+input.submit,
+ul.vmf-umkreis li.aktiv a,
+.videoteaser p,
+div.details div.txt a.btn,
+div.details .modal-layer li a {
+	color: #fff;
+}
+
+
+/* dunkelblau bgcolor */
+
+
+div.suche div.filter ul li.aktiv a,
+input.submit,
+ul.vmf-umkreis li.aktiv a,
+.videoteaser div.box,
+div.details div.txt a.btn,
+.hinweis-layer a,
+.modal-layer a  {
+	background-color: #00a0dc;
+}
+
+
+
+div.auswahl .labl {
+    color: #fff;
+    background-repeat: repeat;
+}
+
+
+div.suche div.filter ul li.aktiv a {
+	background-image: url(bilder/hk_filter_haken.png);
+	background-position: 98% 8px;
+}
+
+
+
+.hkd-tarif-leistungen,
+.hkd-tarif-leistungen-closed  {
+	background-image: url(bilder/hkd-ic-pfeil-akk-unten-1x.png);
+    background-position: 98% center;
+}
+.hk-dcb .hkd-tarif-leistungen {
+    background-position: 320px 13px;
+}
+
+.hk-dcb .hkd-tarif-leistungen-closed,
+.hkd-tarif-leistungen-closed {
+	background-image: urlbilder/hkd-ic-pfeil-akk-oben-1x.png);
+}
+
+
+
+
+
+
+
+
+.hkd-grid-3 div.nav-flyout div.box a {
+	background-color: #c5263a;
+	background-image: url(bilder/hk_pfeil_weiss.png);
+}
+
+
+.hkd-grid-3 div.auswahl ul li.quick,
+.hkd-grid-4 div.auswahl ul li.quick,
+div.details h2.h2-vgl a,
+.no-visual div.details div.txt a  {
+	background-color: #fff;
+}
+
+
+
+
+
+.nav-flyout .navset,
+.nav-flyout .lvl-3,
+.nav-flyout .lvl-4,{
+	border-left: 1px solid #00a0dc;
+}
+
+div.details h2.h2-vgl a{
+	border: 1px solid #00a0dc;
+}
+
+
+
+
+ul.nav li a {
+	color: #00a0dc;
+}
+ul.nav li.aktiv a,
+.hinweis-layer a,
+.modal-layer a {
+	color: #fff;
+}
+ul.nav li.aktiv a {
+	background-color: #00a0dc;
+}
+
+
+div.nav-flyout li.aktiv a {
+	color: #00a0dc;
+}
+
+
+div.nav-flyout li.c a  {
+	background-image: url(bilder/hkd-ic-pfeil-navi-inaktiv-1x.png);
+	background-position: 95% 50%;
+}
+
+
+div.nav-flyout .main ul li.c a.sel {
+	background-image: url(bilder/hkd-ic-pfeil-navi-aktiv-1x.png);
+	background-position: 95% 50%;
+    background-color: #f3f3f3;
+}
+
+
+.selbox div.box a,
+.hkd-grid-6 div.auswahl ul.auswahl-sel h1 a,
+div.nav-flyout div.quick a,
+.hkd-grid-2 div.box a,
+div#news a,
+.hkd-grid-3 div.auswahl ul.auswahl-sel li.quick ul li a,
+.hkd-grid-4 div.auswahl ul.auswahl-sel li.quick ul li a,
+.hkd-grid-6 div.auswahl ul.auswahl-sel li.quick ul li a,
+div.teaser a.tsr-a {
+	background-image: url(bilder/hkd-ic-pfeil-btn1-1x.png);
+	background-position: 0 center;
+}
+
+.hkd-grid-6 div.auswahl ul.auswahl-sel h1 a.download {
+	background-image: url(bilder/hkd-ic-pfeil-download-1x.png);
+	background-position: -5px center;
+}
+
+
+
+div.details div.zusammenfassung ul li {
+	background-position: 0 center;
+	background-image: url(bilder/hkd-ic-pfeil-produkt-box-1x.png);
+}
+
+
+
+
+.hkd-grid-6 div.auswahl a.tsr-pdf {
+	background-image: url(bilder/hk_liste_download.png);
+	background-position: 6px 6px;
+}
+
+
+div.nav-flyout .pfeil {
+	background-image: url(bilder/hk_nav_pfeil.png);
+}
+
+
+
+
+div#header div.suche input {
+	background-image: url(bilder/hkd-ic-lupe01-1x.png);
+	background-repeat: no-repeat;
+	background-position: 98% center;
+	color: #00a0dc;
+}
+
+div#visual {
+	border-bottom: 1px solid #c6c6c6;
+	background-color: #fff;
+}
+
+div.slider-item {
+	background-image: url(bilder/hk_trans_90.png);
+	background-repeat: repeat;
+}
+
+.visual-3 div.slider-item {
+	background-image: url(bilder/hk_grad_geschichte.png);	
+	background-repeat: repeat-x;
+	-webkit-box-shadow: 0 4px 4px -2px #c1c1c1;
+       -moz-box-shadow: 0 4px 4px -2px #c1c1c1;
+            box-shadow: 0 4px 4px -2px #c1c1c1;
+}
+
+
+ul.path li a {
+	background-image: url(bilder/hkd-ic-pfeil-breadcrumb-1x.png);
+	background-position: right center;
+}
+ul.path li:last-child a {
+	background-image: none;  
+}
+
+
+
+
+
+
+
+div.auswahl {
+	background-color: #ebebe9;
+}
+.hkd-grid-1 div.auswahl {
+	background-color: #fff;
+}
+
+.hkd-grid-3 div.auswahl ul.auswahl-sel > li.quick ul
+.hkd-grid-4 div.auswahl ul.auswahl-sel > li.quick ul {
+	border-right: 8px solid #00a0dc;
+}
+
+
+
+
+
+
+
+div.details ul li,
+div.details div.deckungsvergleich ul li > ul li,
+div.details div.deckungsvergleich .c-3 {
+	background-image: url(bilder/hk_li.gif);
+	background-position: 0 8px;
+}
+/* schadenmeldungen - schweigepflicht reset da inline */
+div.details .hkd-bx5-content ul li,
+div.details .modal-content ul li {
+	background-image: none;
+}
+
+
+
+
+/* ZUSAMMENFASSUNG */
+
+div.deckungsvergleich {
+    background-color: #ececec;
+}
+
+
+
+
+div.details div.zusammenfassung {
+    border-bottom: 4px solid #00a0dc;
+}
+
+
+
+
+
+/* DECKUNGSVERGLEICH */
+
+div.deckungsvergleich{
+    border-bottom: 1px solid #d5d5d5;
+}
+
+div.details div.deckungsvergleich ul li {
+    background-image: none;
+}
+div.details div.deckungsvergleich ul.even,
+div.details div.deckungsvergleich li.even {
+	background-color: #fbfbfb;
+}
+div.details div.deckungsvergleich ul li.haken {
+	background-image: url(bilder/hk_dv_haken.png);
+	background-position: 50% -2px;
+}
+
+div.dv-title {
+	border-top: 1px solid #b8d3df;
+	border-bottom: 1px solid #b8d3df;
+}
+
+div.dv-download {
+	background-image: url(bilder/hk_ic_download.gif);
+	background-position: right 0;
+}
+
+
+div.dv-open div.dv-title {
+	background-image: url(bilder/hkd-ic-pfeil-akk-unten-1x.png);
+	background-position: 98% center;
+}
+
+div.dv-closed div.dv-title {
+	background-image: url(bilder/hkd-ic-pfeil-akk-oben-1x.png);
+	background-position: 98% center;
+}
+
+
+
+
+/* newsfeed und schadenmeldungen, tarifrechner */
+.visual-5 div.details {
+	background-color: #e3e2e0;
+	background-image: url(bilder/hk-grad-1.jpg);
+	background-repeat: repeat-x;
+	background-position: 0 -100px;
+}
+
+
+/* FAQ */
+
+div.closed {
+	background-color: #e5f4fa;
+	background-image: url(bilder/hkd-ic-pfeil-akk-unten-1x.png);
+	background-position: 98% 10px;
+}
+div.closed h3 {
+	color: #00a0dc;
+}
+div.open {
+	background-color: #f2f2f2;
+	background-image: url(bilder/hkd-ic-pfeil-akk-oben-1x.png);
+	background-position: 98% 10px;
+}
+
+
+
+/* FEED */
+
+div.feed ul li a {
+	color: #575757;
+}
+div.feed ul li {
+	background-color: #fff;
+	background-image: url(bilder/hkd-ic-pfeil-tr-box-1x.png);
+	background-position: 98% 50%;
+}
+div.feed > a {
+	background-image: url(bilder/hkd-ic-pfeil-tr-box-1x.png);
+	background-position: 0 50%;
+}
+
+
+
+
+
+/* SUCHE */
+
+
+div.pagination,
+div.ergebnis-hinweis {
+	border-top: 1px solid #c2c5c7;
+	border-bottom: 1px solid #c2c5c7;
+}
+div.ergebnis-hinweis {
+	border-top: none;
+	border-bottom: 1px solid #c2c5c7;
+}
+div.suche div.labl {
+	border-bottom: 1px solid #c2c5c7;
+	padding: 0;
+}
+div.suche div.labl p {
+	margin:0;
+}
+
+div.suche ul li {
+	background-image: none;
+}
+div.suche ul.ergebnis-liste ul li {
+	border-left: 1px solid #00a0dc;
+}
+
+div.pagination ul li a,
+div.suche div.filter ul li a {
+	background-color: #e5f4fa;
+}
+div.pagination ul li.aktiv a {
+	color: #fff;
+	background-color: #00a0dc;
+}
+
+
+
+
+
+/* lexikon */
+
+div.lexikon-select a {
+     background-color: #e5f4fa;
+}
+div.lexikon-select li.aktiv a {
+	color: #fff;
+	background-color: #00a0dc;
+}
+div.lexikon-select li.inaktiv a {
+	color: #fff;
+	background-color: #ddd;
+}
+
+
+
+
+
+
+
+div#contact {
+	background-color: #e3e2e0;
+}
+div#contact ul li {
+	background-color: #fff;
+	background-position: 98% 50%;
+}
+div#contact ul li.telefon {
+	background-image: url(bilder/hkd-ic-hotline-footer-1x.png);
+}
+div#contact ul li.email {
+	background-image: url(bilder/hkd-ic-kontakt-footer-1x.png);
+}
+
+
+
+
+div#footer {
+	background-color: #cccccc;
+}
+div#footer h4 {
+
+}
+div#footer li a { 
+	color: #303030; 
+	display: block;
+}
+div#footer li.aktiv { 
+	background-color: #fff;	
+}
+div#footer h4.aktiv {
+	background-color: #fff;
+}
+
+div#legal {
+	background-color: #a5a5a5;
+}
+
+div#legal li a {
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BLAU GLOBAL -1- #00a0dc */
+
+.lexikon-ergebnis-liste li h5,
+.hkd-grid-3 .color-1 div.box a,
+.hkd-grid-4 .color-1 a,
+.hkd-grid-6 .color-1 a,
+.action-color-1 div.action {
+	background-color: #00a0dc;
+}
+
+.hkd-grid-3 .color-1 div.box p a {
+	background-color: transparent;
+}
+
+
+
+.color-1 h1,
+.action-color-1 h1{
+	color: #00a0dc;
+}
+
+
+.lexikon-ergebnis-liste li {
+	border-top: 1px solid  #00a0dc;
+}
+
+
+
+
+
+
+
+
+
+/* FORMS */
+
+div.details p.hkd-form-element input[type="text"]:focus {
+	background-image: url(bilder/hk-ic-edit.png);
+}
+
+div.details p.hkd-form-element input[type="text"].hkd-form-readonly:focus {
+	background-image: none;
+}
+
+div.details p.hkd-form-element textarea:focus {
+	background-image: url(bilder/hk-ic-edit.png);
+}
+
+div.details .hkd-mode-error p.hkd-form-element input {
+	background-image: url(bilder/hk-ic-error.png);
+}
+
+div.details p.hkd-form-suche input {
+	background-image: url(bilder/hkd-ic-lupe01-1x.png);
+}
+
+
+
+
+
+div.error {
+	background-image: url(bilder/hk_error_pfeil.png);
+}
+div.details div.error ul li {
+    background-image: url(bilder/hk_li_error.gif);
+}
+
+
+
+
+/* fehlermeldungen global*/
+div.error,
+div.error p,
+.hkd-error-mark .hkd-form-textarea,
+div.details .hkd-mode-error p.hkd-form-element label,
+div.details .hkd-mode-error p.hkd-form-element input,
+div.details .hkd-error-mark input,
+div.details .hkd-error-mark label {
+	color: #dd3e3e
+}
+
+
+div.error div.cols,
+div.details .hkd-mode-error p.hkd-form-element input,
+.hkd-error-mark .hkd-form-textarea,
+div.details .hkd-error-mark input {
+	background-color: #f3e3e3;
+}
+
+
+
+
+
+div.message div.cols {
+	background-color: #def1da;
+}
+
+div.message {
+	background-image: url(bilder/hk_message_pfeil.png);
+}
+.visual-5 div.meldung {
+	background-image: none;
+}
+.visual-5 div.meldung div.cols {
+	background-color: #fff;
+}
+
+div.details div.message,
+div.details div.message p,
+div.details div.message a {
+	color: #107c2c;
+}
+
+div.details div.error,
+div.details div.error p,
+div.details div.error a {
+	color: #dd3e3e;
+}
+
+div.details div.error a.link {
+	background-color: #fff;
+	padding: 2px 10px
+}
+
+
+span.meldung-kontakt {
+	display: block;
+	background-color: #fff;
+	padding: 5px 5px 5px 10px;
+	color: #575757;
+	border-left: 2px solid #dd3e3e;
+}
+
+
+
+div.details div.message ul li {
+    background-image: url(bilder/hk_li_message.gif);
+}
+
+
+div.tipp div.cols {
+	background-color: #eff6f9;
+}
+div.details div.tipp,
+div.details div.tipp p {
+	color: #00a0dc;
+}
+
+div.tipp {
+	background-image: url(bilder/hk_tipp_pfeil.png);
+}
+
+
+div.details div.sitemap .col a {
+ 	background-image: url(bilder/hkd-ic-pfeil-navi-inaktiv-1x.png);
+    background-position: 95% 50%;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+div.details h2.h2-vgl a {
+	background-image: url(bilder/hk-ic-plus.gif);
+	background-position: 3px 4px;
+}
+
+
+.tarif-gut-besser-komplett-email .download-pdf {
+	background-image: url(bilder/hk-ic-download1x.png);
+	background-position: 10px center;
+}
+
+
+
+
+
+
+
+div.action {
+	background-image: url(bilder/hkd-box-lang-1x.png);
+	background-position: 0 0;
+}
+
+.visual-1 div.action {
+	background-image: url(bilder/hkd-box-kurz-1x.png);
+	background-position: 0 0;
+}
+
+/* smartphone landscape */
+@media handheld, only screen and (max-width: 700px) {
+	
+	div.action {
+		background-image: url(bilder/hkd-box-lang-landscape-1x.png);
+	}
+	
+	.visual-1 div.action {
+		background-image: url(bilder/hkd-box-kurz-landscape-1x.png);
+	}
+
+}
+
+
+
+.selbox div.ic-sel {
+	background-position: center 5px;	
+}
+
+.selbox div.ic-sel-aggversicherung {
+	background-image: url(bilder/hkd-ic-aggversicherung-1x.png);
+}
+.selbox div.ic-sel-aenderungsmitteilung {
+	background-image: url(bilder/hkd-ic-aenderungsmitteilung-1x.png);
+}
+.selbox div.ic-sel-anfahrt {
+	background-image: url(bilder/hkd-ic-anfahrt-1x.png);
+}
+.selbox div.ic-sel-ansprechpartner {
+	background-image: url(bilder/hkd-ic-ansprechpartner-1x.png);
+}
+.selbox div.ic-sel-auszeichnungen {
+	background-image: url(bilder/hkd-ic-auszeichnungen-1x.png);
+}
+li.act-tarifrechner a,
+.selbox div.ic-sel-beitrag-berechnen {
+	background-image: url(bilder/hkd-ic-beitrag-berechnen-1x.png);
+}
+.selbox div.ic-sel-betriebsschliessung {
+	background-image: url(bilder/hkd-ic-betriebsschliessung-1x.png);
+}
+.selbox div.ic-sel-darstellung {
+	background-image: url(bilder/hkd-ic-darstellung-1x.png);
+}
+.selbox div.ic-sel-datenschutz {
+	background-image: url(bilder/hkd-ic-datenschutz-1x.png);
+}
+.selbox div.ic-sel-dokumentencenter {
+	background-image: url(bilder/hkd-ic-dokumentencenter-1x.png);
+}
+.selbox div.ic-sel-downloadcenter {
+	background-image: url(bilder/hkd-ic-downloadcenter-1x.png);
+}
+.selbox div.ic-sel-faq {
+	background-image: url(bilder/hkd-ic-faq-1x.png);
+}
+.selbox div.ic-sel-geschichte {
+	background-image: url(bilder/hkd-ic-geschichte-1x.png);
+}
+.selbox div.ic-sel-geschaeftskunden {
+	background-image: url(bilder/hkd-ic-geschaeftskunde-1x.png);
+}
+.selbox div.ic-sel-haftpflichtversicherung {
+	background-image: url(bilder/hkd-ic-haftpflichtversicherung-1x.png);
+}
+.selbox div.ic-sel-hausratsversicherung {
+	background-image: url(bilder/hkd-ic-hausratsversicherung-1x.png);
+}
+.selbox div.ic-sel-jobskarriere {
+	background-image: url(bilder/hkd-ic-jobskarriere-1x.png);
+}
+.selbox div.ic-sel-kontakt {
+	background-image: url(bilder/hkd-ic-kontakt-1x.png);
+}
+.selbox div.ic-sel-kontaktformular {
+	background-image: url(bilder/hkd-ic-kontaktformular-1x.png);
+}
+.selbox div.ic-sel-microsites {
+	background-image: url(bilder/hkd-ic-microsites-1x.png);
+}
+.selbox div.ic-sel-newsroom {
+	background-image: url(bilder/hkd-ic-newsroom-1x.png);
+}
+.selbox div.ic-sel-presse {
+	background-image: url(bilder/hkd-ic-presse-1x.png);
+}
+li.act-sitemap a,
+.selbox div.ic-sel-produktuebersicht {
+	background-image: url(bilder/hkd-ic-produktuebersicht-1x.png);
+}
+.selbox div.ic-sel-privatkunden {
+	background-image: url(bilder/hkd-ic-privatkunde-1x.png);
+}
+.selbox div.ic-sel-rueckruf {
+	background-image: url(bilder/hkd-ic-rueckruf-1x.png);
+}
+li.act-schaden a,
+.selbox div.ic-sel-schaden-melden {
+	background-image: url(bilder/hkd-ic-schaden-melden-1x.png);
+}
+.selbox div.ic-sel-umweltschadenversicherung {
+	background-image: url(bilder/hkd-ic-umweltschadenversicherung-1x.png);
+}
+.selbox div.ic-sel-unfallversicherung {
+	background-image: url(bilder/hkd-ic-unfallversicherung-1x.png);
+}
+.selbox div.ic-sel-vermittler {
+	background-image: url(bilder/hkd-ic-vermittler-1x.png);
+}
+li.act-vermittler a,
+.selbox div.ic-sel-vermittler-finden {
+	background-image: url(bilder/hkd-ic-vermittler-finden-1x.png);
+}
+.selbox div.ic-sel-versicherungslexikon {
+	background-image: url(bilder/hkd-ic-versicherungslexikon-1x.png);
+}
+.selbox div.ic-sel-wissen {
+	background-image: url(bilder/hkd-ic-wissen-1x.png);
+}
+.selbox div.ic-sel-ziele {
+	background-image: url(bilder/hkd-ic-ziele-1x.png);
+}
+.selbox div.ic-sel-suche {
+	background-image: url(bilder/hkd-ic-suche-1x.png);
+}
+.selbox div.ic-sel-service {
+	background-image: url(bilder/hkd-ic-service-1x.png);
+}
+.selbox div.ic-sel-service {
+	background-image: url(bilder/hkd-ic-service-1x.png);
+}
+li.act-antrag-pdf a {
+	background-image: url(bilder/hkd-ic-antrag-pdf-1x.png);
+}
+li.act-angebot-anfordern a {
+	background-image: url(bilder/hkd-ic-angebot-1x.png);
+}
+
+.selbox div.ic-sel-haus-grundbesitzhaftpflicht {
+	background-image: url(bilder/hkd-ic-haus-grundbesitzhaftpflicht-1x.png);
+}
+.selbox div.ic-sel-gewaesserschadenhaftpflicht {
+	background-image: url(bilder/hkd-ic-gewaesserschadenhaftpflicht-1x.png);
+}
+.selbox div.ic-sel-bauherrenhaftpflicht {
+	background-image: url(bilder/hkd-ic-bauherrenhaftpflicht-1x.png);
+}
+.selbox div.ic-sel-tierhaftpflicht {
+	background-image: url(bilder/hkd-ic-tierhaftpflicht-1x.png);
+}
+
+
+
+
+
+/* ipad portrait ->| 768 */
+@media handheld, only screen and (max-width: 1000px) {
+	
+	div#contact ul li.telefon,
+	div#contact ul li.email {
+		background-image: none;
+	}
+	
+
+	
+	.hk-dcb .hkd-tarif-leistungen {
+   	 	background-position: 180px 15px;
+	}
+
+}
+
+/* 320px iphone */
+@media handheld, only screen and (max-width: 700px) {
+
+	div.nav-flyout .main {
+		background-color: #00a0dc;
+	}
+	
+	.mobile-nav-trigger {
+		background-position: right 50%;
+	}
+
+
+	.nav-flyout .main .mobile-nav,
+	.nav-flyout .main .lvl-2,
+	.nav-flyout .main .lvl-3 {
+		border-bottom: 1px solid #fff;
+	}
+	
+	.nav-flyout .main a {
+		background-color: transparent;
+		color: #fff;
+	}
+	
+	div.nav-flyout li.aktiv a {
+		background-color: #fff;
+	}
+	
+	
+
+	div.nav-flyout li.c a  {
+		background-image: url(bilder/hk_children_pfeil_small_fff.png);
+		background-position: 95% 50;
+	}
+
+	div.nav-flyout .main ul li.c a.sel {
+		background-color: #00a0dc;
+		background-image: url(bilder/hk_children_pfeil_small_fff.png);
+		background-position: 95% 50;
+	}
+	
+	div.nav-flyout  .main ul li.aktiv a.sel,
+	div.nav-flyout  .main ul li.aktiv a {
+		background-image: url(bilder/hkd-ic-pfeil-navi-inaktiv-1x.png);
+		background-position: 95% 50%;
+		background-color: #fff;
+	}
+	
+	
+	/* --> layour */
+	.nav-flyout .main .mobile-nav li, 
+	.nav-flyout .main .lvl-2 li, 
+	.nav-flyout .main .lvl-3 li, 
+	.nav-flyout .main .lvl-4 li {
+    	float: none;
+	}
+	
+	.nav-flyout .main .mobile-nav li, 
+	.nav-flyout .main .lvl-2 li,
+	.nav-flyout .main .lvl-3 li,
+	.nav-flyout .main .lvl-4 li {
+		width: 420px
+	}
+	
+	.hk-dcb .hkd-tarif-leistungen {
+   	 	background-position: 230px 15px;
+	}
+	
+	
+
+}
+
+
+/* 320px iphone */
+@media handheld, only screen and (max-width: 440px) {
+
+	div.action,
+	.visual-1 div.action {
+		background-image: none;
+	}
+	
+	
+	/* --> layour */
+	.nav-flyout .main .mobile-nav li, 
+	.nav-flyout .main .lvl-2 li,
+	.nav-flyout .main .lvl-3 li,
+	.nav-flyout .main .lvl-4 li {
+		width: 280px
+	}
+	
+	hkd-grid-3 .box.trans90 {
+    	background-image: none;
+	}
+	
+	div.auswahl .color-1 .labl,
+	div.auswahl .color-2 .labl,
+	div.auswahl .color-3 .labl,
+	div.auswahl .color-4 .labl,
+	div.auswahl .color-5 .labl,
+	div.auswahl .color-6 .labl,
+	div.auswahl .color-7 .labl,
+	div.auswahl .color-8 .labl,
+	div.auswahl .color-9 .labl {
+		background-image: none;
+	}
+
+	div.auswahl .color-1 .labl {
+		background-color: #00a0dc;
+	}
+	div.auswahl .color-2 .labl {
+		background-color: #e9813a;
+	}
+	div.auswahl .color-3 .labl {
+		background-color: #b6c911;
+	}
+	div.auswahl .color-4 .labl {
+		background-color: #c5263a;
+	}
+	div.auswahl .color-5 .labl {
+		background-color: #c5263a;
+	}
+	div.auswahl .color-6 .labl {
+		background-color: #006e9b;
+	}
+	div.auswahl .color-7 .labl {
+		background-color: #60beee;
+	}
+	div.auswahl .color-8 .labl {
+		background-color: #00949d;
+	}
+	div.auswahl .color-9 .labl {
+		background-color: #465698;
+	}
+
+	.hkd-grid-3 .color-1 div.box a {
+		background-color: transparent;
+		background-image: none;
+	}
+	
+	.hk-dcb .hkd-tarif-leistungen {
+   	 	background-position: 133px 15px;
+	}
+	
+	
+
+
+	
+}
+
+
+/* retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), 
+only screen and (min-resolution: 144dpi) {
+
+	.mobile-nav-trigger {
+		background-image: url(bilder/hkd-ic-mobile-navi-2x.png);
+		background-size: 38px 28px;
+	}
+
+	div.nav-flyout li.c a  {
+		background-image: url(bilder/hkd-ic-pfeil-navi-inaktiv-2x.png);
+		background-size: 5px 10px;
+	}
+
+	div.nav-flyout .main ul li.c a.sel {
+		background-image: url(bilder/hkd-ic-pfeil-navi-aktiv-2x.png);
+		background-size: 7px 14px;
+	}
+	
+	div#header div.logo {
+		background-image: url(bilder/hkd-ic-logo-2x.png);
+		background-size: 137px 62px;
+	}
+	div#header div.suche input {
+		background-image: url(bilder/hkd-ic-lupe01-2x.png);
+		background-size: 22px 22px;
+	}
+	
+	div.details p.hkd-form-suche input {
+		background-image: url(bilder/hkd-ic-lupe01-2x.png);
+		background-size: 22px 22px;
+	}
+
+	
+	/* slider */
+	.rsDefault.rsHor .rsArrowLeft .rsArrowIcn { 
+		background-image: url(bilder/hkd-ic-pfeil-links-2x.png) 
+		background-size: 46px 45px;
+	}
+	.rsDefault.rsHor .rsArrowRight .rsArrowIcn { 
+		background-image: url(bilder/hkd-ic-pfeil-rechts-2x.png);
+		background-size: 46px 45px;
+	}
+	.rsDefault .rsBullet {
+		background-image: url(bilder/hkd-ic-slider-status-2x.png);
+		background-size: 26px 60px;
+	}
+	.rsDefault .rsBullets .rsNavSelected {
+   	 	background-image: url(bilder/hkd-ic-slider-status-2x.png);
+    	background-size: 26px 60px;
+	}
+	
+	
+	
+	div.nav-flyout div.quick a,
+	.hkd-grid-2 div.box a,
+	div#news a,
+	.hkd-grid-3 div.auswahl ul.auswahl-sel li.quick ul li a,
+	.hkd-grid-4 div.auswahl ul.auswahl-sel li.quick ul li a,
+	.hkd-grid-6 div.auswahl ul.auswahl-sel li.quick ul li a,
+	div.teaser a.tsr-a {
+		background-image: url(bilder/hkd-ic-pfeil-btn1-2x.png);
+		background-size: 8px 14px;
+	}
+	
+	.hkd-grid-6 div.auswahl ul.auswahl-sel h1 a.download {
+		background-image: url(bilder/hkd-ic-pfeil-download-1x.png);
+		background-size: 20px 22px;
+	}
+	
+	div.details div.hkd-legal-angebot a,
+	div.details div.txt a,
+	.aLink {
+		background-image: url(bilder/hkd-ic-pfeil-breadcrumb-2x.png);
+		background-size: 4px 8px;
+	}
+	
+	
+	div.closed,
+	div.dv-open div.dv-title {
+		background-image: url(bilder/hkd-ic-pfeil-akk-unten-2x.png);
+		background-size: 18px 9px;
+	}
+	div.open,
+	div.dv-closed div.dv-title {
+		background-image: url(bilder/hkd-ic-pfeil-akk-oben-2x.png);
+		background-size: 18px 9px;
+	}
+	
+
+
+	
+	div.feed > a,
+	div.feed ul li {
+		background-image: url(bilder/hkd-ic-pfeil-tr-box-2x.png);
+		background-size: 9px 18px;
+	}
+	
+	
+	div.details div.sitemap .col a {
+ 		background-image: url(bilder/hkd-ic-pfeil-navi-inaktiv-2x.png);
+ 		background-size: 5px 10px;
+	}
+	
+	div.details div.zusammenfassung ul li {
+		background-image: url(bilder/hkd-ic-pfeil-produkt-box-2x.png);
+		background-size: 7px 15px;
+	}
+	
+
+	.teaser li a,
+	.selbox div.ic-sel {
+		background-size: 60px 60px;	
+	}
+	
+	.selbox div.ic-sel-aggversicherung {
+		background-image: url(bilder/hkd-ic-aggversicherung-2x.png);
+	}
+	.selbox div.ic-sel-aenderungsmitteilung {
+		background-image: url(bilder/hkd-ic-aenderungsmitteilung-2x.png);
+	}
+	.selbox div.ic-sel-anfahrt {
+		background-image: url(bilder/hkd-ic-anfahrt-2x.png);
+	}
+	.selbox div.ic-sel-ansprechpartner {
+		background-image: url(bilder/hkd-ic-ansprechpartner-2x.png);
+	}
+	.selbox div.ic-sel-auszeichnungen {
+		background-image: url(bilder/hkd-ic-auszeichnungen-2x.png);
+	}
+	li.act-tarifrechner a,
+	.selbox div.ic-sel-beitrag-berechnen {
+		background-image: url(bilder/hkd-ic-beitrag-berechnen-2x.png);
+	}
+	.selbox div.ic-sel-betriebsschliessung {
+		background-image: url(bilder/hkd-ic-betriebsschliessung-2x.png);
+	}
+	.selbox div.ic-sel-darstellung {
+		background-image: url(bilder/hkd-ic-darstellung-2x.png);
+	}
+	.selbox div.ic-sel-datenschutz {
+		background-image: url(bilder/hkd-ic-datenschutz-2x.png);
+	}
+	.selbox div.ic-sel-dokumentencenter {
+		background-image: url(bilder/hkd-ic-dokumentencenter-2x.png);
+	}
+	.selbox div.ic-sel-downloadcenter {
+		background-image: url(bilder/hkd-ic-downloadcenter-2x.png);
+	}
+	.selbox div.ic-sel-faq {
+		background-image: url(bilder/hkd-ic-faq-2x.png);
+	}
+	.selbox div.ic-sel-geschichte {
+		background-image: url(bilder/hkd-ic-geschichte-2x.png);
+	}
+	.selbox div.ic-sel-geschaeftskunden {
+		background-image: url(bilder/hkd-ic-geschaeftskunde-2x.png);
+	}
+	.selbox div.ic-sel-haftpflichtversicherung {
+		background-image: url(bilder/hkd-ic-haftpflichtversicherung-2x.png);
+	}
+	.selbox div.ic-sel-hausratsversicherung {
+		background-image: url(bilder/hkd-ic-hausratsversicherung-2x.png);
+	}
+	.selbox div.ic-sel-jobskarriere {
+		background-image: url(bilder/hkd-ic-jobskarriere-2x.png);
+	}
+	.selbox div.ic-sel-kontakt {
+		background-image: url(bilder/hkd-ic-kontakt-2x.png);
+	}
+	.selbox div.ic-sel-kontaktformular {
+		background-image: url(bilder/hkd-ic-kontaktformular-2x.png);
+	}
+	.selbox div.ic-sel-microsites {
+		background-image: url(bilder/hkd-ic-microsites-2x.png);
+	}
+	.selbox div.ic-sel-newsroom {
+		background-image: url(bilder/hkd-ic-newsroom-2x.png);
+	}
+	.selbox div.ic-sel-presse {
+		background-image: url(bilder/hkd-ic-presse-2x.png);
+	}
+	li.act-sitemap a,
+	.selbox div.ic-sel-produktuebersicht {
+		background-image: url(bilder/hkd-ic-produktuebersicht-2x.png);
+	}
+	.selbox div.ic-sel-privatkunden {
+		background-image: url(bilder/hkd-ic-privatkunde-2x.png);
+	}
+	.selbox div.ic-sel-rueckruf {
+		background-image: url(bilder/hkd-ic-rueckruf-2x.png);
+	}
+	li.act-schaden a,
+	.selbox div.ic-sel-schaden-melden {
+		background-image: url(bilder/hkd-ic-schaden-melden-2x.png);
+	}
+	.selbox div.ic-sel-umweltschadenversicherung {
+		background-image: url(bilder/hkd-ic-umweltschadenversicherung-2x.png);
+	}
+	.selbox div.ic-sel-unfallversicherung {
+		background-image: url(bilder/hkd-ic-unfallversicherung-2x.png);
+	}
+	.selbox div.ic-sel-vermittler {
+		background-image: url(bilder/hkd-ic-vermittler-2x.png);
+	}
+	li.act-vermittler a,
+	.selbox div.ic-sel-vermittler-finden {
+		background-image: url(bilder/hkd-ic-vermittler-finden-2x.png);
+	}
+	.selbox div.ic-sel-versicherungslexikon {
+		background-image: url(bilder/hkd-ic-versicherungslexikon-2x.png);
+	}
+	.selbox div.ic-sel-wissen {
+		background-image: url(bilder/hkd-ic-wissen-2x.png);
+	}
+	.selbox div.ic-sel-ziele {
+		background-image: url(bilder/hkd-ic-ziele-2x.png);
+	}
+	.selbox div.ic-sel-suche {
+		background-image: url(bilder/hkd-ic-suche-2x.png);
+	}
+	.selbox div.ic-sel-service {
+		background-image: url(bilder/hkd-ic-service-2x.png);
+	}
+	.selbox div.ic-sel-service {
+		background-image: url(bilder/hkd-ic-service-2x.png);
+	}
+	li.act-antrag-pdf a  {
+		background-image: url(bilder/hkd-ic-antrag-pdf-2x.png);
+	}
+	li.act-angebot-anfordern   {
+		background-image: url(bilder/hkd-ic-angebot-2x.png);
+	}
+	.selbox div.ic-sel-haus-grundbesitzhaftpflicht {
+		background-image: url(bilder/hkd-ic-haus-grundbesitzhaftpflicht-2x.png);
+	}
+	.selbox div.ic-sel-gewaesserschadenhaftpflicht {
+		background-image: url(bilder/hkd-ic-gewaesserschadenhaftpflicht-2x.png);
+	}
+	.selbox div.ic-sel-bauherrenhaftpflicht {
+		background-image: url(bilder/hkd-ic-bauherrenhaftpflicht-2x.png);
+	}
+	.selbox div.ic-sel-tierhaftpflicht {
+		background-image: url(bilder/hkd-ic-tierhaftpflicht-2x.png);
+	}
+	
+	
+	div.action {
+		background-image: url(bilder/hkd-box-lang-2x.png);
+		background-size: 452px 130px;	
+	}
+
+	.visual-1 div.action {
+		background-image: url(bilder/hkd-box-kurz-2x.png);
+		background-size: 355px 130px;	
+	}
+	
+	
+
+}
+
+
+/* RETINA UND BREITE 700 smartphone (6) landscape */
+@media 
+only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 700px), 
+only screen and (           min-resolution: 144dpi) and (max-width: 700px) {
+	
+	div.action {
+		background-image: url(bilder/hkd-box-lang-landscape-2x.png);
+		background-size: 440px 130px;	
+	}
+	
+	.visual-1 div.action {
+		background-image: url(bilder/hkd-box-kurz-landscape-2x.png);
+		background-size: 318px 130px;
+	}
+}
+
+
+/* RETINA UND BREITE 700 smartphone (6) landscape */
+@media 
+only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 420px), 
+only screen and (           min-resolution: 144dpi) and (max-width: 420px) {
+	
+	div.action, .visual-1 div.action {
+		background-image: none;
+	}
+}
+
