@@ -237,11 +237,11 @@ div.hkd-grid-2col,
 #hk-tarifrechner .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-form-col-first {
 	width: 29.5%;
 }
-#hk-tarifrechner .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-form-col-2 {
+#hk-tarifrechner .hkd-form-wrapper .hkd-form-row .hkd-form-cols .hkd-form-col-2 {
 	width: 32%;
 	padding-right: 2.5%;
 }
-#hk-tarifrechner .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-form-col-3 {
+#hk-tarifrechner .hkd-form-wrapper .hkd-form-row .hkd-form-cols .hkd-form-col-3 {
 	width: 34.5%;
 } 
 
@@ -709,11 +709,11 @@ div.details .hkd-tarif-controller-status ul li.hkd-tarif-controller-aktiv {
 	#hk-tarifrechner .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-form-col-first {
 		width: 29.5%;
 	}
-	#hk-tarifrechner .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-form-col-2 {
+	#hk-tarifrechner .hkd-form-wrapper .hkd-form-row .hkd-form-cols .hkd-form-col-2 {
 		width: 32%;
 		padding-right: 2.5%;
 	}
-	#hk-tarifrechner .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-form-col-3 {
+	#hk-tarifrechner .hkd-form-wrapper .hkd-form-row .hkd-form-cols .hkd-form-col-3 {
 		width: 34.5%;
 	} 
 
@@ -807,11 +807,11 @@ div.details .hkd-tarif-controller-status ul li.hkd-tarif-controller-aktiv {
 	#hk-tarifrechner .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-form-col-first {
 		width: 29.5%;
 	}
-	#hk-tarifrechner .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-form-col-2 {
+	#hk-tarifrechner .hkd-form-wrapper .hkd-form-row .hkd-form-cols .hkd-form-col-2 {
 		width: 32%;
 		padding-right: 2.5%;
 	}
-	#hk-tarifrechner .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-form-col-3 {
+	#hk-tarifrechner .hkd-form-wrapper .hkd-form-row .hkd-form-cols .hkd-form-col-3 {
 		width: 34.5%;
 	} 
 
