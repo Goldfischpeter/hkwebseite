@@ -7,7 +7,286 @@ Goldfischclub, pw@goldfischclub.de
 
 
 
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
 
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+
+
+
+/* modal jquery ui dialog-widget */
+.no-close .ui-dialog-titlebar-close {
+  display: none;
+}
+
+.ui-widget-header {
+    border: none;
+    background: #00a0dc;
+    color: #fff;
+}
+
+.ui-button,
+.ui-button:hover {
+	border: none;
+	background: #00a0dc;
+    color: #fff;
+}
+.ui-dialog .ui-dialog-buttonpane {
+	padding: 0;
+	background-color: #e3e2e0;
+}
+
+.hkd-tabelle-pauschal-versicherungssumme .txt p {
+	font-size: 13px;
+}
+
+.ui-dialog .ui-dialog-content {
+	padding: 20px 10px;
+}
+
+
+
+
+/* wertermittlungsbogen, tabellen pauschal und grundsumme */
+
+.hkd-content-grundsumme {
+	margin-top: 30px;
+	display: none;
+	float: left;
+}
+.close-tabelle-grundsumme {
+	margin-left: 20px;
+}
+
+
+.hkd-tabelle-grundsumme,
+.hkd-tabelle-pauschal-versicherungssumme,
+.hkd-tabelle-wertentwicklung {
+	margin-bottom: 20px;
+	float: left;
+	width: 100%;
+}
+
+.hkd-tabelle-grundsumme .hkd-tabelle-content,
+.hkd-tabelle-pauschal-versicherungssumme .hkd-tabelle-content,
+.hkd-tabelle-wertentwicklung .hkd-tabelle-content {
+	float: left;
+	width: 100%;
+}
+.hkd-tabelle-grundsumme .txt,
+.hkd-tabelle-pauschal-versicherungssumme .txt,
+.hkd-tabelle-wertentwicklung .txt {
+	float: left;
+}
+
+
+
+.hkd-tabelle-wertentwicklung .hkd-wert-summe {
+	padding-top: 8px;
+	text-align: right;
+	padding-right: 5px;
+}
+div.details .hkd-tabelle-wertentwicklung .hkd-form-row-summe p,
+div.details .hkd-tabelle-pauschal-versicherungssumme .hkd-form-row-summe p {
+	padding-top: 8px;
+	margin-bottom: 0;
+}
+.hkd-tabelle-wertentwicklung .hkd-form-row-summe .hkd-wert-summe {
+	padding-top:0;
+}
+
+
+div.details .hkd-tabelle-content p.hkd-form-element {
+	margin: 0;	
+}
+
+.hkd-tabelle-content .hkd-form-row-summe dl,
+.hkd-tabelle-content .hkd-form-row-summe p,
+.hkd-tabelle-content .hkd-wert-summe p {
+	color: #00a0dc;
+}
+
+#hk-tarifrechner .hkd-grid-10  .hkd-form-wrapper .hkd-tabelle-pauschal-versicherungssumme  .hkd-form-row > .hkd-form-cols > .hkd-form-col {
+	padding-top: 0; 
+}
+div.details .hkd-tabelle-content p {
+	margin-bottom: 0;
+}
+div.details .hkd-tabelle-content p.hkd-form-element {
+	margin: 0 0 0px 0;	
+}
+
+#hk-tarifrechner .hkd-grid-10  .hkd-form-wrapper  .hkd-form-row > .hkd-form-cols > .hkd-form-col {
+	width: 20%;
+}
+#hk-tarifrechner .hkd-grid-10  .hkd-form-wrapper  .hkd-form-row > .hkd-form-cols > .hkd-form-col-first {
+	width: 80%;
+	padding-top: 8px;
+}
+
+
+#hk-tarifrechner .hkd-grid-10  .hkd-form-wrapper .hkd-tabelle-grundsumme .hkd-form-row > .hkd-form-cols > .hkd-form-col {
+	width: 14%;
+	text-align: right;
+}
+#hk-tarifrechner .hkd-grid-10  .hkd-form-wrapper .hkd-tabelle-grundsumme .hkd-form-row > .hkd-form-cols > .hkd-form-col:first-child {
+	margin-left: 10px;
+	text-align: left;
+}
+
+
+#hk-tarifrechner .hkd-grid-10  .hkd-form-wrapper .hkd-tabelle-wertentwicklung .hkd-form-row > .hkd-form-cols > .hkd-form-col {
+	width: 9%;
+}
+#hk-tarifrechner .hkd-grid-10  .hkd-form-wrapper .hkd-tabelle-wertentwicklung .hkd-form-row > .hkd-form-cols > .hkd-form-col-first {
+	width: 25%;
+	padding-top: 8px;
+	padding-right: 1%;
+}
+#hk-tarifrechner .hkd-grid-10  .hkd-form-wrapper .hkd-form-row-header > .hkd-form-cols > .hkd-form-col-first {
+	padding-top: 0px;
+}
+
+
+
+
+
+
+#hk-tarifrechner .hkd-grid-10  .hkd-form-wrapper .hkd-form-row-header,
+#hk-tarifrechner .hkd-grid-10  .hkd-form-wrapper .hkd-form-row-summe,
+#hk-tarifrechner .hkd-grid-10  .hkd-form-wrapper .hkd-form-row-summe-gesamt {
+	font-weight: bold;
+}
+
+#hk-tarifrechner .hkd-grid-10  .hkd-form-wrapper .hkd-form-row-summe,
+#hk-tarifrechner .hkd-grid-10  .hkd-form-wrapper .hkd-form-row-summe-gesamt {
+	border-top: 1px solid #000;
+}
+
+#hk-tarifrechner .hkd-grid-10 .hkd-form-text input.hkd-form-ts2 {
+	width: 85%;
+}
+
+@media handheld, only screen and (max-width: 1000px) {
+	.hkd-tabelle-grundsumme {
+		width: 700px;
+		overflow-y: auto;
+		margin: 0 0 1em;
+	}
+	
+	.hkd-tabelle-grundsumme  .hkd-tabelle-content,
+	.hkd-tabelle-grundsumme  .hkd-tabelle-content .hkd-form-row,
+	.hkd-tabelle-grundsumme  .hkd-tabelle-content .hkd-form-row .hkd-form-cols {
+		width: 1150px;
+		display: block;
+	}
+	
+
+}
+
+@media handheld, only screen and (max-width: 700px) {
+	.hkd-tabelle-grundsumme,
+	.hkd-tabelle-wertentwicklung  {
+		width: 410px;
+		overflow-y: auto;
+		margin: 0 0 1em;
+	}
+	
+	.hkd-tabelle-grundsumme  .hkd-tabelle-content,
+	.hkd-tabelle-grundsumme  .hkd-tabelle-content .hkd-form-row,
+	.hkd-tabelle-grundsumme  .hkd-tabelle-content .hkd-form-row .hkd-form-cols,
+	.hkd-tabelle-wertentwicklung  .hkd-tabelle-content,
+	.hkd-tabelle-wertentwicklung  .hkd-tabelle-content .hkd-form-row,
+	.hkd-tabelle-wertentwicklung  .hkd-tabelle-content .hkd-form-row .hkd-form-cols {
+		width: 1150px;
+		display: block;
+	}
+	.hkd-tabelle-grundsumme::-webkit-scrollbar,
+	.hkd-tabelle-wertentwicklung::-webkit-scrollbar {
+		-webkit-appearance: none;
+		width: 14px;
+		height: 14px;
+	}
+	.hkd-tabelle-grundsumme::-webkit-scrollbar-thumb,
+	.hkd-tabelle-wertentwicklung::-webkit-scrollbar-thumb {
+		border-radius: 8px;
+		border: 3px solid #fff;
+		background-color: rgba(0, 0, 0, .3);
+	}
+	/* fixe breiten */
+	#hk-tarifrechner .hkd-grid-10  .hkd-form-wrapper .hkd-tabelle-wertentwicklung .hkd-form-row > .hkd-form-cols > .hkd-form-col {
+		width: 100px;
+	}
+	#hk-tarifrechner .hkd-grid-10  .hkd-form-wrapper .hkd-tabelle-wertentwicklung .hkd-form-row > .hkd-form-cols > .hkd-form-col-first {
+		width: 200px;
+	}
+	
+	#hk-tarifrechner .hkd-grid-10  .hkd-form-wrapper .hkd-tabelle-grundsumme .hkd-form-row > .hkd-form-cols > .hkd-form-col {
+		width: 160px;
+	}
+	#hk-tarifrechner .hkd-grid-10  .hkd-form-wrapper .hkd-tabelle-grundsumme .hkd-form-row > .hkd-form-cols > .hkd-form-col:first-child {
+		width: 100px;
+	}
+	
+	#hk-tarifrechner .hkd-grid-10  .hkd-form-wrapper  .hkd-form-row > .hkd-form-cols > .hkd-form-col,
+	#hk-tarifrechner .hkd-grid-10  .hkd-form-wrapper  .hkd-form-row > .hkd-form-cols > .hkd-form-col-first {
+		width: 100%;
+	}
+
+}
+
+@media handheld, only screen and (max-width: 440px) {
+	.hkd-tabelle-grundsumme,
+	.hkd-tabelle-wertentwicklung  {
+		width: 270px;
+	}
+}
+
+
+
+
+
+/* content box 100% breite mit icons für tabellen aufrufe */
+
+.hkd-form-content-100 {
+	margin-left: 18px;
+	padding-top: 10px;
+}
+div.details .hkd-form-content-100 li {
+	background-image: none;
+	padding-left: 0;
+}
+div.details .hkd-form-content-100 a {
+	font-size: 120%;
+}
+
+.hkd-ic56,
+.hkd-ic57 {
+	padding-left: 40px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: 0 center;
+	background-size: 30px 30px
+}
+.hkd-ic56 {
+	background-image: url(bilder/hkd-ic-tabelle-grundsumme.svg);
+}
+.hkd-ic57 {
+	background-image: url(bilder/hkd-ic-tabelle-summe.svg);
+}
 
 
 #hk-tarifrechner {
@@ -48,15 +327,36 @@ div.hkd-grid-2col,
 }
 
 
-
-
 #hk-tarifrechner .hkd-bx-config {
 	cursor: pointer;
+}
+
+
+
+
+
+#hk-tarifrechner .hkd-bx-config,
+#hk-tarifrechner .hkd-bx-hinweis  {
 	margin-top: 10px;
 	margin-bottom: 0px;
 }
 
-#hk-tarifrechner .hkd-bx-config h3 {
+
+#hk-tarifrechner .hkd-bx-hinweis .cancel-hinweis {
+	background-color: #fff;
+	color: #008FD2;
+	padding: 6px 6px 6px 40px;
+	font-size: 14px;
+	position: absolute;
+	right: 10px;
+	top: 8px;
+	background-image: url(bilder/hkd-ic-tr-close-1x.png);
+	background-position: 10px center;
+}
+
+
+#hk-tarifrechner .hkd-bx-config h3,
+#hk-tarifrechner .hkd-bx-hinweis h3 {
     text-align: center;
     color: #008FD2;
     font-weight: normal;
@@ -80,6 +380,20 @@ div.hkd-grid-2col,
     background-image: url(bilder/hk_box_delete.png);
 	background-position: 99% 50%;
 }
+
+
+#hk-tarifrechner .hkd-bx-hinweis h3 {
+    color: #FFFFFF;
+    background-color: #008FD2;
+    background-image: none;
+    margin-bottom: 0;
+	margin-top: 0px;
+	text-align: left;
+	padding-left: 12px;
+	width: calc(100% - 10px);
+	position: relative;
+}
+
 #hk-tarifrechner div.hkd-objekt-nodelete .hkd-bx-config h3 {
 	background-image: none;
 }
@@ -96,7 +410,7 @@ div.hkd-grid-2col,
 	margin-top: 10px;
 }
 
-#hk-tarifrechner div.hkd-form-wrapper div.hkd-form-group-title  h3 {
+#hk-tarifrechner div.hkd-form-wrapper div.hkd-form-group-title h3 {
 	margin-bottom: 0;
 	margin-top: 0px;
 }
@@ -118,6 +432,7 @@ div.hkd-grid-2col,
 	border-top: none;
 }
 
+#hk-tarifrechner div.hkd-form-group-title-hinweis,
 #hk-tarifrechner div.hkd-form-group-title {
 	padding: 0 0;
 }
@@ -237,6 +552,11 @@ div.hkd-grid-2col,
 #hk-tarifrechner .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-form-col-first {
 	width: 29.5%;
 }
+
+
+
+
+
 #hk-tarifrechner .hkd-form-wrapper .hkd-form-row .hkd-form-cols .hkd-form-col-2 {
 	width: 32%;
 	padding-right: 2.5%;
@@ -380,6 +700,7 @@ div.details .hlp {
 
 
 
+
 /* NACHLASS */
 
 .hkd-form-field-group {
@@ -421,6 +742,11 @@ div.details .hkd-form-checkbox-group p.hkd-form-element {
     background-color: #fff;
 }
 
+div.details .hkd-form-radio-group a {
+	font-size: 90%;
+	display: inline-block;
+	margin-bottom: 10px;
+}
 #hk-tarifrechner .hkd-form-element label {
 	font-size: 110%;
 }
@@ -516,7 +842,10 @@ div.details .hkd-form-checkbox-group p.hkd-form-element {
 }
 
 .hkd-angaben-dokumente a.hkd-ic11 {
-    background-image: url(bilder/hkd_ic_pdf.gif);
+    background-image: url(bilder/hkd-ic-download-tarif-pdf.svg);
+}
+.hkd-angaben-dokumente a.hkd-ic12 {
+    background-image: url(bilder/hkd-ic-download-tarif-zip.svg);
 }
 .hkd-angaben-dokumente a.hkd-ic-doc {
     display: block;
@@ -1040,6 +1369,7 @@ only screen and (min-resolution: 144dpi) {
 		background-size: 18px 9px;
 	}
 	
+	#hk-tarifrechner .hkd-bx-hinweis .cancel-hinweis,
 	div.details .hlp {
 		background-image: url(bilder/hkd-ic-tr-close-2x.png);
 		background-size: 20px 20px;

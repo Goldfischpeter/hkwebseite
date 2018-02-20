@@ -296,8 +296,6 @@ div.hkd-bx5 .hkd-form-col-first {
 	 border-radius: 6px;
 }
 
-
-
 .visual-5 .hkd-form-submit-link input,
 .visual-5 .hkd-form-submit-link input:hover,
 .visual-5 .hkd-form-submit-link input:focus,
@@ -306,6 +304,29 @@ div.hkd-bx5 .hkd-form-col-first {
 	color: #008fd2;
 	text-transform: uppercase;
 	text-decoration: underline;
+}
+
+.visual-5 .hkd-form-submit:disabled,
+.visual-5 .hkd-form-submit:disabled:hover,
+.visual-5 .hkd-form-submit:disabled:focus,
+.visual-5 .hkd-form-submit:disabled:active {
+    background-color: #9F9F9F;
+    color: #EFEFEF;
+	padding: 10px 18px;
+	border: none;
+	-webkit-appearance: none;
+}
+
+#hk-tarifrechner .hkd-tbl5 .hkd-tbl-cols-2 a.download {
+	padding: 5px 10px;
+	text-decoration: none;
+	background-color: #008fd2;
+	color: #fff;
+	margin-top: 10px;
+	display: inline-block;
+}
+#hk-tarifrechner .hkd-tbl5 .hkd-tbl-cols-2 a.download + p {
+	margin-top: 5px;
 }
 
 

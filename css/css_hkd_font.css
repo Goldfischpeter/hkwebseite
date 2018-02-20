@@ -37,7 +37,7 @@ Goldfischclub, pw@goldfischclub.de
 	src:url("fonts/5207246/08ecc5dc-9fff-4b48-8f2c-a2c52bfd9a5a.eot?#iefix") format("eot"),url("fonts/5207246/a4d55032-0a0f-4a03-b17a-cdd0d3dd7412.woff2") format("woff2"),url("fonts/5207246/5d14dbeb-af72-4894-9a29-e257f48a430e.woff") format("woff"),url("fonts/5207246/3848c90e-5c3c-4292-b14f-306df00ef9c5.ttf") format("truetype");
 }
 
-body, input, textarea {
+body, input, textarea, .ui-widget {
 	font-family: 'Filson Soft W01 Regular', Arial, sans-serif;
 }
 

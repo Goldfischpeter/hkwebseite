@@ -1,0 +1,140 @@
+#hk-tarifrechner .frage h2 {
+	font-size: 26px;
+}
+#hk-tarifrechner .frage2, 
+#hk-tarifrechner .frage3 {
+	display: none;
+}
+
+#hk-tarifrechner .antworten {
+	margin-top: 50px;
+	width: 100%;
+}
+#hk-tarifrechner .antwort {
+	display: inline-block;
+	vertical-align: top;
+	width: 42%;
+	height: 300px;
+	margin-left: 20px;
+	padding: 30px;
+	background-color: #fff;
+	position: relative;
+	cursor: pointer;
+}
+
+#hk-tarifrechner .frage-col-3 .antwort {
+	width: 25.5%;
+}
+
+#hk-tarifrechner .antwort:hover {
+	background-color: #eff7fa;
+}
+#hk-tarifrechner .antwort:hover .hinweis {
+	background-color: #d3ecf5;
+}
+
+div.details .antwort p {
+	margin-bottom: 0;
+}
+#hk-tarifrechner .antwort .hinweis { 
+	background-color: #f4f4f4;
+	padding: 12px;
+}
+
+#hk-tarifrechner .antwort a {
+	position: absolute;
+	bottom: 30px;
+	padding: 10px 20px;
+	color: #fff;
+	background-color: #00a0dc;
+	display: inline-block;
+	border-radius: 4px;
+	
+} 
+#hk-tarifrechner .antwort:first-child {
+	margin-left: 0;
+}
+
+.hkd-tarif-tipp-b2 .hkd-col-b2 {
+	background-color: #f2fae1;
+}
+
+div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-tipp-b2 .hkd-tarif-tarif .hkd-col-b2 span {
+	color: #fff;
+	border-radius: 3px;
+	padding: 3px 6px;
+	background-color: #93c92b;
+	margin-top: 5px;
+	display: inline-block;
+	
+}
+div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-tipp-b2 .hkd-tarif-tarif .hkd-col-b2 p {
+    padding-top: 8px;
+}
+
+.hkd-tarif-tipp-b2 .hkd-tarif-action .hkd-col-b2 {
+	background-color: transparent;
+}
+
+
+.hkd-tarif-leistung .hkd-form-cols {
+	display: flex;
+  	flex-wrap: wrap;
+}
+
+.dv-box {
+	margin-top: 20px;
+}
+.dv-box-wrapper {
+	overflow: auto;
+	height: 280px;
+}
+
+
+#hk-tarifrechner .hkd-form-grid-3 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-form-col {
+	width: 28%;
+}
+#hk-tarifrechner .hkd-form-grid-3 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-form-col-first {
+	width: 36%;
+}
+
+
+
+#hk-tarifrechner .hkd-form-grid-3 .hkd-form-element label {
+    font-size: 14px;
+}
+
+h1 + #hk-tarifrechner {
+	margin-top: 20px;
+}
+
+#hk-tarifrechner .hkd-grid-10  .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-form-col {
+	width: 8%;
+}
+#hk-tarifrechner .hkd-grid-10  .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-form-col-first {
+	width: 26%;
+	padding-top: 9px;
+}
+#hk-tarifrechner .hkd-grid-10  .hkd-form-wrapper .hkd-form-row-header > .hkd-form-cols > .hkd-form-col-first {
+	padding-top: 0px;
+}
+
+
+#hk-tarifrechner .hkd-grid-10  .hkd-form-wrapper .hkd-form-row-header,
+#hk-tarifrechner .hkd-grid-10  .hkd-form-wrapper .hkd-form-row-summe,
+#hk-tarifrechner .hkd-grid-10  .hkd-form-wrapper .hkd-form-row-summe-gesamt {
+	font-weight: bold;
+}
+
+#hk-tarifrechner .hkd-grid-10  .hkd-form-wrapper .hkd-form-row-summe,
+#hk-tarifrechner .hkd-grid-10  .hkd-form-wrapper .hkd-form-row-summe-gesamt {
+	border-top: 1px solid #000;
+}
+
+#hk-tarifrechner .hkd-grid-10  .hkd-form-wrapper .hkd-form-row-summe-gesamt .hkd-form-col-first  {
+	font-size: 18px;
+}
+
+#hk-tarifrechner .hkd-grid-10 .hkd-form-text input.hkd-form-ts2 {
+	width: 85%;
+}

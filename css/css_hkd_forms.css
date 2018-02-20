@@ -5,6 +5,9 @@ Goldfischclub, pw@goldfischclub.de
 */
 
 
+
+
+
 input.submit,
 .hkd-form-submit  {
 	padding: 10px 18px;
@@ -12,6 +15,14 @@ input.submit,
 	cursor: pointer;
 	-webkit-appearance: none;
 }
+
+input.submit:disabled,
+.hkd-form-submit:disabled  {
+	padding: 10px 18px;
+	border: none;
+	-webkit-appearance: none;
+}
+
 
 /* mehr als 1 submit btn, abstand veringern */
 .hkd-form-submit + .hkd-form-submit {
@@ -82,6 +93,12 @@ legend {
 	font-style: italic;
 	color: #959595;
 }
+.hkd-form-element input:disabled {
+	background-color: #f9f9f9;
+	font-style: italic;
+	color: #959595;
+}
+
 
 
 
@@ -430,6 +447,24 @@ select.hkd-form-ss3 {
 
 
 
+.autocomplete-suggestions {
+    padding: 5px;
+    background-color: #fff;
+    overflow: auto;
+    border: 1px solid #d3d3d3;
+    font-size: 14px;
+}
+
+.autocomplete-suggestion {
+    padding: 6px 4px 4px 4px;
+	font-size: 14px;
+}
+.autocomplete-suggestion.autocomplete-selected {
+    background-color: #d6e8f1;
+}
+
+
+
 
 
 @media handheld, only screen and (max-width: 1020px) {
@@ -512,6 +547,11 @@ select.hkd-form-ss3 {
 		width: 100%;
 	}
 	
+	.hkd-form-hinweis p {
+		width: 50%;
+	}
+
+	
 }
 
 
@@ -563,6 +603,10 @@ select.hkd-form-ss3 {
 	
 	.col-50 .hkd-form-col {
 		width: 100%;
+	}
+	
+	.hkd-form-hinweis p {
+		width: 80%;
 	}
 
 	

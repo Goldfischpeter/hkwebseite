@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>hkd-ic-tabelle-grundsumme</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="18" height="18" rx="3"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="hkd-ic-tabelle-grundsumme">
+            <g id="hkd-ic-download-tarif-zip">
+                <g id="Rectangle">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <rect stroke="#008FD2" stroke-width="1.5" x="0.75" y="0.75" width="16.5" height="16.5" rx="3"></rect>
+                </g>
+            </g>
+            <path d="M3.5,4.5 L14.5,4.5" id="Line" stroke="#00A0DC" stroke-linecap="round"></path>
+            <path d="M3.5,7.5 L14.5,7.5" id="Line" stroke="#00A0DC" stroke-linecap="round"></path>
+            <path d="M3.5,13.5 L7.5,13.5" id="Line" stroke="#00A0DC" stroke-linecap="round"></path>
+            <polyline id="Path-2" stroke="#FFC300" stroke-linecap="round" stroke-linejoin="round" points="14.559082 9.96044922 12.0960867 13.340332 10.5742188 11.6049805"></polyline>
+        </g>
+    </g>
+</svg>

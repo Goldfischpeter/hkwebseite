@@ -367,6 +367,13 @@ div.details div.txt a.btn,
 }
 
 
+input.submit:disabled,
+.hkd-form-submit:disabled {
+	background-color: #ddd;
+	color: #afafaf;
+}
+
+
 
 div.auswahl .labl {
     color: #fff;
@@ -650,7 +657,7 @@ div.dv-closed div.dv-title {
 div.closed {
 	background-color: #e5f4fa;
 	background-image: url(bilder/hkd-ic-pfeil-akk-unten-1x.png);
-	background-position: 98% 10px;
+	background-position: 98% 22px;
 }
 div.closed h3 {
 	color: #00a0dc;
@@ -658,7 +665,7 @@ div.closed h3 {
 div.open {
 	background-color: #f2f2f2;
 	background-image: url(bilder/hkd-ic-pfeil-akk-oben-1x.png);
-	background-position: 98% 10px;
+	background-position: 98% 22px;
 }
 
 
@@ -1141,7 +1148,9 @@ li.act-angebot-anfordern a {
 .selbox div.ic-sel-tierhaftpflicht {
 	background-image: url(bilder/hkd-ic-tierhaftpflicht-1x.png);
 }
-
+.selbox div.ic-sel-dhv {
+	background-image: url(bilder/hkd-ic-diensthaftpflicht-1x.png);
+}
 
 
 
@@ -1556,7 +1565,9 @@ only screen and (min-resolution: 144dpi) {
 	.selbox div.ic-sel-tierhaftpflicht {
 		background-image: url(bilder/hkd-ic-tierhaftpflicht-2x.png);
 	}
-	
+	.selbox div.ic-sel-dhv {
+		background-image: url(bilder/hkd-ic-diensthaftpflicht-2x.png);
+	}
 	
 	div.action {
 		background-image: url(bilder/hkd-box-lang-2x.png);
