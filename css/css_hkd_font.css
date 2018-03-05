@@ -73,6 +73,13 @@ h2.h2-vgl {
 
 
 
+div.details .pressemitteilung h2 {
+	font-size: 18px;
+}
+div.details .pressemitteilung a,
+div.details .pressemitteilung p {
+	font-size: 12px;
+}
 
 
 

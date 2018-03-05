@@ -1051,6 +1051,7 @@ li.act-tarifrechner a,
 .selbox div.ic-sel-dokumentencenter {
 	background-image: url(bilder/hkd-ic-dokumentencenter-1x.png);
 }
+.pressemitteilung a.download,
 .selbox div.ic-sel-downloadcenter {
 	background-image: url(bilder/hkd-ic-downloadcenter-1x.png);
 }
@@ -1132,6 +1133,7 @@ li.act-vermittler a,
 .selbox div.ic-sel-service {
 	background-image: url(bilder/hkd-ic-service-1x.png);
 }
+.pressemitteilung .pdf-download,
 li.act-antrag-pdf a {
 	background-image: url(bilder/hkd-ic-antrag-pdf-1x.png);
 }
@@ -1469,6 +1471,7 @@ only screen and (min-resolution: 144dpi) {
 	.selbox div.ic-sel-dokumentencenter {
 		background-image: url(bilder/hkd-ic-dokumentencenter-2x.png);
 	}
+	.pressemitteilung a.download,
 	.selbox div.ic-sel-downloadcenter {
 		background-image: url(bilder/hkd-ic-downloadcenter-2x.png);
 	}
@@ -1550,6 +1553,7 @@ only screen and (min-resolution: 144dpi) {
 	.selbox div.ic-sel-service {
 		background-image: url(bilder/hkd-ic-service-2x.png);
 	}
+	.pressemitteilung .pdf-download,
 	li.act-antrag-pdf a  {
 		background-image: url(bilder/hkd-ic-antrag-pdf-2x.png);
 	}

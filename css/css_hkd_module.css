@@ -1,6 +1,6 @@
 /*
 Haftpflichtkasse
-MODULE 2017/04/26
+MODULE 2018/03/05
 Goldfischclub, pw@goldfischclub.de
 	
 */
@@ -18,6 +18,126 @@ Goldfischclub, pw@goldfischclub.de
 .clearfix {
   *zoom: 1; /* Für den IE6 und IE7 */
 }
+
+
+
+
+/* video startseite */
+
+.video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+	margin-top: 135px;
+}
+.video-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@media handheld, only screen and (max-width: 700px) {
+	.video-wrapper {
+		margin-top: 85px;
+	}
+}
+
+
+
+
+
+
+/* pressemitteilung */
+
+div.details .col1-1 .pressemitteilung {
+	background-color: #fff;
+	margin-bottom: 30px;
+	display: -webkit-flex; 
+	display: -ms-flexbox; 
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+div.details .col1-1 .pressemitteilung .col {
+	margin: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+div.details .col1-1 .pressemitteilung .col-1 {
+	width: 10%;
+	padding: 25px 2%;
+}
+div.details .col1-1 .pressemitteilung .col-1 p {
+	margin-bottom: 0;
+}
+div.details .col1-1 .pressemitteilung .col-2 {
+	width: 52%;
+	padding-left: 4%;
+	padding-right: 4%;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+
+div.details .col1-1 .pressemitteilung .col-3 {
+	width: 25%;
+}
+div.details .col1-1 .pressemitteilung .col-3 a {
+	display: block;
+	text-align: center;
+}
+div.details .col1-1 .pressemitteilung .col-3 a + a {
+	margin-top: 20px;
+}
+div.details .col1-1 .pressemitteilung .col-2 a:hover {
+	text-decoration: none;
+}
+
+.pressemitteilung .download,
+.pressemitteilung .pdf-download {
+	background-position: center 0;
+	padding-top: 57px;
+}
+
+
+@media handheld, only screen and (max-width: 1000px) {
+	div.details .col1-1 .pressemitteilung {
+		margin: 0 auto 30px auto;
+		width: 95%;
+	}
+}
+@media handheld, only screen and (max-width: 700px) {
+	
+	div.details .col1-1 .pressemitteilung .col {
+		width: 100%;
+		border-left: none;
+		border-right: none;
+	}
+	div.details .col1-1 .pressemitteilung .col-1 {
+		padding-left: 4%;
+	}
+	div.details .col1-1 .pressemitteilung .col-3 {
+		text-align: center;
+	}
+	div.details .col1-1 .pressemitteilung .col-3 a {
+		display: inline-block;
+	}
+	div.details .col1-1 .pressemitteilung .col-3 a + a {
+		margin-left: 10px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1521,6 +1641,16 @@ li.videoteaser div.box a  {
     left: 260px;
     top:16px;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
