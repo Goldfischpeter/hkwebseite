@@ -1,6 +1,6 @@
 /*
 Haftpflichtkasse
-COLORS 2017/06/23
+COLORS 2018/02/27
 Goldfischclub, pw@goldfischclub.de
 
 
@@ -234,6 +234,9 @@ div.details div.hkd-legal-angebot a,
 
 
 /* blau */
+.landingpage h2,
+a.hkd-form-add-item,
+.details .hkd-abschluss-status li.aktiv,
 div.details ul.auswahl-100 span,
 .teaser h1,
 .selbox a,
@@ -394,7 +397,7 @@ div.suche div.filter ul li.aktiv a {
     background-position: 98% center;
 }
 .hk-dcb .hkd-tarif-leistungen {
-    background-position: 320px 13px;
+    background-position: 320px center;
 }
 
 .hk-dcb .hkd-tarif-leistungen-closed,

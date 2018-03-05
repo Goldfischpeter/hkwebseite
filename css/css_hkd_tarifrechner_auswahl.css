@@ -1,11 +1,18 @@
 /*
 Haftpflichtkasse
-TARIFRECHNER AUSWAHL 2017/04/21
+TARIFRECHNER AUSWAHL 2018/02/27
 Goldfischclub, pw@goldfischclub.de
 */
 
 
 
+
+
+
+
+.hkd-zahlungsweise .hkd-form-select {
+	margin-bottom: 20px;
+}
 
 
 /* empfehlung */
@@ -272,6 +279,10 @@ a.hkd-has-ic-float {
 #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-5 .hkd-tarif-paket .hkd-col-c {
 	padding-left: 13px;
 }
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-5.hk-dcb .hkd-tarif-paket .hkd-col-c {
+	padding-left: 0;
+}
+
 #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-5 .hkd-tarif-paket .hkd-col-d {
 	padding-left: 3px;
 }
@@ -310,7 +321,8 @@ a.hkd-has-ic-float {
 }
 
 #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-tarif,
-#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-paket {
+#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-paket,
+#hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-basis:first-child {
 	margin-top: 20px;
 }
 
@@ -367,13 +379,22 @@ div.details #hk-tarifrechner .hk-tarif-auswahl p.hkd-form-select {
 }
 
 #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-leistung .hkd-form-col {
-	min-height: 72px;
+	min-height: 55px;
 }
 
 /* TARIF */
-#hk-tarifrechner .hk-tarif-auswahl .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-b {
+#hk-tarifrechner .hk-tarif-auswahl .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-b,
+#hk-tarifrechner .hk-tarif-auswahl .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-c {
 	text-align: center;
 }
+
+#hk-tarifrechner .hk-tarif-auswahl .hk-dcb .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-c {
+	text-align: left;
+}
+#hk-tarifrechner .hk-tarif-auswahl .hk-dcb .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-c p {
+	margin-left: 15px;
+}
+
 
 /* TARIF PREIS SPALTEN 1 Tarif */
 #hk-tarifrechner .hk-tarif-auswahl .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-b {
@@ -495,7 +516,8 @@ div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-leistung .hkd-col-b p 
 	padding-top: 18px;
 }
 div.details #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-1 .hkd-col-b p,
-div.details #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-tarif-basis .hkd-col-b2 p {
+div.details #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-tarif-basis .hkd-col-b2 p,
+div.details #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-1 .hkd-col-c p {
 	padding-top: 19px;
 }
 div.details #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-1 .hkd-col-b p.hkd-form-select,
@@ -648,7 +670,8 @@ div.details #hk-tarifrechner .hkd-col-b p {
 	line-height: 0.8em;
 }
 
-div.details #hk-tarifrechner .hk-tarif-5 .hkd-tarif-tarif .hkd-col-b p {
+div.details #hk-tarifrechner .hk-tarif-5 .hkd-tarif-tarif .hkd-col-b p,
+div.details #hk-tarifrechner .hk-tarif-1 .hkd-col-c p  {
 	font-size: 105%;
 	font-weight: normal;
 	line-height: 120%;
@@ -673,6 +696,7 @@ div.details #hk-tarifrechner .hkd-tarif-tarif .hkd-col-d p {
 
 
 div.details #hk-tarifrechner .hk-tarif-1 .hkd-col-b p,
+div.details #hk-tarifrechner .hk-tarif-1 .hkd-col-c p,
 div.details #hk-tarifrechner .hk-tarif-2 .hkd-tarif-basis .hkd-col-b2 p,
 div.details #hk-tarifrechner .hk-tarif-2 .hkd-tarif-paket .hkd-col-b p,
 div.details #hk-tarifrechner .hk-tarif-4 .hkd-col-b1-4 p {
@@ -704,7 +728,7 @@ div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-col-b p span {
 	font-size: 12px;
 }
 div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-leistung .hkd-col-b p span {
-	font-size: 14px;
+	font-size: 13px;
 }
 
 
@@ -878,7 +902,7 @@ div.details  #hk-tarifrechner .hk-tarif-auswahl .hkd-hlp-txt li {
 
 /* .visual-5 #hk-tarifrechner .hkd-form-col .hkd-form-submit input #173*/
 .visual-5 #hk-tarifrechner .hk-tarif-auswahl .hkd-col-b .hkd-form-submit input {
-	width: 95%;
+	width: 100%;
 }
 .visual-5 #hk-tarifrechner .hkd-form-submit {
 	background-image: none;
@@ -905,9 +929,34 @@ div.details  #hk-tarifrechner .hk-tarif-auswahl .hkd-hlp-txt li {
 	background-color: #008fd2;
 	color: #fff;
 }
-.visual-5 #hk-tarifrechner .hk-tarif-auswahl .hkd-col-b .hkd-form-submit-antrag input {
+
+/* grau wenn tipp auf spalte */
+.visual-5 #hk-tarifrechner .hk-tarif-auswahl .hkd-col-b .hkd-form-submit-antrag input,
+.visual-5 #hk-tarifrechner .hk-tarif-auswahl .hkd-col-b .hkd-form-submit-antrag input,
+.visual-5 #hk-tarifrechner .hk-tarif-auswahl .hkd-col-b .hkd-form-submit-antrag input,
+.visual-5 #hk-tarifrechner .hk-tarif-auswahl .hkd-col-b .hkd-form-submit-antrag input  {
 	background-color: #89c53b;
 }
+
+
+/* grau wenn tipp auf spalte */
+.visual-5 #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-tipp-b1 .hkd-col-b .hkd-form-submit-antrag input,
+.visual-5 #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-tipp-b2 .hkd-col-b .hkd-form-submit-antrag input,
+.visual-5 #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-tipp-b3 .hkd-col-b .hkd-form-submit-antrag input,
+.visual-5 #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-tipp-b4 .hkd-col-b .hkd-form-submit-antrag input  {
+	background-color: #A0A0A0;
+}
+
+/* grün wenn tipp auf spalte */
+.visual-5 #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-tipp-b1 .hkd-col-b1 .hkd-form-submit-antrag input,
+.visual-5 #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-tipp-b2 .hkd-col-b2 .hkd-form-submit-antrag input,
+.visual-5 #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-tipp-b3 .hkd-col-b3 .hkd-form-submit-antrag input,
+.visual-5 #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-tipp-b4 .hkd-col-b4 .hkd-form-submit-antrag input {
+	background-color: #89c53b;
+}
+
+
+
 .visual-5 #hk-tarifrechner .hk-tarif-auswahl .hkd-col-b .hkd-form-submit-angebot input {
 	background-color: #729bb2;
 }
@@ -1007,7 +1056,9 @@ div.details #hk-tarifrechner .hkd-tarif-leistungen .hkd-col-b3 a {
 	cursor: pointer;
 }
 
-.hkd-deckver.hkd-tarif-leistung .hkd-form-cols {
+
+.hkd-deckver.hkd-tarif-leistung .hkd-form-cols,
+.hkd-tarif-beitrag .hkd-form-cols {
 	float: none;
 	display: -webkit-flex; 
 	display: -ms-flexbox; 
@@ -1018,7 +1069,46 @@ div.details #hk-tarifrechner .hkd-tarif-leistungen .hkd-col-b3 a {
 
 
 
+
+
+
+/* amazon */
+
+.hkd-tarif-action .hkd-form-checkbox label {
+	width: 60%;
+	padding-left: 30px;
+}
+.hkd-tarif-action .hkd-form-checkbox label::before {
+    background-color: #fff;
+}
+div.details p.hkd-form-submit-angebot-email {
+	width: 530px;
+	margin-left: 454px;
+}
+.visual-5 #hk-tarifrechner .hkd-form-submit-angebot-email .hkd-form-submit {
+	width: 100%;
+}
+
+
+
+
+
 @media handheld, only screen and (max-width: 1000px) {
+
+	div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-action div.hkd-tarif-info div {
+		min-height: 80px;
+	}
+	div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-action .hkd-form-col .hkd-form-submit  {
+		font-size: 12px;
+	}
+	div.details p.hkd-form-submit-angebot-email {
+		width: 408px;
+		margin-left: 286px;
+	}
+
+	div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-action .hkd-col-d ul {
+		margin-left: 10px;
+	}
 
 	
 	#hk-tarifrechner .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-form-col, 
@@ -1211,7 +1301,9 @@ div.details #hk-tarifrechner .hkd-tarif-leistungen .hkd-col-b3 a {
 		width: 45%;
 	}
 
-
+	#hk-tarifrechner .hkd-tarif-action .hkd-form-checkbox label {
+		font-size: 100%;
+	}
 
 
 }
@@ -1220,6 +1312,18 @@ div.details #hk-tarifrechner .hkd-tarif-leistungen .hkd-col-b3 a {
 
 @media handheld, only screen and (max-width: 700px) {
 	
+	
+	
+	div.details p.hkd-form-submit-angebot-email {
+		width: 100%;
+		margin-left: 0;
+	}
+	
+	.visual-5 div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-col-b .hkd-form-submit-antrag input {
+		width: 100%;
+		margin-top: 40px;
+	}
+
 	
 	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-c {
 		display: none;
@@ -1398,6 +1502,11 @@ div.details #hk-tarifrechner .hkd-tarif-leistungen .hkd-col-b3 a {
 		background-position: 100% 50%;
 	}
 	
+	#hk-tarifrechner .hk-tarif-1 .hkd-form-wrapper .hkd-form-row.hkd-tarif-action > .hkd-form-cols > .hkd-col-d {
+		width: 100%;
+		padding-right: 0;
+	}
+	
 	
 	/* BUTTONS */
 	#hk-tarifrechner .hk-tarif-1 .hkd-form-wrapper .hkd-tarif-action > .hkd-form-cols > .hkd-col-b {
@@ -1509,7 +1618,10 @@ div.details #hk-tarifrechner .hkd-tarif-leistungen .hkd-col-b3 a {
 		width: 245px; 
 	}
 	
-	
+	#hk-tarifrechner .hk-tarif-1 .hkd-form-wrapper .hkd-form-row.hkd-tarif-action > .hkd-form-cols > .hkd-col-d {
+		width: 100%;
+		padding-right: 0;
+	}
 	
 	
 	/* 4-TARIFE */
@@ -1543,8 +1655,8 @@ div.details #hk-tarifrechner .hkd-tarif-leistungen .hkd-col-b3 a {
 		margin-left: 0;
 	}
 	
-	#hk-tarifrechner .hk-tarif-1 .hkd-form-wrapper .hkd-tarif-action > .hkd-form-cols > .hkd-col-d {;
-		margin-left: 15px;
+	#hk-tarifrechner .hk-tarif-1 .hkd-form-wrapper .hkd-tarif-action > .hkd-form-cols > .hkd-col-d {
+		margin-left: 0;
 	}
 	
 	
@@ -1555,8 +1667,8 @@ div.details #hk-tarifrechner .hkd-tarif-leistungen .hkd-col-b3 a {
 		margin-left: 0;
 	}
 	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-form-wrapper .hkd-tarif-action > .hkd-form-cols > .hkd-col-d {
-		width: 344px;
-		margin-left: 15px;
+		width: 380px;
+		margin-left: 0;
 	}
 	
 	
@@ -1620,6 +1732,26 @@ div.details #hk-tarifrechner .hkd-tarif-leistungen .hkd-col-b3 a {
 	div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-col-c p {
 		margin-left: 10px;
 	}
+	
+	
+	
+	
+	
+	div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-action div.hkd-tarif-info div {
+		min-height: inherit; /*reset */
+	}
+	
+	.visual-5 #hk-tarifrechner .hk-tarif-auswahl .hkd-form-submit-angebot-email {
+		margin-top: 30px;
+	}
+	.visual-5 #hk-tarifrechner .hk-tarif-auswahl .hkd-form-submit-angebot-email input {
+		width: 100%;
+	}
+	.hkd-tarif-action .hkd-form-checkbox label {
+		width: auto;
+	}
+	
+	
 
 }
 
@@ -1884,8 +2016,14 @@ div.details #hk-tarifrechner .hkd-tarif-leistungen .hkd-col-b3 a {
 	}
 	
 	#hk-tarifrechner .hk-tarif-1 .hkd-form-wrapper .hkd-tarif-action > .hkd-form-cols > .hkd-col-d {
-		margin-left: 5px;
+		margin-left: 0;
+		
 	}
+	
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-1 .hkd-form-wrapper .hkd-form-row.hkd-tarif-action > .hkd-form-cols > .hkd-col-d {
+		width: 100%;
+	}
+
 
 	
 	

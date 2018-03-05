@@ -332,6 +332,16 @@ div.details a {
 	line-height: 1.6em;
 }
 
+div.details .hkd-tarif-action .hkd-col-d p,
+div.details .hkd-tarif-action .hkd-col-d li,
+div.details .hkd-tarif-action .hkd-col-d a {
+	line-height: 1.3em;
+}
+
+
+
+
+
 
 
 div.vermittlerfinden-ergebnis div.extended,

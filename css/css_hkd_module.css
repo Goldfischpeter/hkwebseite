@@ -5,6 +5,24 @@ Goldfischclub, pw@goldfischclub.de
 	
 */
 
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+} 
+
+.clearfix::after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1; /* Für den IE6 und IE7 */
+}
+
+
+
+
+
 div.details div.txt {
 	padding-right: 20px;
 }
@@ -558,6 +576,12 @@ div.details h2.h2-vgl {
 	float: left;
 }
 
+
+/* landingpage */
+
+.landingpage .cols {
+	margin-bottom: 40px;
+}
 
 
 

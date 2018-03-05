@@ -279,6 +279,10 @@ div.hkd-bx5 .hkd-form-col-first {
 
 /* gobal button submit style */
 
+.visual-2 .hkd-form-submit input,
+.visual-2 .hkd-form-submit input:hover,
+.visual-2 .hkd-form-submit input:focus,
+.visual-2 .hkd-form-submit input:active,
 .visual-5 .hkd-form-submit input,
 .visual-5 .hkd-form-submit input:hover,
 .visual-5 .hkd-form-submit input:focus,
