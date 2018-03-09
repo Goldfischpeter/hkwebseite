@@ -95,10 +95,28 @@ div.details .col1-1 .pressemitteilung .col-2 a:hover {
 	text-decoration: none;
 }
 
+.presse-downloads .download,
+.presse-downloads .pdf-download,
 .pressemitteilung .download,
 .pressemitteilung .pdf-download {
 	background-position: center 0;
 	padding-top: 57px;
+}
+
+.presse-downloads {
+	margin-top: 60px;
+	margin-bottom: 30px;
+	background-color: #eff6f9;
+	text-align: center;
+	padding: 20px;
+	
+}
+.presse-downloads a {
+	display: inline-block;
+	color: #00a0dc;
+}
+.presse-downloads a + a {
+	margin-left: 20px;
 }
 
 
@@ -106,6 +124,9 @@ div.details .col1-1 .pressemitteilung .col-2 a:hover {
 	div.details .col1-1 .pressemitteilung {
 		margin: 0 auto 30px auto;
 		width: 95%;
+	}
+	.presse-downloads a {
+		width: 40%;
 	}
 }
 @media handheld, only screen and (max-width: 700px) {
@@ -422,8 +443,24 @@ div.auswahl {
 	width: 1008px;
 }
 
+.hkd-grid-2 div.auswahl ul li.selbox--videoteaser {
+	background-position: right 0;
+    width: 992px;
+}
 
-
+@media handheld, only screen and (max-width: 1000px) {
+	.hkd-grid-2 div.auswahl ul li.selbox--videoteaser {
+		width: 708px;
+	}
+}
+@media handheld, only screen and (max-width: 700px) {
+	.hkd-grid-2 div.auswahl ul li.selbox--videoteaser {
+		width: 400px;
+	}
+	.hkd-grid-2 div.auswahl ul li.selbox--videoteaser span {
+		display: none;
+	}
+}
 
 
 
@@ -2403,7 +2440,7 @@ div.details .cr_body p {
 
 
 
-@media handheld, only screen and (max-width: 800px) {
+@media handheld, only screen and (max-width: 700px) {
 
 	.hkd-grid-2 div.box {
 		height: 154px;

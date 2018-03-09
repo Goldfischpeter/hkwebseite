@@ -1019,6 +1019,9 @@ div.action {
 .selbox div.ic-sel {
 	background-position: center 5px;	
 }
+.selbox--videoteaser div.ic-sel {
+	background-position: center 22px;	
+}
 
 .selbox div.ic-sel-aggversicherung {
 	background-image: url(bilder/hkd-ic-aggversicherung-1x.png);
@@ -1051,6 +1054,7 @@ li.act-tarifrechner a,
 .selbox div.ic-sel-dokumentencenter {
 	background-image: url(bilder/hkd-ic-dokumentencenter-1x.png);
 }
+.presse-downloads a.download,
 .pressemitteilung a.download,
 .selbox div.ic-sel-downloadcenter {
 	background-image: url(bilder/hkd-ic-downloadcenter-1x.png);
@@ -1133,6 +1137,7 @@ li.act-vermittler a,
 .selbox div.ic-sel-service {
 	background-image: url(bilder/hkd-ic-service-1x.png);
 }
+.presse-downloads .pdf-download,
 .pressemitteilung .pdf-download,
 li.act-antrag-pdf a {
 	background-image: url(bilder/hkd-ic-antrag-pdf-1x.png);
@@ -1156,6 +1161,10 @@ li.act-angebot-anfordern a {
 .selbox div.ic-sel-dhv {
 	background-image: url(bilder/hkd-ic-diensthaftpflicht-1x.png);
 }
+.selbox div.ic-sel-film-starten {
+	background-image: url(bilder/hkd-ic-video-1x.png);
+}
+
 
 
 
@@ -1471,6 +1480,7 @@ only screen and (min-resolution: 144dpi) {
 	.selbox div.ic-sel-dokumentencenter {
 		background-image: url(bilder/hkd-ic-dokumentencenter-2x.png);
 	}
+	.presse-downloads a.download,
 	.pressemitteilung a.download,
 	.selbox div.ic-sel-downloadcenter {
 		background-image: url(bilder/hkd-ic-downloadcenter-2x.png);
@@ -1553,6 +1563,7 @@ only screen and (min-resolution: 144dpi) {
 	.selbox div.ic-sel-service {
 		background-image: url(bilder/hkd-ic-service-2x.png);
 	}
+	.presse-downloads .pdf-download,
 	.pressemitteilung .pdf-download,
 	li.act-antrag-pdf a  {
 		background-image: url(bilder/hkd-ic-antrag-pdf-2x.png);
@@ -1586,6 +1597,10 @@ only screen and (min-resolution: 144dpi) {
 		background-size: 355px 130px;	
 	}
 	
+	.selbox div.ic-sel-film-starten {
+		background-image: url(bilder/hkd-ic-video-2x.png);
+		background-size: 79px 57px;
+	}
 	
 
 }
