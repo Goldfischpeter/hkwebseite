@@ -1,6 +1,6 @@
 /*
 Haftpflichtkasse
-TARIFRECHNER 2018/05/14
+TARIFRECHNER 2018/06/20
 Goldfischclub, pw@goldfischclub.de
 
 */
@@ -483,6 +483,16 @@ div.hkd-grid-2col,
 	background-position: 99% 50%;
 }
 
+#hk-tarifrechner div.hkd-bx-closed .hkd-bx-config.hkd-bx-open-close h3 {
+	background-image: url(bilder/hkd-ic-pfeil-akk-unten-weiss-1x.png);
+	background-position: 98.5% 50%;
+}
+#hk-tarifrechner div.hkd-bx-open .hkd-bx-config.hkd-bx-open-close h3 {
+	background-image: url(bilder/hkd-ic-pfeil-akk-oben-1x.png);
+	background-position: 98.5% 50%;
+	color: #008FD2;
+	background-color: #FFFFFF;
+}
 
 #hk-tarifrechner .hkd-bx-hinweis h3 {
     color: #FFFFFF;
@@ -1218,7 +1228,6 @@ div.details .hkd-tarif-controller-status ul li.hkd-tarif-controller-aktiv {
 	display: inline-block;
 }
 
-
 /* datenschutzhinweis ------------------------------ */
 .datenschutzhinweis{
 	font-size: 100% !important;
@@ -1617,6 +1626,15 @@ only screen and (min-resolution: 144dpi) {
 	div.details .hlp {
 		background-image: url(bilder/hkd-ic-tr-close-2x.png);
 		background-size: 20px 20px;
+	}
+
+	#hk-tarifrechner div.hkd-bx-closed .hkd-bx-config.hkd-bx-open-close h3 {
+		background-image: url(bilder/hkd-ic-pfeil-akk-unten-weiss-2x.png);
+		background-position: 98.5% 50%;
+	}
+	#hk-tarifrechner div.hkd-bx-open .hkd-bx-config.hkd-bx-open-close h3 {
+		background-image: url(bilder/hkd-ic-pfeil-akk-oben-2x.png);
+		background-position: 98.5% 50%;
 	}
 	
 }
