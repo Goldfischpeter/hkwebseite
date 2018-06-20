@@ -995,6 +995,11 @@ div.action {
 	background-image: url(bilder/hkd-box-lang-1x.png);
 	background-position: 0 0;
 }
+.amazon-landingpage div.action {
+	background-image: url(bilder/hkd-box-amazon-lang-1x.png);
+	background-position: 0 0;
+}
+
 
 .visual-1 div.action {
 	background-image: url(bilder/hkd-box-kurz-1x.png);
@@ -1099,9 +1104,11 @@ li.act-sitemap a,
 .selbox div.ic-sel-privatkunden {
 	background-image: url(bilder/hkd-ic-privatkunde-1x.png);
 }
+li.act-rueckruf a,
 .selbox div.ic-sel-rueckruf {
 	background-image: url(bilder/hkd-ic-rueckruf-1x.png);
 }
+
 li.act-schaden a,
 .selbox div.ic-sel-schaden-melden {
 	background-image: url(bilder/hkd-ic-schaden-melden-1x.png);
@@ -1484,6 +1491,7 @@ only screen and (min-resolution: 144dpi) {
 	.pressemitteilung a.download,
 	.selbox div.ic-sel-downloadcenter {
 		background-image: url(bilder/hkd-ic-downloadcenter-2x.png);
+		background-size: 60px 60px;	
 	}
 	.selbox div.ic-sel-faq {
 		background-image: url(bilder/hkd-ic-faq-2x.png);
@@ -1525,6 +1533,7 @@ only screen and (min-resolution: 144dpi) {
 	.selbox div.ic-sel-privatkunden {
 		background-image: url(bilder/hkd-ic-privatkunde-2x.png);
 	}
+	li.act-rueckruf a,
 	.selbox div.ic-sel-rueckruf {
 		background-image: url(bilder/hkd-ic-rueckruf-2x.png);
 	}
@@ -1567,6 +1576,7 @@ only screen and (min-resolution: 144dpi) {
 	.pressemitteilung .pdf-download,
 	li.act-antrag-pdf a  {
 		background-image: url(bilder/hkd-ic-antrag-pdf-2x.png);
+		background-size: 60px 60px;	
 	}
 	li.act-angebot-anfordern   {
 		background-image: url(bilder/hkd-ic-angebot-2x.png);
@@ -1590,6 +1600,11 @@ only screen and (min-resolution: 144dpi) {
 	div.action {
 		background-image: url(bilder/hkd-box-lang-2x.png);
 		background-size: 452px 130px;	
+	}
+	
+	.amazon-landingpage div.action {
+		background-image: url(bilder/hkd-box-amazon-lang-2x.png);
+		background-size: 272px 130px;	
 	}
 
 	.visual-1 div.action {

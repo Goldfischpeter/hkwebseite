@@ -81,6 +81,9 @@ ul.nav li {
 	position: fixed;
 }
 
+
+
+
 .mobile-nav {
 	display: none; 
 }
@@ -292,6 +295,19 @@ div#visual {
 	height: 284px; /* 420 - 136 */
 	padding-top: 136px;	
 }
+
+
+.amazon-landingpage.visual-2 div#visual {
+	padding-top: 86px;	
+}
+.amazon-landingpage #header {
+    height: 86px;
+}
+.amazon-landingpage div#header div.container {
+    height: 86px;
+}
+
+
 
 .visual-3 div#visual{
 	height: 394px; /* 530 - 136 */

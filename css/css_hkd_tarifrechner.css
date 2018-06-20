@@ -1,6 +1,6 @@
 /*
 Haftpflichtkasse
-TARIFRECHNER 2018/02/27
+TARIFRECHNER 2018/05/14
 Goldfischclub, pw@goldfischclub.de
 
 */
@@ -529,7 +529,12 @@ div.hkd-grid-2col,
 	padding: 10px 0;
 	border-top: 1px solid #e2e2e0;
 }
+#hk-tarifrechner .landingpage-thv .hkd-form-row {
+	padding: 10px 0 0 0;
+}
 
+#hk-tarifrechner .hkd-form-row.hkd-papierlos + .hkd-papierlos,
+#hk-tarifrechner .hkd-form-row.hkd-zahlungsweise + .hkd-zahlungsweise,
 #hk-tarifrechner .hkd-form-berechnungsgrundlage {
 	border-top: none;
 }
@@ -1214,6 +1219,11 @@ div.details .hkd-tarif-controller-status ul li.hkd-tarif-controller-aktiv {
 }
 
 
+/* datenschutzhinweis ------------------------------ */
+.datenschutzhinweis{
+	font-size: 100% !important;
+	color: #00a0dc;
+}
 
 
 

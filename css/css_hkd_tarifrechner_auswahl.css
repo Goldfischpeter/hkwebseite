@@ -1,7 +1,13 @@
 /*
 Haftpflichtkasse
-TARIFRECHNER AUSWAHL 2018/02/27
+TARIFRECHNER AUSWAHL 2018/05/14
 Goldfischclub, pw@goldfischclub.de
+
+tarif-1 : keine Auswahl, ein tarif
+tarif-2 : 2 tarife
+tarif-4 : 4 tarife
+tarif-6 : 3 tarife mod von tarif-4
+tarif-7 : 2 tarife mod von tarif-4
 */
 
 
@@ -9,7 +15,7 @@ Goldfischclub, pw@goldfischclub.de
 
 
 
-
+.hkd-papierlos .hkd-form-select,
 .hkd-zahlungsweise .hkd-form-select {
 	margin-bottom: 20px;
 }
@@ -126,6 +132,8 @@ div.details #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-tipp-b4 .hkd-tarif-hea
 #hk-tarifrechner .hk-tarif-auswahl .hkd-tarif-action .hkd-col-d {
 	background-color: #f7f6f6;
 }
+
+/* könnte entfallen, prüfen */
 
 #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-6 .hkd-tarif-beitrag {
 	background-image: url(bilder/hk-bg-table-tarif-6-desktop.gif);
@@ -409,12 +417,18 @@ div.details #hk-tarifrechner .hk-tarif-auswahl p.hkd-form-select {
 	width: 130px;
 }
 
-/* TARIF PREIS SPALTEN 4 Tarif4 */
+/* TARIF PREIS SPALTEN 4 Tarif6 */
 #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-6 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-b {
 	width: 176px;
 }
 
-div.details #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-6 ul {
+/* TARIF PREIS SPALTEN 4 Tarif-7 mod für 2 Spalten */
+#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-7 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-b {
+	width: 265px;
+}
+
+div.details #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-6 ul,
+div.details #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-7 ul {
 	margin-left: 20px;
 }
 
@@ -670,6 +684,13 @@ div.details #hk-tarifrechner .hkd-col-b p {
 	line-height: 0.8em;
 }
 
+div.details #hk-tarifrechner .hkd-papierlos .hkd-col-b p {
+	font-size: 110%;
+	font-weight: normal;
+	line-height: 0.8em;
+}
+
+
 div.details #hk-tarifrechner .hk-tarif-5 .hkd-tarif-tarif .hkd-col-b p,
 div.details #hk-tarifrechner .hk-tarif-1 .hkd-col-c p  {
 	font-size: 105%;
@@ -750,7 +771,7 @@ div.details #hk-tarifrechner .hkd-tarif-paket .hkd-col-b p,
 
 #hk-tarifrechner .hkd-tarif-tarif .hkd-col-b p a {
 	background-image: url(bilder/hkd-ic-pfeil-navi-inaktiv-1x.png);
-	background-position: 25% 50%;
+	background-position: 0 50%;
 	padding-left: 14px;
 }
 
@@ -770,7 +791,8 @@ div.details #hk-tarifrechner .hkd-tarif-paket-closed .hkd-col-b p,
 	color: #fff;
 }
 
-
+#hk-tarifrechner .hk-tarif-auswahl .hkd-papierlos p,
+#hk-tarifrechner .hk-tarif-auswahl .hkd-papierlos select,
 #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-1 .hkd-tarif-selected p,
 #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-1 .hkd-tarif-selected select,
 #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-2 .hkd-tarif-selected p,
@@ -1038,6 +1060,9 @@ div.details .hkd-tarif-controller-status ul li.hkd-tarif-controller-aktiv {
 	margin-top: 20px
 }
 
+
+
+
 div.details #hk-tarifrechner .hkd-tarif-leistungen .hkd-col-b3 p {
 	line-height: 0.9em;
 	padding-top: 10px;
@@ -1230,11 +1255,15 @@ div.details p.hkd-form-submit-angebot-email {
 	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-c {
 		width: 90px; /* 100 */
 	}
-	/* TARIF-6 HR NEU */
+	/* TARIF-6 HR NEU 3 Spalten */
 	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-6 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-b {
 		width: 135px; /* 160 */
 	}
-	
+    /* TARIF-7 HR NEU 2 Spalten */
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-7 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-b {
+		width: 206px; /* 160 */
+	}
+    
 	/*
 	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4.hk-dcb .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-b {
 		width: 118px;
@@ -1629,6 +1658,10 @@ div.details p.hkd-form-submit-angebot-email {
 	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-b {
 		width: 140px;
 	}
+	
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-7 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-b {
+		width: 142px;
+	}
 
 	
 	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-form-wrapper .hkd-form-row > .hkd-form-cols > .hkd-col-d {
@@ -1638,7 +1671,7 @@ div.details p.hkd-form-submit-angebot-email {
 	}
 	
 	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-tarif-selected .hkd-form-col {
-    	min-height: 95px;
+    	min-height: 55px;
 	}
 	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-6 .hkd-tarif-selected .hkd-form-col {
     	min-height: 55px;
@@ -1995,7 +2028,8 @@ div.details p.hkd-form-submit-angebot-email {
 	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-tarif-selected .hkd-form-col {
     	min-height: 95px;
 	}
-	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-6 .hkd-tarif-selected .hkd-form-col {
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-6 .hkd-tarif-selected .hkd-form-col,
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-7 .hkd-tarif-selected .hkd-form-col {
     	min-height: 55px;
 	}
 	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-tarif-tarif .hkd-form-col {
@@ -2005,7 +2039,8 @@ div.details p.hkd-form-submit-angebot-email {
 	div.details #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-4 .hkd-tarif-tarif .hkd-col-b p {
     	padding-top: 50px;
 	}
-	div.details #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-6 .hkd-tarif-tarif .hkd-col-b p {
+	div.details #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-6 .hkd-tarif-tarif .hkd-col-b p,
+	div.details #hk-tarifrechner .hk-tarif-auswahl .hk-tarif-7 .hkd-tarif-tarif .hkd-col-b p {
     	padding-top: 20px;
 		line-height: 1.3em;
 	}
@@ -2070,13 +2105,15 @@ div.details p.hkd-form-submit-angebot-email {
 		width: 150px;
 	}
 	
-	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-6 .hkd-form-wrapper .hk-row-editmode > .hkd-form-cols > .hkd-col-c {
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-6 .hkd-form-wrapper .hk-row-editmode > .hkd-form-cols > .hkd-col-c,
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-7 .hkd-form-wrapper .hk-row-editmode > .hkd-form-cols > .hkd-col-c {
 		/*margin: 110px 0 0 146px;*/
 		margin: 45px 0 0 0px;
 		width: 150px;
 	}
 	
-	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-6 .hkd-form-wrapper .hkd-tarif-beitrag.hk-row-editmode > .hkd-form-cols > .hkd-col-c {
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-6 .hkd-form-wrapper .hkd-tarif-beitrag.hk-row-editmode > .hkd-form-cols > .hkd-col-c,
+	#hk-tarifrechner .hk-tarif-auswahl .hk-tarif-7 .hkd-form-wrapper .hkd-tarif-beitrag.hk-row-editmode > .hkd-form-cols > .hkd-col-c {
 		/*margin: 110px 0 0 146px;*/
 		margin: 92px 0 0 0px;
 		width: 150px;

@@ -1,9 +1,17 @@
 /*
 Haftpflichtkasse
-MODULE 2018/03/05
+MODULE 2018/05/02
 Goldfischclub, pw@goldfischclub.de
 	
 */
+
+
+.datenschutzhinweis { 
+    font-size: 100% !important; 
+    color: #00a0dc;
+}
+
+
 
 .clearfix::before,
 .clearfix::after {
@@ -19,6 +27,21 @@ Goldfischclub, pw@goldfischclub.de
   *zoom: 1; /* Für den IE6 und IE7 */
 }
 
+
+.amazon-landingpage .teaser .act-tarifrechner,
+.amazon-landingpage .teaser .act-schaden,
+.amazon-landingpage .teaser .act-sitemap,
+.amazon-landingpage .path,
+.amazon-landingpage .top li,
+.amazon-landingpage .nav,
+.amazon-landingpage .mobile-nav-trigger,
+.amazon-landingpage .suche {
+	display: none;
+}
+
+.amazon-landingpage div.action-teaser {
+    width: 270px;
+}
 
 
 
@@ -104,7 +127,6 @@ div.details .col1-1 .pressemitteilung .col-2 a:hover {
 }
 
 .presse-downloads {
-	margin-top: 60px;
 	margin-bottom: 30px;
 	background-color: #eff6f9;
 	text-align: center;
@@ -738,6 +760,14 @@ div.details h2.h2-vgl {
 
 .landingpage .cols {
 	margin-bottom: 40px;
+}
+
+
+.landingpage .landingpage-thv-hunde .hkd-form-row.thv-hunde-name .hkd-form-cols-n-3 .hkd-form-col {
+	padding-bottom: 20px;
+	background-image: url(bilder/ic-pfeil-hunde.png);
+	background-repeat: no-repeat;
+	background-position: center calc(100% - 5px);
 }
 
 
