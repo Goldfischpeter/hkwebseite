@@ -1,7 +1,7 @@
 /*
 
 @ haftpflichtkasse.de
-2015 05 15
+2018 06 20
 
 */
 
@@ -711,6 +711,33 @@ function bindClearer(){
     }); 
 }
 
+function bindLandwirte(){
+    
+    $('[id^=hkd-form-deckungserweiterungen-]').click(function(){
+        var id = $(this).attr("id");
+        if ( $(this).is(':checked') ) $("."+id).slideDown();
+        else $("."+id).slideUp();
+    });
+
+    $('input#hkd-form-deckungserweiterungen-5-3').on('input',function(e){
+        var val = $(this).val();
+        var id = $(this).attr("id"); 
+        if (val != "") $("."+id).slideDown();
+        else $("."+id).slideUp();
+    });
+
+    $('.hkd-form-checkbox .hkd-ic55, legend .hkd-ic55').click(function () {
+        var id = $(this).attr("rel");
+        $("."+id).toggle();
+        return false;
+    }); 
+
+    $('.hkd-tip').click(function () {
+        $(this).hide();
+        return false;
+    }); 
+    
+}
 
 
 $(document).ready(function()
@@ -736,7 +763,9 @@ $(document).ready(function()
 	bindTarifLeistung()
 
 	startPage();
-	udpateVisualHoffset();
+    udpateVisualHoffset();
+    
+    bindLandwirte();
 	
 	
 	bindClearer();

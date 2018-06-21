@@ -1,6 +1,6 @@
 /*
 Haftpflichtkasse
-FORM ALL 2017/04/21
+FORM ALL 2018/06/20
 Goldfischclub, pw@goldfischclub.de
 */
 
@@ -50,6 +50,7 @@ input[type="radio"]:checked + label:before {
     position: relative;
     line-height: 29px;
     font-size: 15px;
+    width: 80%;
 }
 
 

@@ -1,8 +1,48 @@
 /*
 Haftpflichtkasse
-FORMS 2017/04/21
+FORMS 2018/06/20
 Goldfischclub, pw@goldfischclub.de
 */
+
+
+.hkd-form-group-addon {
+    display: none;
+    padding-bottom: 30px;
+    float: left;
+    padding-left: 40px;
+}
+
+.hkd-has-ic-abs {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.hkd-tip {
+    background-image: url(bilder/hkd-ic-tr-close-1x.png);
+    background-position: 99% 10px;
+    cursor: pointer;
+    display: block;
+    background-color: #eff6f9;
+    font-size: 15px;
+    padding: 10px;
+    margin: 0 0 15px 0;
+    display: none;
+    width: calc(100% - 20px);
+    float: left;
+}
+div.details .hkd-tip p {
+    margin-bottom: 0;
+}
+
+.hkd-form-produktauswahl .col {
+	width: 30%;
+}
+.hkd-form-produktauswahl .hkd-form-col-1 {
+	width: 60%;
+}
+
+
 
 
 
@@ -58,7 +98,8 @@ legend {
 	border-top: 1px solid #d6e8f1;
 	float: left;
 	width: 100%;
-	display: block;
+    display: block;
+    position: relative;
 }
 #hk-schadenmeldung legend {
 	margin-top: 0;
@@ -112,6 +153,14 @@ legend {
 .hkd-form-element input {
 	width: 99%;
 }
+.hkd-form-text--s1 label {
+	width: 100%;
+	display: block;
+}
+.hkd-form-text--s1 input {
+    width: 100px;
+}
+
 
 .hkd-form-select select {
 	width: 100%;
@@ -119,6 +168,8 @@ legend {
 	padding: 9px 3px 9px 3px;
 	-webkit-appearance: none;
 }
+
+
 
 
 
@@ -172,7 +223,8 @@ textarea.hkd-form-textarea,
 
 
 div.details p.hkd-form-element {
-	margin: 0 0 10px 0;
+    margin: 0 0 10px 0;
+    position: relative;
 }
 
 div.details p.hkd-form-element input {
@@ -236,7 +288,8 @@ div.details p.hkd-form-element textarea:focus {
 
 
 .hkd-form-row label {
-	display: block;
+    display: block;
+    padding-bottom: 4px;
 }
 
 
