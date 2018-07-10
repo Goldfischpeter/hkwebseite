@@ -689,7 +689,9 @@ div.hkd-grid-2col,
 
 
 .hkd-form-function {
-	text-align: center;
+    text-align: center;
+    float: left;
+    width: 100%;
 }
 
 /* anpassungen breite, button weitere x */
